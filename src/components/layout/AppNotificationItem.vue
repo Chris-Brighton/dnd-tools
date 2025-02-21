@@ -1,3 +1,21 @@
+<template>
+  <v-alert
+    :variant="showAll ? 'outlined' : 'flat'"
+    :border="showAll ? 'start' : false"
+    :density="showAll ? 'compact' : undefined"
+    :theme="showAll ? undefined : 'dark'"
+    :elevation="showAll ? 0 : 3"
+    :type="notification.type"
+    :text="notification.text"
+    :title="notification.time.toLocaleString()"
+    class="clip-4"
+  >
+    <template #close>
+      <v-btn icon="$close" @click="emit('close')" />
+    </template>
+  </v-alert>
+</template>
+
 <script setup lang="ts">
 import { useTimeoutFn } from '@vueuse/core'
 import type { Notification } from '@/stores/notification'
@@ -18,23 +36,6 @@ const { start, stop } = useTimeoutFn(() => (isShow.value = false), timeout, {
 watch(timeout, (v) => (v !== -1 ? start() : stop()), { immediate: true })
 const showAll = computed(() => timeout.value === -1)
 </script>
-
-<template>
-  <v-alert
-    :variant="showAll ? 'outlined' : 'flat'"
-    :border="showAll ? 'start' : false"
-    :density="showAll ? 'compact' : undefined"
-    :theme="showAll ? undefined : 'dark'"
-    :elevation="showAll ? 0 : 3"
-    :type="notification.type"
-    :text="notification.text"
-    :title="notification.time.toLocaleString()"
-  >
-    <template #close>
-      <v-btn icon="$close" @click="emit('close')" />
-    </template>
-  </v-alert>
-</template>
 
 <style scoped>
 :deep(.v-alert-title) {

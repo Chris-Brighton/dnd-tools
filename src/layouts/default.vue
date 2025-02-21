@@ -1,10 +1,9 @@
 <template>
   <AppDrawer />
-  <AppBar />
   <v-main>
     <router-view />
   </v-main>
-  <AppFooter />
+  <AppNotification />
 </template>
 
 <script setup lang="ts">

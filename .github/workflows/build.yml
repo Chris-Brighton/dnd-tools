@@ -1,0 +1,39 @@
+name: Build
+on: [push]
+
+jobs:
+  build_on_linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: pnpm/action-setup@v4
+      with:
+        version: 10
+    - name: install dependencies
+      run: pnpm install
+    - name: build
+      run: pnpm build
+
+  build_on_mac:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: pnpm/action-setup@v4
+      with:
+        version: 10
+    - name: install dependencies
+      run: pnpm install
+    - name: build
+      run: pnpm build
+
+  build_on_windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: pnpm/action-setup@v4
+      with:
+        version: 10
+    - name: install dependencies
+      run: pnpm install
+    - name: build
+      run: pnpm build

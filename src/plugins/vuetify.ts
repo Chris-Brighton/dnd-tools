@@ -1,10 +1,15 @@
 import 'vuetify/styles'
 import { createVuetify, type IconSet, type IconProps } from 'vuetify'
-import { en, zhHans } from 'vuetify/locale'
+import { en } from 'vuetify/locale'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
-import { useDark } from '@vueuse/core'
-import { md3 } from 'vuetify/blueprints'
 import type { VDataTable } from 'vuetify/lib/components/index.mjs'
+import { deepOrange, teal, deepPurple } from 'vuetify/util/colors'
+const colors = {
+  primary: deepOrange.base,
+  secondary: teal.accent2,
+  accent: deepPurple.base,
+}
+
 export type DataTableHeaders = InstanceType<
   typeof VDataTable
 >['$props']['headers']
@@ -31,48 +36,117 @@ const custom: IconSet = {
     h(props.tag, { innerHTML: svgIcons[props.icon as string] }),
 }
 
-const theme = {
-  primary: localStorage.getItem('theme-primary') || '#1697f6',
-}
-
 export default createVuetify({
-  blueprint: md3,
+  // blueprint: md3,
   locale: {
-    locale: 'zhHans',
+    locale: 'en',
     fallback: 'en',
-    messages: { zhHans, en },
+    messages: {  en },
   },
   defaults: {
-    VSwitch: {
-      color: 'primary',
+    VAlert: {
+      class: 'rounded-0',
     },
-    VDataTable: {
-      fixedHeader: true,
-      hover: true,
+    VAutocomplete: {
+      color: 'primary',
+      density: 'comfortable',
+    },
+    VBtn: {
+      density: 'default',
+      class: 'text-capitalize rounded-0 clip-2',
     },
     VCard: {
-      flat: true,
-      border: true,
+      density: 'default',
+      class: 'rounded-0 clip-4',
+      elevation: '2',
     },
-    VBtn: { color: undefined },
+    VCheckbox: {
+      color: 'primary',
+      density: 'comfortable',
+    },
+    VCombobox: {
+      color: 'primary',
+      density: 'comfortable',
+    },
+    VExpansionPanels: {
+      rounded: false,
+    },
+    VFileInput: {
+      color: 'primary',
+      prependInnerIcon: 'mdi-file-upload',
+      prependIcon: '',
+      density: 'comfortable',
+    },
+    VOverlay: {
+      opacity: 0.9,
+    },
+    VRadio: {
+      color: 'primary',
+      density: 'comfortable',
+    },
+    VRangeSlider: {
+      color: 'primary',
+      thumbLabel: 'always',
+      thumbColor: 'primary',
+      density: 'comfortable',
+    },
+    VSelect: {
+      color: 'primary',
+      prependInnerIcon: 'mdi-form-select',
+      density: 'comfortable',
+    },
+    VSheet: {
+      class: 'rounded-0',
+    },
+    VSnackbar: {
+      class: 'd-flex',
+      rounded: 0,
+    },
+    VSlider: {
+      color: 'primary',
+      thumbLabel: 'always',
+      thumbColor: 'primary',
+    },
+    VStepper: {
+      class: 'clip-4',
+    },
+    VSwitch: {
+      color: 'primary',
+      density: 'comfortable',
+    },
+    VTab: {
+      class: 'text-capitalize text-button',
+    },
+    VTable: {
+      density: 'compact',
+    },
+    VTooltip: {
+      contentClass: 'rounded-0 clip-2',
+    },
+    VList: {
+      density: 'compact',
+    },
+    VTextField: {
+      color: 'primary',
+      prependInnerIcon: 'mdi-form-textbox',
+      density: 'comfortable',
+    },
+    VTextarea: {
+      color: 'primary',
+      prependInnerIcon: 'mdi-form-textarea',
+      density: 'comfortable',
+    },
     VNavigationDrawer: {
       VList: {
         nav: true,
-        VListItem: {
-          rounded: 'xl',
-        },
       },
     },
-    VChip: { rounded: 'lg' },
   },
   theme: {
-    defaultTheme: useDark().value ? 'dark' : 'light',
+    defaultTheme: 'dark',
     themes: {
-      light: {
-        colors: theme,
-      },
       dark: {
-        colors: theme,
+        colors,
       },
     },
   },

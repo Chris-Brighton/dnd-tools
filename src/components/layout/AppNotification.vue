@@ -37,7 +37,7 @@ function toggleAll() {
     <v-card
       elevation="6"
       width="400"
-      class="d-flex flex-column notification-card"
+      class="d-flex flex-column notification-card clip-0"
       :class="{ 'notification-card--open': showAll }"
     >
       <v-toolbar flat density="compact">

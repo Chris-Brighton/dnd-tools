@@ -71,7 +71,7 @@ export default defineConfig(({ command }) => {
           },
         ],
         dts: 'src/auto-imports.d.ts',
-        dirs: ['src/stores'],
+        dirs: ['src/stores', 'src/composables'],
       }),
       Electron({
         main: {

@@ -9,13 +9,13 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
 
 app.whenReady().then(() => {
   const win = new BrowserWindow({
-    frame: false,
+    frame: true,
     width: 1500,
     height: 900,
     minHeight: 400,
     minWidth: 300,
     icon: join(__dirname, '../public/favicon.ico'),
-    titleBarStyle: 'hidden',
+    titleBarStyle: 'default',
     titleBarOverlay: {
       color: '#f3f3f300',
       symbolColor: '#434343',
@@ -26,13 +26,13 @@ app.whenReady().then(() => {
     },
   })
 
-  ipcMain.handle('darkMode:toggle', (event, dark: boolean) => {
-    win.setTitleBarOverlay(
-      dark
-        ? { color: '#21212100', symbolColor: '#999999' }
-        : { color: '#f3f3f300', symbolColor: '#434343' },
-    )
-  })
+  // ipcMain.handle('darkMode:toggle', (event, dark: boolean) => {
+  //   win.setTitleBarOverlay(
+  //     dark
+  //       ? { color: '#21212100', symbolColor: '#999999' }
+  //       : { color: '#f3f3f300', symbolColor: '#434343' },
+  //   )
+  // })
 
   // You can use `process.env.VITE_DEV_SERVER_URL` when the vite command is called `serve`
   if (process.env.VITE_DEV_SERVER_URL) {
