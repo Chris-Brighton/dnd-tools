@@ -17,6 +17,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: pnpm/action-setup@v4
+    - name: set token
+      run: |
+        GH_TOKEN=${{ secrets.github_token }}
+        echo "GH_TOKEN=$GH_TOKEN" >> $GITHUB_ENV
     - name: install dependencies
       run: pnpm install
     - name: build
@@ -27,6 +31,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: pnpm/action-setup@v4
+    - name: set token
+      run: |
+        GH_TOKEN=${{ secrets.github_token }}
+        echo "GH_TOKEN=$GH_TOKEN" >> $GITHUB_ENV
     - name: install dependencies
       run: pnpm install
     - name: build
