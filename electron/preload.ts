@@ -6,12 +6,19 @@ import { contextBridge, ipcRenderer, } from 'electron';
 
 
 contextBridge.exposeInMainWorld('fileHandler', {
-  write: (file:string, data:string) => {
-    ipcRenderer.invoke('file:write', { file, data })
+  write: async (file:string, data:string) => {
+    await ipcRenderer.invoke('file:write', { file, data })
   },
   read: async (file:string) => {
     const data = await ipcRenderer.invoke('file:read', file);
     return data;
+  },
+  exists: async (file:string) => {
+    const data = await ipcRenderer.invoke('file:exists', file);
+    return data;
+  },
+  makeFolder: async (folder:string) => {
+    await ipcRenderer.invoke('file:mkdir', folder);
   }
 })
 

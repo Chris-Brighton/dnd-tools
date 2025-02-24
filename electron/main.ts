@@ -29,14 +29,24 @@ app.whenReady().then(() => {
   })
 
   ipcMain.handle('file:write', (event, { file, data }) => {
-    const PATH = join(app.getPath('userData'), file);
-    console.log(PATH);
-    fs.writeFileSync(PATH, data, 'utf-8');
+    fs.writeFileSync(join(app.getPath('userData'), file), data, 'utf-8');
   })
 
   ipcMain.handle('file:read', (event, file:string) => {
     const data = fs.readFileSync(join(app.getPath('userData'), file), { encoding: 'utf-8'});
     return data;
+  })
+
+  ipcMain.handle('file:exists', (event, file:string) => {
+    const exists = fs.existsSync(join(app.getPath('userData'), file))
+    return exists;
+  })
+
+  ipcMain.handle('file:mkdir', (event, folder:string) => {
+    const exists = fs.existsSync(join(app.getPath('userData'), folder))
+    if(!exists) {
+      fs.mkdirSync(join(app.getPath('userData'), folder))
+    }
   })
 
   // You can use `process.env.VITE_DEV_SERVER_URL` when the vite command is called `serve`

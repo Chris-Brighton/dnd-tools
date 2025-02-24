@@ -75,7 +75,7 @@ declare global {
   const useCssVars: typeof import('vue')['useCssVars']
   const useDisplay: typeof import('vuetify')['useDisplay']
   const useFetch: typeof import('./composables/useFetch.js')['default']
-  const useFile: typeof import('./composables/useFile.js')['default']
+  const useFile: typeof import('./composables/useFile')['default']
   const useJSON: typeof import('./composables/useJSON')['default']
   const useLayout: typeof import('vuetify')['useLayout']
   const useLocale: typeof import('vuetify')['useLocale']
