@@ -11,11 +11,8 @@
               color="primary"
             />
           </template>
-          <v-list-item-title
-            class="text-h5 font-weight-bold"
-            style="line-height: 2rem"
-          >
-            Vitify <span class="text-primary">Admin</span>
+          <v-list-item-title class="font-weight-bold" style="line-height: 2rem">
+            Dungeons & Dragons Tools
           </v-list-item-title>
         </v-list-item>
       </v-list>

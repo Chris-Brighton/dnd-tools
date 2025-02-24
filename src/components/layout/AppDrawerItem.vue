@@ -25,6 +25,7 @@ const icon = computed(() => props.item.meta?.icon)
     :prepend-icon="icon"
     active-class="text-primary"
     :title="title"
+    :data-to="item.name"
   />
   <v-list-group v-else-if="icon" :prepend-icon="icon" color="primary">
     <template #activator="{ props: vProps }">

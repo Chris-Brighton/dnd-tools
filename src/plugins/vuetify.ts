@@ -50,7 +50,7 @@ export default createVuetify({
   },
   defaults: {
     VAlert: {
-      class: 'rounded-0',
+      class: 'rounded-0 clip-4',
     },
     VAutocomplete: {
       color: 'primary',
