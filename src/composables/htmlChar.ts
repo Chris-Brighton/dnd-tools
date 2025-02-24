@@ -1,0 +1,4365 @@
+type Char = 'AElig'|'AElig'|'AMP'|'AMP'|'Aacute'|'Aacute'|'Abreve'|'Acirc'|'Acirc'|'Acy'|'Afr'|'Agrave'|'Agrave'|'Alpha'|'Amacr'|'And'|'Aogon'|'Aopf'|'ApplyFunction'|'Aring'|'Aring'|'Ascr'|'Assign'|'Atilde'|'Atilde'|'Auml'|'Auml'|'Backslash'|'Barv'|'Barwed'|'Bcy'|'Because'|'Bernoullis'|'Beta'|'Bfr'|'Bopf'|'Breve'|'Bscr'|'Bumpeq'|'CHcy'|'COPY'|'COPY'|'Cacute'|'Cap'|'CapitalDifferentialD'|'Cayleys'|'Ccaron'|'Ccedil'|'Ccedil'|'Ccirc'|'Cconint'|'Cdot'|'Cedilla'|'CenterDot'|'Cfr'|'Chi'|'CircleDot'|'CircleMinus'|'CirclePlus'|'CircleTimes'|'ClockwiseContourIntegral'|'CloseCurlyDoubleQuote'|'CloseCurlyQuote'|'Colon'|'Colone'|'Congruent'|'Conint'|'ContourIntegral'|'Copf'|'Coproduct'|'CounterClockwiseContourIntegral'|'Cross'|'Cscr'|'Cup'|'CupCap'|'DD'|'DDotrahd'|'DJcy'|'DScy'|'DZcy'|'Dagger'|'Darr'|'Dashv'|'Dcaron'|'Dcy'|'Del'|'Delta'|'Dfr'|'DiacriticalAcute'|'DiacriticalDot'|'DiacriticalDoubleAcute'|'DiacriticalGrave'|'DiacriticalTilde'|'Diamond'|'DifferentialD'|'Dopf'|'Dot'|'DotDot'|'DotEqual'|'DoubleContourIntegral'|'DoubleDot'|'DoubleDownArrow'|'DoubleLeftArrow'|'DoubleLeftRightArrow'|'DoubleLeftTee'|'DoubleLongLeftArrow'|'DoubleLongLeftRightArrow'|'DoubleLongRightArrow'|'DoubleRightArrow'|'DoubleRightTee'|'DoubleUpArrow'|'DoubleUpDownArrow'|'DoubleVerticalBar'|'DownArrow'|'DownArrowBar'|'DownArrowUpArrow'|'DownBreve'|'DownLeftRightVector'|'DownLeftTeeVector'|'DownLeftVector'|'DownLeftVectorBar'|'DownRightTeeVector'|'DownRightVector'|'DownRightVectorBar'|'DownTee'|'DownTeeArrow'|'Downarrow'|'Dscr'|'Dstrok'|'ENG'|'ETH'|'ETH'|'Eacute'|'Eacute'|'Ecaron'|'Ecirc'|'Ecirc'|'Ecy'|'Edot'|'Efr'|'Egrave'|'Egrave'|'Element'|'Emacr'|'EmptySmallSquare'|'EmptyVerySmallSquare'|'Eogon'|'Eopf'|'Epsilon'|'Equal'|'EqualTilde'|'Equilibrium'|'Escr'|'Esim'|'Eta'|'Euml'|'Euml'|'Exists'|'ExponentialE'|'Fcy'|'Ffr'|'FilledSmallSquare'|'FilledVerySmallSquare'|'Fopf'|'ForAll'|'Fouriertrf'|'Fscr'|'GJcy'|'GT'|'GT'|'Gamma'|'Gammad'|'Gbreve'|'Gcedil'|'Gcirc'|'Gcy'|'Gdot'|'Gfr'|'Gg'|'Gopf'|'GreaterEqual'|'GreaterEqualLess'|'GreaterFullEqual'|'GreaterGreater'|'GreaterLess'|'GreaterSlantEqual'|'GreaterTilde'|'Gscr'|'Gt'|'HARDcy'|'Hacek'|'Hat'|'Hcirc'|'Hfr'|'HilbertSpace'|'Hopf'|'HorizontalLine'|'Hscr'|'Hstrok'|'HumpDownHump'|'HumpEqual'|'IEcy'|'IJlig'|'IOcy'|'Iacute'|'Iacute'|'Icirc'|'Icirc'|'Icy'|'Idot'|'Ifr'|'Igrave'|'Igrave'|'Im'|'Imacr'|'ImaginaryI'|'Implies'|'Int'|'Integral'|'Intersection'|'InvisibleComma'|'InvisibleTimes'|'Iogon'|'Iopf'|'Iota'|'Iscr'|'Itilde'|'Iukcy'|'Iuml'|'Iuml'|'Jcirc'|'Jcy'|'Jfr'|'Jopf'|'Jscr'|'Jsercy'|'Jukcy'|'KHcy'|'KJcy'|'Kappa'|'Kcedil'|'Kcy'|'Kfr'|'Kopf'|'Kscr'|'LJcy'|'LT'|'LT'|'Lacute'|'Lambda'|'Lang'|'Laplacetrf'|'Larr'|'Lcaron'|'Lcedil'|'Lcy'|'LeftAngleBracket'|'LeftArrow'|'LeftArrowBar'|'LeftArrowRightArrow'|'LeftCeiling'|'LeftDoubleBracket'|'LeftDownTeeVector'|'LeftDownVector'|'LeftDownVectorBar'|'LeftFloor'|'LeftRightArrow'|'LeftRightVector'|'LeftTee'|'LeftTeeArrow'|'LeftTeeVector'|'LeftTriangle'|'LeftTriangleBar'|'LeftTriangleEqual'|'LeftUpDownVector'|'LeftUpTeeVector'|'LeftUpVector'|'LeftUpVectorBar'|'LeftVector'|'LeftVectorBar'|'Leftarrow'|'Leftrightarrow'|'LessEqualGreater'|'LessFullEqual'|'LessGreater'|'LessLess'|'LessSlantEqual'|'LessTilde'|'Lfr'|'Ll'|'Lleftarrow'|'Lmidot'|'LongLeftArrow'|'LongLeftRightArrow'|'LongRightArrow'|'Longleftarrow'|'Longleftrightarrow'|'Longrightarrow'|'Lopf'|'LowerLeftArrow'|'LowerRightArrow'|'Lscr'|'Lsh'|'Lstrok'|'Lt'|'Map'|'Mcy'|'MediumSpace'|'Mellintrf'|'Mfr'|'MinusPlus'|'Mopf'|'Mscr'|'Mu'|'NJcy'|'Nacute'|'Ncaron'|'Ncedil'|'Ncy'|'NegativeMediumSpace'|'NegativeThickSpace'|'NegativeThinSpace'|'NegativeVeryThinSpace'|'NestedGreaterGreater'|'NestedLessLess'|'Nfr'|'NoBreak'|'NonBreakingSpace'|'Nopf'|'Not'|'NotCongruent'|'NotCupCap'|'NotDoubleVerticalBar'|'NotElement'|'NotEqual'|'NotEqualTilde'|'NotExists'|'NotGreater'|'NotGreaterEqual'|'NotGreaterFullEqual'|'NotGreaterGreater'|'NotGreaterLess'|'NotGreaterSlantEqual'|'NotGreaterTilde'|'NotHumpDownHump'|'NotHumpEqual'|'NotLeftTriangle'|'NotLeftTriangleBar'|'NotLeftTriangleEqual'|'NotLess'|'NotLessEqual'|'NotLessGreater'|'NotLessLess'|'NotLessSlantEqual'|'NotLessTilde'|'NotNestedGreaterGreater'|'NotNestedLessLess'|'NotPrecedes'|'NotPrecedesEqual'|'NotPrecedesSlantEqual'|'NotReverseElement'|'NotRightTriangle'|'NotRightTriangleBar'|'NotRightTriangleEqual'|'NotSquareSubset'|'NotSquareSubsetEqual'|'NotSquareSuperset'|'NotSquareSupersetEqual'|'NotSubset'|'NotSubsetEqual'|'NotSucceeds'|'NotSucceedsEqual'|'NotSucceedsSlantEqual'|'NotSucceedsTilde'|'NotSuperset'|'NotSupersetEqual'|'NotTilde'|'NotTildeEqual'|'NotTildeFullEqual'|'NotTildeTilde'|'NotVerticalBar'|'Nscr'|'Ntilde'|'Ntilde'|'Nu'|'OElig'|'Oacute'|'Oacute'|'Ocirc'|'Ocirc'|'Ocy'|'Odblac'|'Ofr'|'Ograve'|'Ograve'|'Omacr'|'Omega'|'Omicron'|'Oopf'|'OpenCurlyDoubleQuote'|'OpenCurlyQuote'|'Or'|'Oscr'|'Oslash'|'Oslash'|'Otilde'|'Otilde'|'Otimes'|'Ouml'|'Ouml'|'OverBar'|'OverBrace'|'OverBracket'|'OverParenthesis'|'PartialD'|'Pcy'|'Pfr'|'Phi'|'Pi'|'PlusMinus'|'Poincareplane'|'Popf'|'Pr'|'Precedes'|'PrecedesEqual'|'PrecedesSlantEqual'|'PrecedesTilde'|'Prime'|'Product'|'Proportion'|'Proportional'|'Pscr'|'Psi'|'QUOT'|'QUOT'|'Qfr'|'Qopf'|'Qscr'|'RBarr'|'REG'|'REG'|'Racute'|'Rang'|'Rarr'|'Rarrtl'|'Rcaron'|'Rcedil'|'Rcy'|'Re'|'ReverseElement'|'ReverseEquilibrium'|'ReverseUpEquilibrium'|'Rfr'|'Rho'|'RightAngleBracket'|'RightArrow'|'RightArrowBar'|'RightArrowLeftArrow'|'RightCeiling'|'RightDoubleBracket'|'RightDownTeeVector'|'RightDownVector'|'RightDownVectorBar'|'RightFloor'|'RightTee'|'RightTeeArrow'|'RightTeeVector'|'RightTriangle'|'RightTriangleBar'|'RightTriangleEqual'|'RightUpDownVector'|'RightUpTeeVector'|'RightUpVector'|'RightUpVectorBar'|'RightVector'|'RightVectorBar'|'Rightarrow'|'Ropf'|'RoundImplies'|'Rrightarrow'|'Rscr'|'Rsh'|'RuleDelayed'|'SHCHcy'|'SHcy'|'SOFTcy'|'Sacute'|'Sc'|'Scaron'|'Scedil'|'Scirc'|'Scy'|'Sfr'|'ShortDownArrow'|'ShortLeftArrow'|'ShortRightArrow'|'ShortUpArrow'|'Sigma'|'SmallCircle'|'Sopf'|'Sqrt'|'Square'|'SquareIntersection'|'SquareSubset'|'SquareSubsetEqual'|'SquareSuperset'|'SquareSupersetEqual'|'SquareUnion'|'Sscr'|'Star'|'Sub'|'Subset'|'SubsetEqual'|'Succeeds'|'SucceedsEqual'|'SucceedsSlantEqual'|'SucceedsTilde'|'SuchThat'|'Sum'|'Sup'|'Superset'|'SupersetEqual'|'Supset'|'THORN'|'THORN'|'TRADE'|'TSHcy'|'TScy'|'Tab'|'Tau'|'Tcaron'|'Tcedil'|'Tcy'|'Tfr'|'Therefore'|'Theta'|'ThickSpace'|'ThinSpace'|'Tilde'|'TildeEqual'|'TildeFullEqual'|'TildeTilde'|'Topf'|'TripleDot'|'Tscr'|'Tstrok'|'Uacute'|'Uacute'|'Uarr'|'Uarrocir'|'Ubrcy'|'Ubreve'|'Ucirc'|'Ucirc'|'Ucy'|'Udblac'|'Ufr'|'Ugrave'|'Ugrave'|'Umacr'|'UnderBar'|'UnderBrace'|'UnderBracket'|'UnderParenthesis'|'Union'|'UnionPlus'|'Uogon'|'Uopf'|'UpArrow'|'UpArrowBar'|'UpArrowDownArrow'|'UpDownArrow'|'UpEquilibrium'|'UpTee'|'UpTeeArrow'|'Uparrow'|'Updownarrow'|'UpperLeftArrow'|'UpperRightArrow'|'Upsi'|'Upsilon'|'Uring'|'Uscr'|'Utilde'|'Uuml'|'Uuml'|'VDash'|'Vbar'|'Vcy'|'Vdash'|'Vdashl'|'Vee'|'Verbar'|'Vert'|'VerticalBar'|'VerticalLine'|'VerticalSeparator'|'VerticalTilde'|'VeryThinSpace'|'Vfr'|'Vopf'|'Vscr'|'Vvdash'|'Wcirc'|'Wedge'|'Wfr'|'Wopf'|'Wscr'|'Xfr'|'Xi'|'Xopf'|'Xscr'|'YAcy'|'YIcy'|'YUcy'|'Yacute'|'Yacute'|'Ycirc'|'Ycy'|'Yfr'|'Yopf'|'Yscr'|'Yuml'|'ZHcy'|'Zacute'|'Zcaron'|'Zcy'|'Zdot'|'ZeroWidthSpace'|'Zeta'|'Zfr'|'Zopf'|'Zscr'|'aacute'|'aacute'|'abreve'|'ac'|'acE'|'acd'|'acirc'|'acirc'|'acute'|'acute'|'acy'|'aelig'|'aelig'|'af'|'afr'|'agrave'|'agrave'|'alefsym'|'aleph'|'alpha'|'amacr'|'amalg'|'amp'|'amp'|'and'|'andand'|'andd'|'andslope'|'andv'|'ang'|'ange'|'angle'|'angmsd'|'angmsdaa'|'angmsdab'|'angmsdac'|'angmsdad'|'angmsdae'|'angmsdaf'|'angmsdag'|'angmsdah'|'angrt'|'angrtvb'|'angrtvbd'|'angsph'|'angst'|'angzarr'|'aogon'|'aopf'|'ap'|'apE'|'apacir'|'ape'|'apid'|'apos'|'approx'|'approxeq'|'aring'|'aring'|'ascr'|'ast'|'asymp'|'asympeq'|'atilde'|'atilde'|'auml'|'auml'|'awconint'|'awint'|'bNot'|'backcong'|'backepsilon'|'backprime'|'backsim'|'backsimeq'|'barvee'|'barwed'|'barwedge'|'bbrk'|'bbrktbrk'|'bcong'|'bcy'|'bdquo'|'becaus'|'because'|'bemptyv'|'bepsi'|'bernou'|'beta'|'beth'|'between'|'bfr'|'bigcap'|'bigcirc'|'bigcup'|'bigodot'|'bigoplus'|'bigotimes'|'bigsqcup'|'bigstar'|'bigtriangledown'|'bigtriangleup'|'biguplus'|'bigvee'|'bigwedge'|'bkarow'|'blacklozenge'|'blacksquare'|'blacktriangle'|'blacktriangledown'|'blacktriangleleft'|'blacktriangleright'|'blank'|'blk12'|'blk14'|'blk34'|'block'|'bne'|'bnequiv'|'bnot'|'bopf'|'bot'|'bottom'|'bowtie'|'boxDL'|'boxDR'|'boxDl'|'boxDr'|'boxH'|'boxHD'|'boxHU'|'boxHd'|'boxHu'|'boxUL'|'boxUR'|'boxUl'|'boxUr'|'boxV'|'boxVH'|'boxVL'|'boxVR'|'boxVh'|'boxVl'|'boxVr'|'boxbox'|'boxdL'|'boxdR'|'boxdl'|'boxdr'|'boxh'|'boxhD'|'boxhU'|'boxhd'|'boxhu'|'boxminus'|'boxplus'|'boxtimes'|'boxuL'|'boxuR'|'boxul'|'boxur'|'boxv'|'boxvH'|'boxvL'|'boxvR'|'boxvh'|'boxvl'|'boxvr'|'bprime'|'breve'|'brvbar'|'brvbar'|'bscr'|'bsemi'|'bsim'|'bsime'|'bsol'|'bsolb'|'bsolhsub'|'bull'|'bullet'|'bump'|'bumpE'|'bumpe'|'bumpeq'|'cacute'|'cap'|'capand'|'capbrcup'|'capcap'|'capcup'|'capdot'|'caps'|'caret'|'caron'|'ccaps'|'ccaron'|'ccedil'|'ccedil'|'ccirc'|'ccups'|'ccupssm'|'cdot'|'cedil'|'cedil'|'cemptyv'|'cent'|'cent'|'centerdot'|'cfr'|'chcy'|'check'|'checkmark'|'chi'|'cir'|'cirE'|'circ'|'circeq'|'circlearrowleft'|'circlearrowright'|'circledR'|'circledS'|'circledast'|'circledcirc'|'circleddash'|'cire'|'cirfnint'|'cirmid'|'cirscir'|'clubs'|'clubsuit'|'colon'|'colone'|'coloneq'|'comma'|'commat'|'comp'|'compfn'|'complement'|'complexes'|'cong'|'congdot'|'conint'|'copf'|'coprod'|'copy'|'copy'|'copysr'|'crarr'|'cross'|'cscr'|'csub'|'csube'|'csup'|'csupe'|'ctdot'|'cudarrl'|'cudarrr'|'cuepr'|'cuesc'|'cularr'|'cularrp'|'cup'|'cupbrcap'|'cupcap'|'cupcup'|'cupdot'|'cupor'|'cups'|'curarr'|'curarrm'|'curlyeqprec'|'curlyeqsucc'|'curlyvee'|'curlywedge'|'curren'|'curren'|'curvearrowleft'|'curvearrowright'|'cuvee'|'cuwed'|'cwconint'|'cwint'|'cylcty'|'dArr'|'dHar'|'dagger'|'daleth'|'darr'|'dash'|'dashv'|'dbkarow'|'dblac'|'dcaron'|'dcy'|'dd'|'ddagger'|'ddarr'|'ddotseq'|'deg'|'deg'|'delta'|'demptyv'|'dfisht'|'dfr'|'dharl'|'dharr'|'diam'|'diamond'|'diamondsuit'|'diams'|'die'|'digamma'|'disin'|'div'|'divide'|'divide'|'divideontimes'|'divonx'|'djcy'|'dlcorn'|'dlcrop'|'dollar'|'dopf'|'dot'|'doteq'|'doteqdot'|'dotminus'|'dotplus'|'dotsquare'|'doublebarwedge'|'downarrow'|'downdownarrows'|'downharpoonleft'|'downharpoonright'|'drbkarow'|'drcorn'|'drcrop'|'dscr'|'dscy'|'dsol'|'dstrok'|'dtdot'|'dtri'|'dtrif'|'duarr'|'duhar'|'dwangle'|'dzcy'|'dzigrarr'|'eDDot'|'eDot'|'eacute'|'eacute'|'easter'|'ecaron'|'ecir'|'ecirc'|'ecirc'|'ecolon'|'ecy'|'edot'|'ee'|'efDot'|'efr'|'eg'|'egrave'|'egrave'|'egs'|'egsdot'|'el'|'elinters'|'ell'|'els'|'elsdot'|'emacr'|'empty'|'emptyset'|'emptyv'|'emsp13'|'emsp14'|'emsp'|'eng'|'ensp'|'eogon'|'eopf'|'epar'|'eparsl'|'eplus'|'epsi'|'epsilon'|'epsiv'|'eqcirc'|'eqcolon'|'eqsim'|'eqslantgtr'|'eqslantless'|'equals'|'equest'|'equiv'|'equivDD'|'eqvparsl'|'erDot'|'erarr'|'escr'|'esdot'|'esim'|'eta'|'eth'|'eth'|'euml'|'euml'|'euro'|'excl'|'exist'|'expectation'|'exponentiale'|'fallingdotseq'|'fcy'|'female'|'ffilig'|'fflig'|'ffllig'|'ffr'|'filig'|'fjlig'|'flat'|'fllig'|'fltns'|'fnof'|'fopf'|'forall'|'fork'|'forkv'|'fpartint'|'frac12'|'frac12'|'frac13'|'frac14'|'frac14'|'frac15'|'frac16'|'frac18'|'frac23'|'frac25'|'frac34'|'frac34'|'frac35'|'frac38'|'frac45'|'frac56'|'frac58'|'frac78'|'frasl'|'frown'|'fscr'|'gE'|'gEl'|'gacute'|'gamma'|'gammad'|'gap'|'gbreve'|'gcirc'|'gcy'|'gdot'|'ge'|'gel'|'geq'|'geqq'|'geqslant'|'ges'|'gescc'|'gesdot'|'gesdoto'|'gesdotol'|'gesl'|'gesles'|'gfr'|'gg'|'ggg'|'gimel'|'gjcy'|'gl'|'glE'|'gla'|'glj'|'gnE'|'gnap'|'gnapprox'|'gne'|'gneq'|'gneqq'|'gnsim'|'gopf'|'grave'|'gscr'|'gsim'|'gsime'|'gsiml'|'gt'|'gt'|'gtcc'|'gtcir'|'gtdot'|'gtlPar'|'gtquest'|'gtrapprox'|'gtrarr'|'gtrdot'|'gtreqless'|'gtreqqless'|'gtrless'|'gtrsim'|'gvertneqq'|'gvnE'|'hArr'|'hairsp'|'half'|'hamilt'|'hardcy'|'harr'|'harrcir'|'harrw'|'hbar'|'hcirc'|'hearts'|'heartsuit'|'hellip'|'hercon'|'hfr'|'hksearow'|'hkswarow'|'hoarr'|'homtht'|'hookleftarrow'|'hookrightarrow'|'hopf'|'horbar'|'hscr'|'hslash'|'hstrok'|'hybull'|'hyphen'|'iacute'|'iacute'|'ic'|'icirc'|'icirc'|'icy'|'iecy'|'iexcl'|'iexcl'|'iff'|'ifr'|'igrave'|'igrave'|'ii'|'iiiint'|'iiint'|'iinfin'|'iiota'|'ijlig'|'imacr'|'image'|'imagline'|'imagpart'|'imath'|'imof'|'imped'|'in'|'incare'|'infin'|'infintie'|'inodot'|'int'|'intcal'|'integers'|'intercal'|'intlarhk'|'intprod'|'iocy'|'iogon'|'iopf'|'iota'|'iprod'|'iquest'|'iquest'|'iscr'|'isin'|'isinE'|'isindot'|'isins'|'isinsv'|'isinv'|'it'|'itilde'|'iukcy'|'iuml'|'iuml'|'jcirc'|'jcy'|'jfr'|'jmath'|'jopf'|'jscr'|'jsercy'|'jukcy'|'kappa'|'kappav'|'kcedil'|'kcy'|'kfr'|'kgreen'|'khcy'|'kjcy'|'kopf'|'kscr'|'lAarr'|'lArr'|'lAtail'|'lBarr'|'lE'|'lEg'|'lHar'|'lacute'|'laemptyv'|'lagran'|'lambda'|'lang'|'langd'|'langle'|'lap'|'laquo'|'laquo'|'larr'|'larrb'|'larrbfs'|'larrfs'|'larrhk'|'larrlp'|'larrpl'|'larrsim'|'larrtl'|'lat'|'latail'|'late'|'lates'|'lbarr'|'lbbrk'|'lbrace'|'lbrack'|'lbrke'|'lbrksld'|'lbrkslu'|'lcaron'|'lcedil'|'lceil'|'lcub'|'lcy'|'ldca'|'ldquo'|'ldquor'|'ldrdhar'|'ldrushar'|'ldsh'|'le'|'leftarrow'|'leftarrowtail'|'leftharpoondown'|'leftharpoonup'|'leftleftarrows'|'leftrightarrow'|'leftrightarrows'|'leftrightharpoons'|'leftrightsquigarrow'|'leftthreetimes'|'leg'|'leq'|'leqq'|'leqslant'|'les'|'lescc'|'lesdot'|'lesdoto'|'lesdotor'|'lesg'|'lesges'|'lessapprox'|'lessdot'|'lesseqgtr'|'lesseqqgtr'|'lessgtr'|'lesssim'|'lfisht'|'lfloor'|'lfr'|'lg'|'lgE'|'lhard'|'lharu'|'lharul'|'lhblk'|'ljcy'|'ll'|'llarr'|'llcorner'|'llhard'|'lltri'|'lmidot'|'lmoust'|'lmoustache'|'lnE'|'lnap'|'lnapprox'|'lne'|'lneq'|'lneqq'|'lnsim'|'loang'|'loarr'|'lobrk'|'longleftarrow'|'longleftrightarrow'|'longmapsto'|'longrightarrow'|'looparrowleft'|'looparrowright'|'lopar'|'lopf'|'loplus'|'lotimes'|'lowast'|'lowbar'|'loz'|'lozenge'|'lozf'|'lpar'|'lparlt'|'lrarr'|'lrcorner'|'lrhar'|'lrhard'|'lrm'|'lrtri'|'lsaquo'|'lscr'|'lsh'|'lsim'|'lsime'|'lsimg'|'lsqb'|'lsquo'|'lsquor'|'lstrok'|'lt'|'lt'|'ltcc'|'ltcir'|'ltdot'|'lthree'|'ltimes'|'ltlarr'|'ltquest'|'ltrPar'|'ltri'|'ltrie'|'ltrif'|'lurdshar'|'luruhar'|'lvertneqq'|'lvnE'|'mDDot'|'macr'|'macr'|'male'|'malt'|'maltese'|'map'|'mapsto'|'mapstodown'|'mapstoleft'|'mapstoup'|'marker'|'mcomma'|'mcy'|'mdash'|'measuredangle'|'mfr'|'mho'|'micro'|'micro'|'mid'|'midast'|'midcir'|'middot'|'middot'|'minus'|'minusb'|'minusd'|'minusdu'|'mlcp'|'mldr'|'mnplus'|'models'|'mopf'|'mp'|'mscr'|'mstpos'|'mu'|'multimap'|'mumap'|'nGg'|'nGt'|'nGtv'|'nLeftarrow'|'nLeftrightarrow'|'nLl'|'nLt'|'nLtv'|'nRightarrow'|'nVDash'|'nVdash'|'nabla'|'nacute'|'nang'|'nap'|'napE'|'napid'|'napos'|'napprox'|'natur'|'natural'|'naturals'|'nbsp'|'nbsp'|'nbump'|'nbumpe'|'ncap'|'ncaron'|'ncedil'|'ncong'|'ncongdot'|'ncup'|'ncy'|'ndash'|'ne'|'neArr'|'nearhk'|'nearr'|'nearrow'|'nedot'|'nequiv'|'nesear'|'nesim'|'nexist'|'nexists'|'nfr'|'ngE'|'nge'|'ngeq'|'ngeqq'|'ngeqslant'|'nges'|'ngsim'|'ngt'|'ngtr'|'nhArr'|'nharr'|'nhpar'|'ni'|'nis'|'nisd'|'niv'|'njcy'|'nlArr'|'nlE'|'nlarr'|'nldr'|'nle'|'nleftarrow'|'nleftrightarrow'|'nleq'|'nleqq'|'nleqslant'|'nles'|'nless'|'nlsim'|'nlt'|'nltri'|'nltrie'|'nmid'|'nopf'|'not'|'not'|'notin'|'notinE'|'notindot'|'notinva'|'notinvb'|'notinvc'|'notni'|'notniva'|'notnivb'|'notnivc'|'npar'|'nparallel'|'nparsl'|'npart'|'npolint'|'npr'|'nprcue'|'npre'|'nprec'|'npreceq'|'nrArr'|'nrarr'|'nrarrc'|'nrarrw'|'nrightarrow'|'nrtri'|'nrtrie'|'nsc'|'nsccue'|'nsce'|'nscr'|'nshortmid'|'nshortparallel'|'nsim'|'nsime'|'nsimeq'|'nsmid'|'nspar'|'nsqsube'|'nsqsupe'|'nsub'|'nsubE'|'nsube'|'nsubset'|'nsubseteq'|'nsubseteqq'|'nsucc'|'nsucceq'|'nsup'|'nsupE'|'nsupe'|'nsupset'|'nsupseteq'|'nsupseteqq'|'ntgl'|'ntilde'|'ntilde'|'ntlg'|'ntriangleleft'|'ntrianglelefteq'|'ntriangleright'|'ntrianglerighteq'|'nu'|'num'|'numero'|'numsp'|'nvDash'|'nvHarr'|'nvap'|'nvdash'|'nvge'|'nvgt'|'nvinfin'|'nvlArr'|'nvle'|'nvlt'|'nvltrie'|'nvrArr'|'nvrtrie'|'nvsim'|'nwArr'|'nwarhk'|'nwarr'|'nwarrow'|'nwnear'|'oS'|'oacute'|'oacute'|'oast'|'ocir'|'ocirc'|'ocirc'|'ocy'|'odash'|'odblac'|'odiv'|'odot'|'odsold'|'oelig'|'ofcir'|'ofr'|'ogon'|'ograve'|'ograve'|'ogt'|'ohbar'|'ohm'|'oint'|'olarr'|'olcir'|'olcross'|'oline'|'olt'|'omacr'|'omega'|'omicron'|'omid'|'ominus'|'oopf'|'opar'|'operp'|'oplus'|'or'|'orarr'|'ord'|'order'|'orderof'|'ordf'|'ordf'|'ordm'|'ordm'|'origof'|'oror'|'orslope'|'orv'|'oscr'|'oslash'|'oslash'|'osol'|'otilde'|'otilde'|'otimes'|'otimesas'|'ouml'|'ouml'|'ovbar'|'par'|'para'|'para'|'parallel'|'parsim'|'parsl'|'part'|'pcy'|'percnt'|'period'|'permil'|'perp'|'pertenk'|'pfr'|'phi'|'phiv'|'phmmat'|'phone'|'pi'|'pitchfork'|'piv'|'planck'|'planckh'|'plankv'|'plus'|'plusacir'|'plusb'|'pluscir'|'plusdo'|'plusdu'|'pluse'|'plusmn'|'plusmn'|'plussim'|'plustwo'|'pm'|'pointint'|'popf'|'pound'|'pound'|'pr'|'prE'|'prap'|'prcue'|'pre'|'prec'|'precapprox'|'preccurlyeq'|'preceq'|'precnapprox'|'precneqq'|'precnsim'|'precsim'|'prime'|'primes'|'prnE'|'prnap'|'prnsim'|'prod'|'profalar'|'profline'|'profsurf'|'prop'|'propto'|'prsim'|'prurel'|'pscr'|'psi'|'puncsp'|'qfr'|'qint'|'qopf'|'qprime'|'qscr'|'quaternions'|'quatint'|'quest'|'questeq'|'quot'|'quot'|'rAarr'|'rArr'|'rAtail'|'rBarr'|'rHar'|'race'|'racute'|'radic'|'raemptyv'|'rang'|'rangd'|'range'|'rangle'|'raquo'|'raquo'|'rarr'|'rarrap'|'rarrb'|'rarrbfs'|'rarrc'|'rarrfs'|'rarrhk'|'rarrlp'|'rarrpl'|'rarrsim'|'rarrtl'|'rarrw'|'ratail'|'ratio'|'rationals'|'rbarr'|'rbbrk'|'rbrace'|'rbrack'|'rbrke'|'rbrksld'|'rbrkslu'|'rcaron'|'rcedil'|'rceil'|'rcub'|'rcy'|'rdca'|'rdldhar'|'rdquo'|'rdquor'|'rdsh'|'real'|'realine'|'realpart'|'reals'|'rect'|'reg'|'reg'|'rfisht'|'rfloor'|'rfr'|'rhard'|'rharu'|'rharul'|'rho'|'rhov'|'rightarrow'|'rightarrowtail'|'rightharpoondown'|'rightharpoonup'|'rightleftarrows'|'rightleftharpoons'|'rightrightarrows'|'rightsquigarrow'|'rightthreetimes'|'ring'|'risingdotseq'|'rlarr'|'rlhar'|'rlm'|'rmoust'|'rmoustache'|'rnmid'|'roang'|'roarr'|'robrk'|'ropar'|'ropf'|'roplus'|'rotimes'|'rpar'|'rpargt'|'rppolint'|'rrarr'|'rsaquo'|'rscr'|'rsh'|'rsqb'|'rsquo'|'rsquor'|'rthree'|'rtimes'|'rtri'|'rtrie'|'rtrif'|'rtriltri'|'ruluhar'|'rx'|'sacute'|'sbquo'|'sc'|'scE'|'scap'|'scaron'|'sccue'|'sce'|'scedil'|'scirc'|'scnE'|'scnap'|'scnsim'|'scpolint'|'scsim'|'scy'|'sdot'|'sdotb'|'sdote'|'seArr'|'searhk'|'searr'|'searrow'|'sect'|'sect'|'semi'|'seswar'|'setminus'|'setmn'|'sext'|'sfr'|'sfrown'|'sharp'|'shchcy'|'shcy'|'shortmid'|'shortparallel'|'shy'|'shy'|'sigma'|'sigmaf'|'sigmav'|'sim'|'simdot'|'sime'|'simeq'|'simg'|'simgE'|'siml'|'simlE'|'simne'|'simplus'|'simrarr'|'slarr'|'smallsetminus'|'smashp'|'smeparsl'|'smid'|'smile'|'smt'|'smte'|'smtes'|'softcy'|'sol'|'solb'|'solbar'|'sopf'|'spades'|'spadesuit'|'spar'|'sqcap'|'sqcaps'|'sqcup'|'sqcups'|'sqsub'|'sqsube'|'sqsubset'|'sqsubseteq'|'sqsup'|'sqsupe'|'sqsupset'|'sqsupseteq'|'squ'|'square'|'squarf'|'squf'|'srarr'|'sscr'|'ssetmn'|'ssmile'|'sstarf'|'star'|'starf'|'straightepsilon'|'straightphi'|'strns'|'sub'|'subE'|'subdot'|'sube'|'subedot'|'submult'|'subnE'|'subne'|'subplus'|'subrarr'|'subset'|'subseteq'|'subseteqq'|'subsetneq'|'subsetneqq'|'subsim'|'subsub'|'subsup'|'succ'|'succapprox'|'succcurlyeq'|'succeq'|'succnapprox'|'succneqq'|'succnsim'|'succsim'|'sum'|'sung'|'sup1'|'sup1'|'sup2'|'sup2'|'sup3'|'sup3'|'sup'|'supE'|'supdot'|'supdsub'|'supe'|'supedot'|'suphsol'|'suphsub'|'suplarr'|'supmult'|'supnE'|'supne'|'supplus'|'supset'|'supseteq'|'supseteqq'|'supsetneq'|'supsetneqq'|'supsim'|'supsub'|'supsup'|'swArr'|'swarhk'|'swarr'|'swarrow'|'swnwar'|'szlig'|'szlig'|'target'|'tau'|'tbrk'|'tcaron'|'tcedil'|'tcy'|'tdot'|'telrec'|'tfr'|'there4'|'therefore'|'theta'|'thetasym'|'thetav'|'thickapprox'|'thicksim'|'thinsp'|'thkap'|'thksim'|'thorn'|'thorn'|'tilde'|'times'|'times'|'timesb'|'timesbar'|'timesd'|'tint'|'toea'|'top'|'topbot'|'topcir'|'topf'|'topfork'|'tosa'|'tprime'|'trade'|'triangle'|'triangledown'|'triangleleft'|'trianglelefteq'|'triangleq'|'triangleright'|'trianglerighteq'|'tridot'|'trie'|'triminus'|'triplus'|'trisb'|'tritime'|'trpezium'|'tscr'|'tscy'|'tshcy'|'tstrok'|'twixt'|'twoheadleftarrow'|'twoheadrightarrow'|'uArr'|'uHar'|'uacute'|'uacute'|'uarr'|'ubrcy'|'ubreve'|'ucirc'|'ucirc'|'ucy'|'udarr'|'udblac'|'udhar'|'ufisht'|'ufr'|'ugrave'|'ugrave'|'uharl'|'uharr'|'uhblk'|'ulcorn'|'ulcorner'|'ulcrop'|'ultri'|'umacr'|'uml'|'uml'|'uogon'|'uopf'|'uparrow'|'updownarrow'|'upharpoonleft'|'upharpoonright'|'uplus'|'upsi'|'upsih'|'upsilon'|'upuparrows'|'urcorn'|'urcorner'|'urcrop'|'uring'|'urtri'|'uscr'|'utdot'|'utilde'|'utri'|'utrif'|'uuarr'|'uuml'|'uuml'|'uwangle'|'vArr'|'vBar'|'vBarv'|'vDash'|'vangrt'|'varepsilon'|'varkappa'|'varnothing'|'varphi'|'varpi'|'varpropto'|'varr'|'varrho'|'varsigma'|'varsubsetneq'|'varsubsetneqq'|'varsupsetneq'|'varsupsetneqq'|'vartheta'|'vartriangleleft'|'vartriangleright'|'vcy'|'vdash'|'vee'|'veebar'|'veeeq'|'vellip'|'verbar'|'vert'|'vfr'|'vltri'|'vnsub'|'vnsup'|'vopf'|'vprop'|'vrtri'|'vscr'|'vsubnE'|'vsubne'|'vsupnE'|'vsupne'|'vzigzag'|'wcirc'|'wedbar'|'wedge'|'wedgeq'|'weierp'|'wfr'|'wopf'|'wp'|'wr'|'wreath'|'wscr'|'xcap'|'xcirc'|'xcup'|'xdtri'|'xfr'|'xhArr'|'xharr'|'xi'|'xlArr'|'xlarr'|'xmap'|'xnis'|'xodot'|'xopf'|'xoplus'|'xotime'|'xrArr'|'xrarr'|'xscr'|'xsqcup'|'xuplus'|'xutri'|'xvee'|'xwedge'|'yacute'|'yacute'|'yacy'|'ycirc'|'ycy'|'yen'|'yen'|'yfr'|'yicy'|'yopf'|'yscr'|'yucy'|'yuml'|'yuml'|'zacute'|'zcaron'|'zcy'|'zdot'|'zeetrf'|'zeta'|'zfr'|'zhcy'|'zigrarr'|'zopf'|'zscr'|'zwj'|'zwnj'
+
+/**
+ * @type {Record<string, string>}
+ */
+const characterEntities = {
+  AElig: 'Æ',
+  AMP: '&',
+  Aacute: 'Á',
+  Abreve: 'Ă',
+  Acirc: 'Â',
+  Acy: 'А',
+  Afr: '𝔄',
+  Agrave: 'À',
+  Alpha: 'Α',
+  Amacr: 'Ā',
+  And: '⩓',
+  Aogon: 'Ą',
+  Aopf: '𝔸',
+  ApplyFunction: '⁡',
+  Aring: 'Å',
+  Ascr: '𝒜',
+  Assign: '≔',
+  Atilde: 'Ã',
+  Auml: 'Ä',
+  Backslash: '∖',
+  Barv: '⫧',
+  Barwed: '⌆',
+  Bcy: 'Б',
+  Because: '∵',
+  Bernoullis: 'ℬ',
+  Beta: 'Β',
+  Bfr: '𝔅',
+  Bopf: '𝔹',
+  Breve: '˘',
+  Bscr: 'ℬ',
+  Bumpeq: '≎',
+  CHcy: 'Ч',
+  COPY: '©',
+  Cacute: 'Ć',
+  Cap: '⋒',
+  CapitalDifferentialD: 'ⅅ',
+  Cayleys: 'ℭ',
+  Ccaron: 'Č',
+  Ccedil: 'Ç',
+  Ccirc: 'Ĉ',
+  Cconint: '∰',
+  Cdot: 'Ċ',
+  Cedilla: '¸',
+  CenterDot: '·',
+  Cfr: 'ℭ',
+  Chi: 'Χ',
+  CircleDot: '⊙',
+  CircleMinus: '⊖',
+  CirclePlus: '⊕',
+  CircleTimes: '⊗',
+  ClockwiseContourIntegral: '∲',
+  CloseCurlyDoubleQuote: '”',
+  CloseCurlyQuote: '’',
+  Colon: '∷',
+  Colone: '⩴',
+  Congruent: '≡',
+  Conint: '∯',
+  ContourIntegral: '∮',
+  Copf: 'ℂ',
+  Coproduct: '∐',
+  CounterClockwiseContourIntegral: '∳',
+  Cross: '⨯',
+  Cscr: '𝒞',
+  Cup: '⋓',
+  CupCap: '≍',
+  DD: 'ⅅ',
+  DDotrahd: '⤑',
+  DJcy: 'Ђ',
+  DScy: 'Ѕ',
+  DZcy: 'Џ',
+  Dagger: '‡',
+  Darr: '↡',
+  Dashv: '⫤',
+  Dcaron: 'Ď',
+  Dcy: 'Д',
+  Del: '∇',
+  Delta: 'Δ',
+  Dfr: '𝔇',
+  DiacriticalAcute: '´',
+  DiacriticalDot: '˙',
+  DiacriticalDoubleAcute: '˝',
+  DiacriticalGrave: '`',
+  DiacriticalTilde: '˜',
+  Diamond: '⋄',
+  DifferentialD: 'ⅆ',
+  Dopf: '𝔻',
+  Dot: '¨',
+  DotDot: '⃜',
+  DotEqual: '≐',
+  DoubleContourIntegral: '∯',
+  DoubleDot: '¨',
+  DoubleDownArrow: '⇓',
+  DoubleLeftArrow: '⇐',
+  DoubleLeftRightArrow: '⇔',
+  DoubleLeftTee: '⫤',
+  DoubleLongLeftArrow: '⟸',
+  DoubleLongLeftRightArrow: '⟺',
+  DoubleLongRightArrow: '⟹',
+  DoubleRightArrow: '⇒',
+  DoubleRightTee: '⊨',
+  DoubleUpArrow: '⇑',
+  DoubleUpDownArrow: '⇕',
+  DoubleVerticalBar: '∥',
+  DownArrow: '↓',
+  DownArrowBar: '⤓',
+  DownArrowUpArrow: '⇵',
+  DownBreve: '̑',
+  DownLeftRightVector: '⥐',
+  DownLeftTeeVector: '⥞',
+  DownLeftVector: '↽',
+  DownLeftVectorBar: '⥖',
+  DownRightTeeVector: '⥟',
+  DownRightVector: '⇁',
+  DownRightVectorBar: '⥗',
+  DownTee: '⊤',
+  DownTeeArrow: '↧',
+  Downarrow: '⇓',
+  Dscr: '𝒟',
+  Dstrok: 'Đ',
+  ENG: 'Ŋ',
+  ETH: 'Ð',
+  Eacute: 'É',
+  Ecaron: 'Ě',
+  Ecirc: 'Ê',
+  Ecy: 'Э',
+  Edot: 'Ė',
+  Efr: '𝔈',
+  Egrave: 'È',
+  Element: '∈',
+  Emacr: 'Ē',
+  EmptySmallSquare: '◻',
+  EmptyVerySmallSquare: '▫',
+  Eogon: 'Ę',
+  Eopf: '𝔼',
+  Epsilon: 'Ε',
+  Equal: '⩵',
+  EqualTilde: '≂',
+  Equilibrium: '⇌',
+  Escr: 'ℰ',
+  Esim: '⩳',
+  Eta: 'Η',
+  Euml: 'Ë',
+  Exists: '∃',
+  ExponentialE: 'ⅇ',
+  Fcy: 'Ф',
+  Ffr: '𝔉',
+  FilledSmallSquare: '◼',
+  FilledVerySmallSquare: '▪',
+  Fopf: '𝔽',
+  ForAll: '∀',
+  Fouriertrf: 'ℱ',
+  Fscr: 'ℱ',
+  GJcy: 'Ѓ',
+  GT: '>',
+  Gamma: 'Γ',
+  Gammad: 'Ϝ',
+  Gbreve: 'Ğ',
+  Gcedil: 'Ģ',
+  Gcirc: 'Ĝ',
+  Gcy: 'Г',
+  Gdot: 'Ġ',
+  Gfr: '𝔊',
+  Gg: '⋙',
+  Gopf: '𝔾',
+  GreaterEqual: '≥',
+  GreaterEqualLess: '⋛',
+  GreaterFullEqual: '≧',
+  GreaterGreater: '⪢',
+  GreaterLess: '≷',
+  GreaterSlantEqual: '⩾',
+  GreaterTilde: '≳',
+  Gscr: '𝒢',
+  Gt: '≫',
+  HARDcy: 'Ъ',
+  Hacek: 'ˇ',
+  Hat: '^',
+  Hcirc: 'Ĥ',
+  Hfr: 'ℌ',
+  HilbertSpace: 'ℋ',
+  Hopf: 'ℍ',
+  HorizontalLine: '─',
+  Hscr: 'ℋ',
+  Hstrok: 'Ħ',
+  HumpDownHump: '≎',
+  HumpEqual: '≏',
+  IEcy: 'Е',
+  IJlig: 'Ĳ',
+  IOcy: 'Ё',
+  Iacute: 'Í',
+  Icirc: 'Î',
+  Icy: 'И',
+  Idot: 'İ',
+  Ifr: 'ℑ',
+  Igrave: 'Ì',
+  Im: 'ℑ',
+  Imacr: 'Ī',
+  ImaginaryI: 'ⅈ',
+  Implies: '⇒',
+  Int: '∬',
+  Integral: '∫',
+  Intersection: '⋂',
+  InvisibleComma: '⁣',
+  InvisibleTimes: '⁢',
+  Iogon: 'Į',
+  Iopf: '𝕀',
+  Iota: 'Ι',
+  Iscr: 'ℐ',
+  Itilde: 'Ĩ',
+  Iukcy: 'І',
+  Iuml: 'Ï',
+  Jcirc: 'Ĵ',
+  Jcy: 'Й',
+  Jfr: '𝔍',
+  Jopf: '𝕁',
+  Jscr: '𝒥',
+  Jsercy: 'Ј',
+  Jukcy: 'Є',
+  KHcy: 'Х',
+  KJcy: 'Ќ',
+  Kappa: 'Κ',
+  Kcedil: 'Ķ',
+  Kcy: 'К',
+  Kfr: '𝔎',
+  Kopf: '𝕂',
+  Kscr: '𝒦',
+  LJcy: 'Љ',
+  LT: '<',
+  Lacute: 'Ĺ',
+  Lambda: 'Λ',
+  Lang: '⟪',
+  Laplacetrf: 'ℒ',
+  Larr: '↞',
+  Lcaron: 'Ľ',
+  Lcedil: 'Ļ',
+  Lcy: 'Л',
+  LeftAngleBracket: '⟨',
+  LeftArrow: '←',
+  LeftArrowBar: '⇤',
+  LeftArrowRightArrow: '⇆',
+  LeftCeiling: '⌈',
+  LeftDoubleBracket: '⟦',
+  LeftDownTeeVector: '⥡',
+  LeftDownVector: '⇃',
+  LeftDownVectorBar: '⥙',
+  LeftFloor: '⌊',
+  LeftRightArrow: '↔',
+  LeftRightVector: '⥎',
+  LeftTee: '⊣',
+  LeftTeeArrow: '↤',
+  LeftTeeVector: '⥚',
+  LeftTriangle: '⊲',
+  LeftTriangleBar: '⧏',
+  LeftTriangleEqual: '⊴',
+  LeftUpDownVector: '⥑',
+  LeftUpTeeVector: '⥠',
+  LeftUpVector: '↿',
+  LeftUpVectorBar: '⥘',
+  LeftVector: '↼',
+  LeftVectorBar: '⥒',
+  Leftarrow: '⇐',
+  Leftrightarrow: '⇔',
+  LessEqualGreater: '⋚',
+  LessFullEqual: '≦',
+  LessGreater: '≶',
+  LessLess: '⪡',
+  LessSlantEqual: '⩽',
+  LessTilde: '≲',
+  Lfr: '𝔏',
+  Ll: '⋘',
+  Lleftarrow: '⇚',
+  Lmidot: 'Ŀ',
+  LongLeftArrow: '⟵',
+  LongLeftRightArrow: '⟷',
+  LongRightArrow: '⟶',
+  Longleftarrow: '⟸',
+  Longleftrightarrow: '⟺',
+  Longrightarrow: '⟹',
+  Lopf: '𝕃',
+  LowerLeftArrow: '↙',
+  LowerRightArrow: '↘',
+  Lscr: 'ℒ',
+  Lsh: '↰',
+  Lstrok: 'Ł',
+  Lt: '≪',
+  Map: '⤅',
+  Mcy: 'М',
+  MediumSpace: ' ',
+  Mellintrf: 'ℳ',
+  Mfr: '𝔐',
+  MinusPlus: '∓',
+  Mopf: '𝕄',
+  Mscr: 'ℳ',
+  Mu: 'Μ',
+  NJcy: 'Њ',
+  Nacute: 'Ń',
+  Ncaron: 'Ň',
+  Ncedil: 'Ņ',
+  Ncy: 'Н',
+  NegativeMediumSpace: '​',
+  NegativeThickSpace: '​',
+  NegativeThinSpace: '​',
+  NegativeVeryThinSpace: '​',
+  NestedGreaterGreater: '≫',
+  NestedLessLess: '≪',
+  Nfr: '𝔑',
+  NoBreak: '⁠',
+  NonBreakingSpace: ' ',
+  Nopf: 'ℕ',
+  Not: '⫬',
+  NotCongruent: '≢',
+  NotCupCap: '≭',
+  NotDoubleVerticalBar: '∦',
+  NotElement: '∉',
+  NotEqual: '≠',
+  NotEqualTilde: '≂̸',
+  NotExists: '∄',
+  NotGreater: '≯',
+  NotGreaterEqual: '≱',
+  NotGreaterFullEqual: '≧̸',
+  NotGreaterGreater: '≫̸',
+  NotGreaterLess: '≹',
+  NotGreaterSlantEqual: '⩾̸',
+  NotGreaterTilde: '≵',
+  NotHumpDownHump: '≎̸',
+  NotHumpEqual: '≏̸',
+  NotLeftTriangle: '⋪',
+  NotLeftTriangleBar: '⧏̸',
+  NotLeftTriangleEqual: '⋬',
+  NotLess: '≮',
+  NotLessEqual: '≰',
+  NotLessGreater: '≸',
+  NotLessLess: '≪̸',
+  NotLessSlantEqual: '⩽̸',
+  NotLessTilde: '≴',
+  NotNestedGreaterGreater: '⪢̸',
+  NotNestedLessLess: '⪡̸',
+  NotPrecedes: '⊀',
+  NotPrecedesEqual: '⪯̸',
+  NotPrecedesSlantEqual: '⋠',
+  NotReverseElement: '∌',
+  NotRightTriangle: '⋫',
+  NotRightTriangleBar: '⧐̸',
+  NotRightTriangleEqual: '⋭',
+  NotSquareSubset: '⊏̸',
+  NotSquareSubsetEqual: '⋢',
+  NotSquareSuperset: '⊐̸',
+  NotSquareSupersetEqual: '⋣',
+  NotSubset: '⊂⃒',
+  NotSubsetEqual: '⊈',
+  NotSucceeds: '⊁',
+  NotSucceedsEqual: '⪰̸',
+  NotSucceedsSlantEqual: '⋡',
+  NotSucceedsTilde: '≿̸',
+  NotSuperset: '⊃⃒',
+  NotSupersetEqual: '⊉',
+  NotTilde: '≁',
+  NotTildeEqual: '≄',
+  NotTildeFullEqual: '≇',
+  NotTildeTilde: '≉',
+  NotVerticalBar: '∤',
+  Nscr: '𝒩',
+  Ntilde: 'Ñ',
+  Nu: 'Ν',
+  OElig: 'Œ',
+  Oacute: 'Ó',
+  Ocirc: 'Ô',
+  Ocy: 'О',
+  Odblac: 'Ő',
+  Ofr: '𝔒',
+  Ograve: 'Ò',
+  Omacr: 'Ō',
+  Omega: 'Ω',
+  Omicron: 'Ο',
+  Oopf: '𝕆',
+  OpenCurlyDoubleQuote: '“',
+  OpenCurlyQuote: '‘',
+  Or: '⩔',
+  Oscr: '𝒪',
+  Oslash: 'Ø',
+  Otilde: 'Õ',
+  Otimes: '⨷',
+  Ouml: 'Ö',
+  OverBar: '‾',
+  OverBrace: '⏞',
+  OverBracket: '⎴',
+  OverParenthesis: '⏜',
+  PartialD: '∂',
+  Pcy: 'П',
+  Pfr: '𝔓',
+  Phi: 'Φ',
+  Pi: 'Π',
+  PlusMinus: '±',
+  Poincareplane: 'ℌ',
+  Popf: 'ℙ',
+  Pr: '⪻',
+  Precedes: '≺',
+  PrecedesEqual: '⪯',
+  PrecedesSlantEqual: '≼',
+  PrecedesTilde: '≾',
+  Prime: '″',
+  Product: '∏',
+  Proportion: '∷',
+  Proportional: '∝',
+  Pscr: '𝒫',
+  Psi: 'Ψ',
+  QUOT: '"',
+  Qfr: '𝔔',
+  Qopf: 'ℚ',
+  Qscr: '𝒬',
+  RBarr: '⤐',
+  REG: '®',
+  Racute: 'Ŕ',
+  Rang: '⟫',
+  Rarr: '↠',
+  Rarrtl: '⤖',
+  Rcaron: 'Ř',
+  Rcedil: 'Ŗ',
+  Rcy: 'Р',
+  Re: 'ℜ',
+  ReverseElement: '∋',
+  ReverseEquilibrium: '⇋',
+  ReverseUpEquilibrium: '⥯',
+  Rfr: 'ℜ',
+  Rho: 'Ρ',
+  RightAngleBracket: '⟩',
+  RightArrow: '→',
+  RightArrowBar: '⇥',
+  RightArrowLeftArrow: '⇄',
+  RightCeiling: '⌉',
+  RightDoubleBracket: '⟧',
+  RightDownTeeVector: '⥝',
+  RightDownVector: '⇂',
+  RightDownVectorBar: '⥕',
+  RightFloor: '⌋',
+  RightTee: '⊢',
+  RightTeeArrow: '↦',
+  RightTeeVector: '⥛',
+  RightTriangle: '⊳',
+  RightTriangleBar: '⧐',
+  RightTriangleEqual: '⊵',
+  RightUpDownVector: '⥏',
+  RightUpTeeVector: '⥜',
+  RightUpVector: '↾',
+  RightUpVectorBar: '⥔',
+  RightVector: '⇀',
+  RightVectorBar: '⥓',
+  Rightarrow: '⇒',
+  Ropf: 'ℝ',
+  RoundImplies: '⥰',
+  Rrightarrow: '⇛',
+  Rscr: 'ℛ',
+  Rsh: '↱',
+  RuleDelayed: '⧴',
+  SHCHcy: 'Щ',
+  SHcy: 'Ш',
+  SOFTcy: 'Ь',
+  Sacute: 'Ś',
+  Sc: '⪼',
+  Scaron: 'Š',
+  Scedil: 'Ş',
+  Scirc: 'Ŝ',
+  Scy: 'С',
+  Sfr: '𝔖',
+  ShortDownArrow: '↓',
+  ShortLeftArrow: '←',
+  ShortRightArrow: '→',
+  ShortUpArrow: '↑',
+  Sigma: 'Σ',
+  SmallCircle: '∘',
+  Sopf: '𝕊',
+  Sqrt: '√',
+  Square: '□',
+  SquareIntersection: '⊓',
+  SquareSubset: '⊏',
+  SquareSubsetEqual: '⊑',
+  SquareSuperset: '⊐',
+  SquareSupersetEqual: '⊒',
+  SquareUnion: '⊔',
+  Sscr: '𝒮',
+  Star: '⋆',
+  Sub: '⋐',
+  Subset: '⋐',
+  SubsetEqual: '⊆',
+  Succeeds: '≻',
+  SucceedsEqual: '⪰',
+  SucceedsSlantEqual: '≽',
+  SucceedsTilde: '≿',
+  SuchThat: '∋',
+  Sum: '∑',
+  Sup: '⋑',
+  Superset: '⊃',
+  SupersetEqual: '⊇',
+  Supset: '⋑',
+  THORN: 'Þ',
+  TRADE: '™',
+  TSHcy: 'Ћ',
+  TScy: 'Ц',
+  Tab: '\t',
+  Tau: 'Τ',
+  Tcaron: 'Ť',
+  Tcedil: 'Ţ',
+  Tcy: 'Т',
+  Tfr: '𝔗',
+  Therefore: '∴',
+  Theta: 'Θ',
+  ThickSpace: '  ',
+  ThinSpace: ' ',
+  Tilde: '∼',
+  TildeEqual: '≃',
+  TildeFullEqual: '≅',
+  TildeTilde: '≈',
+  Topf: '𝕋',
+  TripleDot: '⃛',
+  Tscr: '𝒯',
+  Tstrok: 'Ŧ',
+  Uacute: 'Ú',
+  Uarr: '↟',
+  Uarrocir: '⥉',
+  Ubrcy: 'Ў',
+  Ubreve: 'Ŭ',
+  Ucirc: 'Û',
+  Ucy: 'У',
+  Udblac: 'Ű',
+  Ufr: '𝔘',
+  Ugrave: 'Ù',
+  Umacr: 'Ū',
+  UnderBar: '_',
+  UnderBrace: '⏟',
+  UnderBracket: '⎵',
+  UnderParenthesis: '⏝',
+  Union: '⋃',
+  UnionPlus: '⊎',
+  Uogon: 'Ų',
+  Uopf: '𝕌',
+  UpArrow: '↑',
+  UpArrowBar: '⤒',
+  UpArrowDownArrow: '⇅',
+  UpDownArrow: '↕',
+  UpEquilibrium: '⥮',
+  UpTee: '⊥',
+  UpTeeArrow: '↥',
+  Uparrow: '⇑',
+  Updownarrow: '⇕',
+  UpperLeftArrow: '↖',
+  UpperRightArrow: '↗',
+  Upsi: 'ϒ',
+  Upsilon: 'Υ',
+  Uring: 'Ů',
+  Uscr: '𝒰',
+  Utilde: 'Ũ',
+  Uuml: 'Ü',
+  VDash: '⊫',
+  Vbar: '⫫',
+  Vcy: 'В',
+  Vdash: '⊩',
+  Vdashl: '⫦',
+  Vee: '⋁',
+  Verbar: '‖',
+  Vert: '‖',
+  VerticalBar: '∣',
+  VerticalLine: '|',
+  VerticalSeparator: '❘',
+  VerticalTilde: '≀',
+  VeryThinSpace: ' ',
+  Vfr: '𝔙',
+  Vopf: '𝕍',
+  Vscr: '𝒱',
+  Vvdash: '⊪',
+  Wcirc: 'Ŵ',
+  Wedge: '⋀',
+  Wfr: '𝔚',
+  Wopf: '𝕎',
+  Wscr: '𝒲',
+  Xfr: '𝔛',
+  Xi: 'Ξ',
+  Xopf: '𝕏',
+  Xscr: '𝒳',
+  YAcy: 'Я',
+  YIcy: 'Ї',
+  YUcy: 'Ю',
+  Yacute: 'Ý',
+  Ycirc: 'Ŷ',
+  Ycy: 'Ы',
+  Yfr: '𝔜',
+  Yopf: '𝕐',
+  Yscr: '𝒴',
+  Yuml: 'Ÿ',
+  ZHcy: 'Ж',
+  Zacute: 'Ź',
+  Zcaron: 'Ž',
+  Zcy: 'З',
+  Zdot: 'Ż',
+  ZeroWidthSpace: '​',
+  Zeta: 'Ζ',
+  Zfr: 'ℨ',
+  Zopf: 'ℤ',
+  Zscr: '𝒵',
+  aacute: 'á',
+  abreve: 'ă',
+  ac: '∾',
+  acE: '∾̳',
+  acd: '∿',
+  acirc: 'â',
+  acute: '´',
+  acy: 'а',
+  aelig: 'æ',
+  af: '⁡',
+  afr: '𝔞',
+  agrave: 'à',
+  alefsym: 'ℵ',
+  aleph: 'ℵ',
+  alpha: 'α',
+  amacr: 'ā',
+  amalg: '⨿',
+  amp: '&',
+  and: '∧',
+  andand: '⩕',
+  andd: '⩜',
+  andslope: '⩘',
+  andv: '⩚',
+  ang: '∠',
+  ange: '⦤',
+  angle: '∠',
+  angmsd: '∡',
+  angmsdaa: '⦨',
+  angmsdab: '⦩',
+  angmsdac: '⦪',
+  angmsdad: '⦫',
+  angmsdae: '⦬',
+  angmsdaf: '⦭',
+  angmsdag: '⦮',
+  angmsdah: '⦯',
+  angrt: '∟',
+  angrtvb: '⊾',
+  angrtvbd: '⦝',
+  angsph: '∢',
+  angst: 'Å',
+  angzarr: '⍼',
+  aogon: 'ą',
+  aopf: '𝕒',
+  ap: '≈',
+  apE: '⩰',
+  apacir: '⩯',
+  ape: '≊',
+  apid: '≋',
+  apos: "'",
+  approx: '≈',
+  approxeq: '≊',
+  aring: 'å',
+  ascr: '𝒶',
+  ast: '*',
+  asymp: '≈',
+  asympeq: '≍',
+  atilde: 'ã',
+  auml: 'ä',
+  awconint: '∳',
+  awint: '⨑',
+  bNot: '⫭',
+  backcong: '≌',
+  backepsilon: '϶',
+  backprime: '‵',
+  backsim: '∽',
+  backsimeq: '⋍',
+  barvee: '⊽',
+  barwed: '⌅',
+  barwedge: '⌅',
+  bbrk: '⎵',
+  bbrktbrk: '⎶',
+  bcong: '≌',
+  bcy: 'б',
+  bdquo: '„',
+  becaus: '∵',
+  because: '∵',
+  bemptyv: '⦰',
+  bepsi: '϶',
+  bernou: 'ℬ',
+  beta: 'β',
+  beth: 'ℶ',
+  between: '≬',
+  bfr: '𝔟',
+  bigcap: '⋂',
+  bigcirc: '◯',
+  bigcup: '⋃',
+  bigodot: '⨀',
+  bigoplus: '⨁',
+  bigotimes: '⨂',
+  bigsqcup: '⨆',
+  bigstar: '★',
+  bigtriangledown: '▽',
+  bigtriangleup: '△',
+  biguplus: '⨄',
+  bigvee: '⋁',
+  bigwedge: '⋀',
+  bkarow: '⤍',
+  blacklozenge: '⧫',
+  blacksquare: '▪',
+  blacktriangle: '▴',
+  blacktriangledown: '▾',
+  blacktriangleleft: '◂',
+  blacktriangleright: '▸',
+  blank: '␣',
+  blk12: '▒',
+  blk14: '░',
+  blk34: '▓',
+  block: '█',
+  bne: '=⃥',
+  bnequiv: '≡⃥',
+  bnot: '⌐',
+  bopf: '𝕓',
+  bot: '⊥',
+  bottom: '⊥',
+  bowtie: '⋈',
+  boxDL: '╗',
+  boxDR: '╔',
+  boxDl: '╖',
+  boxDr: '╓',
+  boxH: '═',
+  boxHD: '╦',
+  boxHU: '╩',
+  boxHd: '╤',
+  boxHu: '╧',
+  boxUL: '╝',
+  boxUR: '╚',
+  boxUl: '╜',
+  boxUr: '╙',
+  boxV: '║',
+  boxVH: '╬',
+  boxVL: '╣',
+  boxVR: '╠',
+  boxVh: '╫',
+  boxVl: '╢',
+  boxVr: '╟',
+  boxbox: '⧉',
+  boxdL: '╕',
+  boxdR: '╒',
+  boxdl: '┐',
+  boxdr: '┌',
+  boxh: '─',
+  boxhD: '╥',
+  boxhU: '╨',
+  boxhd: '┬',
+  boxhu: '┴',
+  boxminus: '⊟',
+  boxplus: '⊞',
+  boxtimes: '⊠',
+  boxuL: '╛',
+  boxuR: '╘',
+  boxul: '┘',
+  boxur: '└',
+  boxv: '│',
+  boxvH: '╪',
+  boxvL: '╡',
+  boxvR: '╞',
+  boxvh: '┼',
+  boxvl: '┤',
+  boxvr: '├',
+  bprime: '‵',
+  breve: '˘',
+  brvbar: '¦',
+  bscr: '𝒷',
+  bsemi: '⁏',
+  bsim: '∽',
+  bsime: '⋍',
+  bsol: '\\',
+  bsolb: '⧅',
+  bsolhsub: '⟈',
+  bull: '•',
+  bullet: '•',
+  bump: '≎',
+  bumpE: '⪮',
+  bumpe: '≏',
+  bumpeq: '≏',
+  cacute: 'ć',
+  cap: '∩',
+  capand: '⩄',
+  capbrcup: '⩉',
+  capcap: '⩋',
+  capcup: '⩇',
+  capdot: '⩀',
+  caps: '∩︀',
+  caret: '⁁',
+  caron: 'ˇ',
+  ccaps: '⩍',
+  ccaron: 'č',
+  ccedil: 'ç',
+  ccirc: 'ĉ',
+  ccups: '⩌',
+  ccupssm: '⩐',
+  cdot: 'ċ',
+  cedil: '¸',
+  cemptyv: '⦲',
+  cent: '¢',
+  centerdot: '·',
+  cfr: '𝔠',
+  chcy: 'ч',
+  check: '✓',
+  checkmark: '✓',
+  chi: 'χ',
+  cir: '○',
+  cirE: '⧃',
+  circ: 'ˆ',
+  circeq: '≗',
+  circlearrowleft: '↺',
+  circlearrowright: '↻',
+  circledR: '®',
+  circledS: 'Ⓢ',
+  circledast: '⊛',
+  circledcirc: '⊚',
+  circleddash: '⊝',
+  cire: '≗',
+  cirfnint: '⨐',
+  cirmid: '⫯',
+  cirscir: '⧂',
+  clubs: '♣',
+  clubsuit: '♣',
+  colon: ':',
+  colone: '≔',
+  coloneq: '≔',
+  comma: ',',
+  commat: '@',
+  comp: '∁',
+  compfn: '∘',
+  complement: '∁',
+  complexes: 'ℂ',
+  cong: '≅',
+  congdot: '⩭',
+  conint: '∮',
+  copf: '𝕔',
+  coprod: '∐',
+  copy: '©',
+  copysr: '℗',
+  crarr: '↵',
+  cross: '✗',
+  cscr: '𝒸',
+  csub: '⫏',
+  csube: '⫑',
+  csup: '⫐',
+  csupe: '⫒',
+  ctdot: '⋯',
+  cudarrl: '⤸',
+  cudarrr: '⤵',
+  cuepr: '⋞',
+  cuesc: '⋟',
+  cularr: '↶',
+  cularrp: '⤽',
+  cup: '∪',
+  cupbrcap: '⩈',
+  cupcap: '⩆',
+  cupcup: '⩊',
+  cupdot: '⊍',
+  cupor: '⩅',
+  cups: '∪︀',
+  curarr: '↷',
+  curarrm: '⤼',
+  curlyeqprec: '⋞',
+  curlyeqsucc: '⋟',
+  curlyvee: '⋎',
+  curlywedge: '⋏',
+  curren: '¤',
+  curvearrowleft: '↶',
+  curvearrowright: '↷',
+  cuvee: '⋎',
+  cuwed: '⋏',
+  cwconint: '∲',
+  cwint: '∱',
+  cylcty: '⌭',
+  dArr: '⇓',
+  dHar: '⥥',
+  dagger: '†',
+  daleth: 'ℸ',
+  darr: '↓',
+  dash: '‐',
+  dashv: '⊣',
+  dbkarow: '⤏',
+  dblac: '˝',
+  dcaron: 'ď',
+  dcy: 'д',
+  dd: 'ⅆ',
+  ddagger: '‡',
+  ddarr: '⇊',
+  ddotseq: '⩷',
+  deg: '°',
+  delta: 'δ',
+  demptyv: '⦱',
+  dfisht: '⥿',
+  dfr: '𝔡',
+  dharl: '⇃',
+  dharr: '⇂',
+  diam: '⋄',
+  diamond: '⋄',
+  diamondsuit: '♦',
+  diams: '♦',
+  die: '¨',
+  digamma: 'ϝ',
+  disin: '⋲',
+  div: '÷',
+  divide: '÷',
+  divideontimes: '⋇',
+  divonx: '⋇',
+  djcy: 'ђ',
+  dlcorn: '⌞',
+  dlcrop: '⌍',
+  dollar: '$',
+  dopf: '𝕕',
+  dot: '˙',
+  doteq: '≐',
+  doteqdot: '≑',
+  dotminus: '∸',
+  dotplus: '∔',
+  dotsquare: '⊡',
+  doublebarwedge: '⌆',
+  downarrow: '↓',
+  downdownarrows: '⇊',
+  downharpoonleft: '⇃',
+  downharpoonright: '⇂',
+  drbkarow: '⤐',
+  drcorn: '⌟',
+  drcrop: '⌌',
+  dscr: '𝒹',
+  dscy: 'ѕ',
+  dsol: '⧶',
+  dstrok: 'đ',
+  dtdot: '⋱',
+  dtri: '▿',
+  dtrif: '▾',
+  duarr: '⇵',
+  duhar: '⥯',
+  dwangle: '⦦',
+  dzcy: 'џ',
+  dzigrarr: '⟿',
+  eDDot: '⩷',
+  eDot: '≑',
+  eacute: 'é',
+  easter: '⩮',
+  ecaron: 'ě',
+  ecir: '≖',
+  ecirc: 'ê',
+  ecolon: '≕',
+  ecy: 'э',
+  edot: 'ė',
+  ee: 'ⅇ',
+  efDot: '≒',
+  efr: '𝔢',
+  eg: '⪚',
+  egrave: 'è',
+  egs: '⪖',
+  egsdot: '⪘',
+  el: '⪙',
+  elinters: '⏧',
+  ell: 'ℓ',
+  els: '⪕',
+  elsdot: '⪗',
+  emacr: 'ē',
+  empty: '∅',
+  emptyset: '∅',
+  emptyv: '∅',
+  emsp13: ' ',
+  emsp14: ' ',
+  emsp: ' ',
+  eng: 'ŋ',
+  ensp: ' ',
+  eogon: 'ę',
+  eopf: '𝕖',
+  epar: '⋕',
+  eparsl: '⧣',
+  eplus: '⩱',
+  epsi: 'ε',
+  epsilon: 'ε',
+  epsiv: 'ϵ',
+  eqcirc: '≖',
+  eqcolon: '≕',
+  eqsim: '≂',
+  eqslantgtr: '⪖',
+  eqslantless: '⪕',
+  equals: '=',
+  equest: '≟',
+  equiv: '≡',
+  equivDD: '⩸',
+  eqvparsl: '⧥',
+  erDot: '≓',
+  erarr: '⥱',
+  escr: 'ℯ',
+  esdot: '≐',
+  esim: '≂',
+  eta: 'η',
+  eth: 'ð',
+  euml: 'ë',
+  euro: '€',
+  excl: '!',
+  exist: '∃',
+  expectation: 'ℰ',
+  exponentiale: 'ⅇ',
+  fallingdotseq: '≒',
+  fcy: 'ф',
+  female: '♀',
+  ffilig: 'ﬃ',
+  fflig: 'ﬀ',
+  ffllig: 'ﬄ',
+  ffr: '𝔣',
+  filig: 'ﬁ',
+  fjlig: 'fj',
+  flat: '♭',
+  fllig: 'ﬂ',
+  fltns: '▱',
+  fnof: 'ƒ',
+  fopf: '𝕗',
+  forall: '∀',
+  fork: '⋔',
+  forkv: '⫙',
+  fpartint: '⨍',
+  frac12: '½',
+  frac13: '⅓',
+  frac14: '¼',
+  frac15: '⅕',
+  frac16: '⅙',
+  frac18: '⅛',
+  frac23: '⅔',
+  frac25: '⅖',
+  frac34: '¾',
+  frac35: '⅗',
+  frac38: '⅜',
+  frac45: '⅘',
+  frac56: '⅚',
+  frac58: '⅝',
+  frac78: '⅞',
+  frasl: '⁄',
+  frown: '⌢',
+  fscr: '𝒻',
+  gE: '≧',
+  gEl: '⪌',
+  gacute: 'ǵ',
+  gamma: 'γ',
+  gammad: 'ϝ',
+  gap: '⪆',
+  gbreve: 'ğ',
+  gcirc: 'ĝ',
+  gcy: 'г',
+  gdot: 'ġ',
+  ge: '≥',
+  gel: '⋛',
+  geq: '≥',
+  geqq: '≧',
+  geqslant: '⩾',
+  ges: '⩾',
+  gescc: '⪩',
+  gesdot: '⪀',
+  gesdoto: '⪂',
+  gesdotol: '⪄',
+  gesl: '⋛︀',
+  gesles: '⪔',
+  gfr: '𝔤',
+  gg: '≫',
+  ggg: '⋙',
+  gimel: 'ℷ',
+  gjcy: 'ѓ',
+  gl: '≷',
+  glE: '⪒',
+  gla: '⪥',
+  glj: '⪤',
+  gnE: '≩',
+  gnap: '⪊',
+  gnapprox: '⪊',
+  gne: '⪈',
+  gneq: '⪈',
+  gneqq: '≩',
+  gnsim: '⋧',
+  gopf: '𝕘',
+  grave: '`',
+  gscr: 'ℊ',
+  gsim: '≳',
+  gsime: '⪎',
+  gsiml: '⪐',
+  gt: '>',
+  gtcc: '⪧',
+  gtcir: '⩺',
+  gtdot: '⋗',
+  gtlPar: '⦕',
+  gtquest: '⩼',
+  gtrapprox: '⪆',
+  gtrarr: '⥸',
+  gtrdot: '⋗',
+  gtreqless: '⋛',
+  gtreqqless: '⪌',
+  gtrless: '≷',
+  gtrsim: '≳',
+  gvertneqq: '≩︀',
+  gvnE: '≩︀',
+  hArr: '⇔',
+  hairsp: ' ',
+  half: '½',
+  hamilt: 'ℋ',
+  hardcy: 'ъ',
+  harr: '↔',
+  harrcir: '⥈',
+  harrw: '↭',
+  hbar: 'ℏ',
+  hcirc: 'ĥ',
+  hearts: '♥',
+  heartsuit: '♥',
+  hellip: '…',
+  hercon: '⊹',
+  hfr: '𝔥',
+  hksearow: '⤥',
+  hkswarow: '⤦',
+  hoarr: '⇿',
+  homtht: '∻',
+  hookleftarrow: '↩',
+  hookrightarrow: '↪',
+  hopf: '𝕙',
+  horbar: '―',
+  hscr: '𝒽',
+  hslash: 'ℏ',
+  hstrok: 'ħ',
+  hybull: '⁃',
+  hyphen: '‐',
+  iacute: 'í',
+  ic: '⁣',
+  icirc: 'î',
+  icy: 'и',
+  iecy: 'е',
+  iexcl: '¡',
+  iff: '⇔',
+  ifr: '𝔦',
+  igrave: 'ì',
+  ii: 'ⅈ',
+  iiiint: '⨌',
+  iiint: '∭',
+  iinfin: '⧜',
+  iiota: '℩',
+  ijlig: 'ĳ',
+  imacr: 'ī',
+  image: 'ℑ',
+  imagline: 'ℐ',
+  imagpart: 'ℑ',
+  imath: 'ı',
+  imof: '⊷',
+  imped: 'Ƶ',
+  in: '∈',
+  incare: '℅',
+  infin: '∞',
+  infintie: '⧝',
+  inodot: 'ı',
+  int: '∫',
+  intcal: '⊺',
+  integers: 'ℤ',
+  intercal: '⊺',
+  intlarhk: '⨗',
+  intprod: '⨼',
+  iocy: 'ё',
+  iogon: 'į',
+  iopf: '𝕚',
+  iota: 'ι',
+  iprod: '⨼',
+  iquest: '¿',
+  iscr: '𝒾',
+  isin: '∈',
+  isinE: '⋹',
+  isindot: '⋵',
+  isins: '⋴',
+  isinsv: '⋳',
+  isinv: '∈',
+  it: '⁢',
+  itilde: 'ĩ',
+  iukcy: 'і',
+  iuml: 'ï',
+  jcirc: 'ĵ',
+  jcy: 'й',
+  jfr: '𝔧',
+  jmath: 'ȷ',
+  jopf: '𝕛',
+  jscr: '𝒿',
+  jsercy: 'ј',
+  jukcy: 'є',
+  kappa: 'κ',
+  kappav: 'ϰ',
+  kcedil: 'ķ',
+  kcy: 'к',
+  kfr: '𝔨',
+  kgreen: 'ĸ',
+  khcy: 'х',
+  kjcy: 'ќ',
+  kopf: '𝕜',
+  kscr: '𝓀',
+  lAarr: '⇚',
+  lArr: '⇐',
+  lAtail: '⤛',
+  lBarr: '⤎',
+  lE: '≦',
+  lEg: '⪋',
+  lHar: '⥢',
+  lacute: 'ĺ',
+  laemptyv: '⦴',
+  lagran: 'ℒ',
+  lambda: 'λ',
+  lang: '⟨',
+  langd: '⦑',
+  langle: '⟨',
+  lap: '⪅',
+  laquo: '«',
+  larr: '←',
+  larrb: '⇤',
+  larrbfs: '⤟',
+  larrfs: '⤝',
+  larrhk: '↩',
+  larrlp: '↫',
+  larrpl: '⤹',
+  larrsim: '⥳',
+  larrtl: '↢',
+  lat: '⪫',
+  latail: '⤙',
+  late: '⪭',
+  lates: '⪭︀',
+  lbarr: '⤌',
+  lbbrk: '❲',
+  lbrace: '{',
+  lbrack: '[',
+  lbrke: '⦋',
+  lbrksld: '⦏',
+  lbrkslu: '⦍',
+  lcaron: 'ľ',
+  lcedil: 'ļ',
+  lceil: '⌈',
+  lcub: '{',
+  lcy: 'л',
+  ldca: '⤶',
+  ldquo: '“',
+  ldquor: '„',
+  ldrdhar: '⥧',
+  ldrushar: '⥋',
+  ldsh: '↲',
+  le: '≤',
+  leftarrow: '←',
+  leftarrowtail: '↢',
+  leftharpoondown: '↽',
+  leftharpoonup: '↼',
+  leftleftarrows: '⇇',
+  leftrightarrow: '↔',
+  leftrightarrows: '⇆',
+  leftrightharpoons: '⇋',
+  leftrightsquigarrow: '↭',
+  leftthreetimes: '⋋',
+  leg: '⋚',
+  leq: '≤',
+  leqq: '≦',
+  leqslant: '⩽',
+  les: '⩽',
+  lescc: '⪨',
+  lesdot: '⩿',
+  lesdoto: '⪁',
+  lesdotor: '⪃',
+  lesg: '⋚︀',
+  lesges: '⪓',
+  lessapprox: '⪅',
+  lessdot: '⋖',
+  lesseqgtr: '⋚',
+  lesseqqgtr: '⪋',
+  lessgtr: '≶',
+  lesssim: '≲',
+  lfisht: '⥼',
+  lfloor: '⌊',
+  lfr: '𝔩',
+  lg: '≶',
+  lgE: '⪑',
+  lhard: '↽',
+  lharu: '↼',
+  lharul: '⥪',
+  lhblk: '▄',
+  ljcy: 'љ',
+  ll: '≪',
+  llarr: '⇇',
+  llcorner: '⌞',
+  llhard: '⥫',
+  lltri: '◺',
+  lmidot: 'ŀ',
+  lmoust: '⎰',
+  lmoustache: '⎰',
+  lnE: '≨',
+  lnap: '⪉',
+  lnapprox: '⪉',
+  lne: '⪇',
+  lneq: '⪇',
+  lneqq: '≨',
+  lnsim: '⋦',
+  loang: '⟬',
+  loarr: '⇽',
+  lobrk: '⟦',
+  longleftarrow: '⟵',
+  longleftrightarrow: '⟷',
+  longmapsto: '⟼',
+  longrightarrow: '⟶',
+  looparrowleft: '↫',
+  looparrowright: '↬',
+  lopar: '⦅',
+  lopf: '𝕝',
+  loplus: '⨭',
+  lotimes: '⨴',
+  lowast: '∗',
+  lowbar: '_',
+  loz: '◊',
+  lozenge: '◊',
+  lozf: '⧫',
+  lpar: '(',
+  lparlt: '⦓',
+  lrarr: '⇆',
+  lrcorner: '⌟',
+  lrhar: '⇋',
+  lrhard: '⥭',
+  lrm: '‎',
+  lrtri: '⊿',
+  lsaquo: '‹',
+  lscr: '𝓁',
+  lsh: '↰',
+  lsim: '≲',
+  lsime: '⪍',
+  lsimg: '⪏',
+  lsqb: '[',
+  lsquo: '‘',
+  lsquor: '‚',
+  lstrok: 'ł',
+  lt: '<',
+  ltcc: '⪦',
+  ltcir: '⩹',
+  ltdot: '⋖',
+  lthree: '⋋',
+  ltimes: '⋉',
+  ltlarr: '⥶',
+  ltquest: '⩻',
+  ltrPar: '⦖',
+  ltri: '◃',
+  ltrie: '⊴',
+  ltrif: '◂',
+  lurdshar: '⥊',
+  luruhar: '⥦',
+  lvertneqq: '≨︀',
+  lvnE: '≨︀',
+  mDDot: '∺',
+  macr: '¯',
+  male: '♂',
+  malt: '✠',
+  maltese: '✠',
+  map: '↦',
+  mapsto: '↦',
+  mapstodown: '↧',
+  mapstoleft: '↤',
+  mapstoup: '↥',
+  marker: '▮',
+  mcomma: '⨩',
+  mcy: 'м',
+  mdash: '—',
+  measuredangle: '∡',
+  mfr: '𝔪',
+  mho: '℧',
+  micro: 'µ',
+  mid: '∣',
+  midast: '*',
+  midcir: '⫰',
+  middot: '·',
+  minus: '−',
+  minusb: '⊟',
+  minusd: '∸',
+  minusdu: '⨪',
+  mlcp: '⫛',
+  mldr: '…',
+  mnplus: '∓',
+  models: '⊧',
+  mopf: '𝕞',
+  mp: '∓',
+  mscr: '𝓂',
+  mstpos: '∾',
+  mu: 'μ',
+  multimap: '⊸',
+  mumap: '⊸',
+  nGg: '⋙̸',
+  nGt: '≫⃒',
+  nGtv: '≫̸',
+  nLeftarrow: '⇍',
+  nLeftrightarrow: '⇎',
+  nLl: '⋘̸',
+  nLt: '≪⃒',
+  nLtv: '≪̸',
+  nRightarrow: '⇏',
+  nVDash: '⊯',
+  nVdash: '⊮',
+  nabla: '∇',
+  nacute: 'ń',
+  nang: '∠⃒',
+  nap: '≉',
+  napE: '⩰̸',
+  napid: '≋̸',
+  napos: 'ŉ',
+  napprox: '≉',
+  natur: '♮',
+  natural: '♮',
+  naturals: 'ℕ',
+  nbsp: ' ',
+  nbump: '≎̸',
+  nbumpe: '≏̸',
+  ncap: '⩃',
+  ncaron: 'ň',
+  ncedil: 'ņ',
+  ncong: '≇',
+  ncongdot: '⩭̸',
+  ncup: '⩂',
+  ncy: 'н',
+  ndash: '–',
+  ne: '≠',
+  neArr: '⇗',
+  nearhk: '⤤',
+  nearr: '↗',
+  nearrow: '↗',
+  nedot: '≐̸',
+  nequiv: '≢',
+  nesear: '⤨',
+  nesim: '≂̸',
+  nexist: '∄',
+  nexists: '∄',
+  nfr: '𝔫',
+  ngE: '≧̸',
+  nge: '≱',
+  ngeq: '≱',
+  ngeqq: '≧̸',
+  ngeqslant: '⩾̸',
+  nges: '⩾̸',
+  ngsim: '≵',
+  ngt: '≯',
+  ngtr: '≯',
+  nhArr: '⇎',
+  nharr: '↮',
+  nhpar: '⫲',
+  ni: '∋',
+  nis: '⋼',
+  nisd: '⋺',
+  niv: '∋',
+  njcy: 'њ',
+  nlArr: '⇍',
+  nlE: '≦̸',
+  nlarr: '↚',
+  nldr: '‥',
+  nle: '≰',
+  nleftarrow: '↚',
+  nleftrightarrow: '↮',
+  nleq: '≰',
+  nleqq: '≦̸',
+  nleqslant: '⩽̸',
+  nles: '⩽̸',
+  nless: '≮',
+  nlsim: '≴',
+  nlt: '≮',
+  nltri: '⋪',
+  nltrie: '⋬',
+  nmid: '∤',
+  nopf: '𝕟',
+  not: '¬',
+  notin: '∉',
+  notinE: '⋹̸',
+  notindot: '⋵̸',
+  notinva: '∉',
+  notinvb: '⋷',
+  notinvc: '⋶',
+  notni: '∌',
+  notniva: '∌',
+  notnivb: '⋾',
+  notnivc: '⋽',
+  npar: '∦',
+  nparallel: '∦',
+  nparsl: '⫽⃥',
+  npart: '∂̸',
+  npolint: '⨔',
+  npr: '⊀',
+  nprcue: '⋠',
+  npre: '⪯̸',
+  nprec: '⊀',
+  npreceq: '⪯̸',
+  nrArr: '⇏',
+  nrarr: '↛',
+  nrarrc: '⤳̸',
+  nrarrw: '↝̸',
+  nrightarrow: '↛',
+  nrtri: '⋫',
+  nrtrie: '⋭',
+  nsc: '⊁',
+  nsccue: '⋡',
+  nsce: '⪰̸',
+  nscr: '𝓃',
+  nshortmid: '∤',
+  nshortparallel: '∦',
+  nsim: '≁',
+  nsime: '≄',
+  nsimeq: '≄',
+  nsmid: '∤',
+  nspar: '∦',
+  nsqsube: '⋢',
+  nsqsupe: '⋣',
+  nsub: '⊄',
+  nsubE: '⫅̸',
+  nsube: '⊈',
+  nsubset: '⊂⃒',
+  nsubseteq: '⊈',
+  nsubseteqq: '⫅̸',
+  nsucc: '⊁',
+  nsucceq: '⪰̸',
+  nsup: '⊅',
+  nsupE: '⫆̸',
+  nsupe: '⊉',
+  nsupset: '⊃⃒',
+  nsupseteq: '⊉',
+  nsupseteqq: '⫆̸',
+  ntgl: '≹',
+  ntilde: 'ñ',
+  ntlg: '≸',
+  ntriangleleft: '⋪',
+  ntrianglelefteq: '⋬',
+  ntriangleright: '⋫',
+  ntrianglerighteq: '⋭',
+  nu: 'ν',
+  num: '#',
+  numero: '№',
+  numsp: ' ',
+  nvDash: '⊭',
+  nvHarr: '⤄',
+  nvap: '≍⃒',
+  nvdash: '⊬',
+  nvge: '≥⃒',
+  nvgt: '>⃒',
+  nvinfin: '⧞',
+  nvlArr: '⤂',
+  nvle: '≤⃒',
+  nvlt: '<⃒',
+  nvltrie: '⊴⃒',
+  nvrArr: '⤃',
+  nvrtrie: '⊵⃒',
+  nvsim: '∼⃒',
+  nwArr: '⇖',
+  nwarhk: '⤣',
+  nwarr: '↖',
+  nwarrow: '↖',
+  nwnear: '⤧',
+  oS: 'Ⓢ',
+  oacute: 'ó',
+  oast: '⊛',
+  ocir: '⊚',
+  ocirc: 'ô',
+  ocy: 'о',
+  odash: '⊝',
+  odblac: 'ő',
+  odiv: '⨸',
+  odot: '⊙',
+  odsold: '⦼',
+  oelig: 'œ',
+  ofcir: '⦿',
+  ofr: '𝔬',
+  ogon: '˛',
+  ograve: 'ò',
+  ogt: '⧁',
+  ohbar: '⦵',
+  ohm: 'Ω',
+  oint: '∮',
+  olarr: '↺',
+  olcir: '⦾',
+  olcross: '⦻',
+  oline: '‾',
+  olt: '⧀',
+  omacr: 'ō',
+  omega: 'ω',
+  omicron: 'ο',
+  omid: '⦶',
+  ominus: '⊖',
+  oopf: '𝕠',
+  opar: '⦷',
+  operp: '⦹',
+  oplus: '⊕',
+  or: '∨',
+  orarr: '↻',
+  ord: '⩝',
+  order: 'ℴ',
+  orderof: 'ℴ',
+  ordf: 'ª',
+  ordm: 'º',
+  origof: '⊶',
+  oror: '⩖',
+  orslope: '⩗',
+  orv: '⩛',
+  oscr: 'ℴ',
+  oslash: 'ø',
+  osol: '⊘',
+  otilde: 'õ',
+  otimes: '⊗',
+  otimesas: '⨶',
+  ouml: 'ö',
+  ovbar: '⌽',
+  par: '∥',
+  para: '¶',
+  parallel: '∥',
+  parsim: '⫳',
+  parsl: '⫽',
+  part: '∂',
+  pcy: 'п',
+  percnt: '%',
+  period: '.',
+  permil: '‰',
+  perp: '⊥',
+  pertenk: '‱',
+  pfr: '𝔭',
+  phi: 'φ',
+  phiv: 'ϕ',
+  phmmat: 'ℳ',
+  phone: '☎',
+  pi: 'π',
+  pitchfork: '⋔',
+  piv: 'ϖ',
+  planck: 'ℏ',
+  planckh: 'ℎ',
+  plankv: 'ℏ',
+  plus: '+',
+  plusacir: '⨣',
+  plusb: '⊞',
+  pluscir: '⨢',
+  plusdo: '∔',
+  plusdu: '⨥',
+  pluse: '⩲',
+  plusmn: '±',
+  plussim: '⨦',
+  plustwo: '⨧',
+  pm: '±',
+  pointint: '⨕',
+  popf: '𝕡',
+  pound: '£',
+  pr: '≺',
+  prE: '⪳',
+  prap: '⪷',
+  prcue: '≼',
+  pre: '⪯',
+  prec: '≺',
+  precapprox: '⪷',
+  preccurlyeq: '≼',
+  preceq: '⪯',
+  precnapprox: '⪹',
+  precneqq: '⪵',
+  precnsim: '⋨',
+  precsim: '≾',
+  prime: '′',
+  primes: 'ℙ',
+  prnE: '⪵',
+  prnap: '⪹',
+  prnsim: '⋨',
+  prod: '∏',
+  profalar: '⌮',
+  profline: '⌒',
+  profsurf: '⌓',
+  prop: '∝',
+  propto: '∝',
+  prsim: '≾',
+  prurel: '⊰',
+  pscr: '𝓅',
+  psi: 'ψ',
+  puncsp: ' ',
+  qfr: '𝔮',
+  qint: '⨌',
+  qopf: '𝕢',
+  qprime: '⁗',
+  qscr: '𝓆',
+  quaternions: 'ℍ',
+  quatint: '⨖',
+  quest: '?',
+  questeq: '≟',
+  quot: '"',
+  rAarr: '⇛',
+  rArr: '⇒',
+  rAtail: '⤜',
+  rBarr: '⤏',
+  rHar: '⥤',
+  race: '∽̱',
+  racute: 'ŕ',
+  radic: '√',
+  raemptyv: '⦳',
+  rang: '⟩',
+  rangd: '⦒',
+  range: '⦥',
+  rangle: '⟩',
+  raquo: '»',
+  rarr: '→',
+  rarrap: '⥵',
+  rarrb: '⇥',
+  rarrbfs: '⤠',
+  rarrc: '⤳',
+  rarrfs: '⤞',
+  rarrhk: '↪',
+  rarrlp: '↬',
+  rarrpl: '⥅',
+  rarrsim: '⥴',
+  rarrtl: '↣',
+  rarrw: '↝',
+  ratail: '⤚',
+  ratio: '∶',
+  rationals: 'ℚ',
+  rbarr: '⤍',
+  rbbrk: '❳',
+  rbrace: '}',
+  rbrack: ']',
+  rbrke: '⦌',
+  rbrksld: '⦎',
+  rbrkslu: '⦐',
+  rcaron: 'ř',
+  rcedil: 'ŗ',
+  rceil: '⌉',
+  rcub: '}',
+  rcy: 'р',
+  rdca: '⤷',
+  rdldhar: '⥩',
+  rdquo: '”',
+  rdquor: '”',
+  rdsh: '↳',
+  real: 'ℜ',
+  realine: 'ℛ',
+  realpart: 'ℜ',
+  reals: 'ℝ',
+  rect: '▭',
+  reg: '®',
+  rfisht: '⥽',
+  rfloor: '⌋',
+  rfr: '𝔯',
+  rhard: '⇁',
+  rharu: '⇀',
+  rharul: '⥬',
+  rho: 'ρ',
+  rhov: 'ϱ',
+  rightarrow: '→',
+  rightarrowtail: '↣',
+  rightharpoondown: '⇁',
+  rightharpoonup: '⇀',
+  rightleftarrows: '⇄',
+  rightleftharpoons: '⇌',
+  rightrightarrows: '⇉',
+  rightsquigarrow: '↝',
+  rightthreetimes: '⋌',
+  ring: '˚',
+  risingdotseq: '≓',
+  rlarr: '⇄',
+  rlhar: '⇌',
+  rlm: '‏',
+  rmoust: '⎱',
+  rmoustache: '⎱',
+  rnmid: '⫮',
+  roang: '⟭',
+  roarr: '⇾',
+  robrk: '⟧',
+  ropar: '⦆',
+  ropf: '𝕣',
+  roplus: '⨮',
+  rotimes: '⨵',
+  rpar: ')',
+  rpargt: '⦔',
+  rppolint: '⨒',
+  rrarr: '⇉',
+  rsaquo: '›',
+  rscr: '𝓇',
+  rsh: '↱',
+  rsqb: ']',
+  rsquo: '’',
+  rsquor: '’',
+  rthree: '⋌',
+  rtimes: '⋊',
+  rtri: '▹',
+  rtrie: '⊵',
+  rtrif: '▸',
+  rtriltri: '⧎',
+  ruluhar: '⥨',
+  rx: '℞',
+  sacute: 'ś',
+  sbquo: '‚',
+  sc: '≻',
+  scE: '⪴',
+  scap: '⪸',
+  scaron: 'š',
+  sccue: '≽',
+  sce: '⪰',
+  scedil: 'ş',
+  scirc: 'ŝ',
+  scnE: '⪶',
+  scnap: '⪺',
+  scnsim: '⋩',
+  scpolint: '⨓',
+  scsim: '≿',
+  scy: 'с',
+  sdot: '⋅',
+  sdotb: '⊡',
+  sdote: '⩦',
+  seArr: '⇘',
+  searhk: '⤥',
+  searr: '↘',
+  searrow: '↘',
+  sect: '§',
+  semi: ';',
+  seswar: '⤩',
+  setminus: '∖',
+  setmn: '∖',
+  sext: '✶',
+  sfr: '𝔰',
+  sfrown: '⌢',
+  sharp: '♯',
+  shchcy: 'щ',
+  shcy: 'ш',
+  shortmid: '∣',
+  shortparallel: '∥',
+  shy: '­',
+  sigma: 'σ',
+  sigmaf: 'ς',
+  sigmav: 'ς',
+  sim: '∼',
+  simdot: '⩪',
+  sime: '≃',
+  simeq: '≃',
+  simg: '⪞',
+  simgE: '⪠',
+  siml: '⪝',
+  simlE: '⪟',
+  simne: '≆',
+  simplus: '⨤',
+  simrarr: '⥲',
+  slarr: '←',
+  smallsetminus: '∖',
+  smashp: '⨳',
+  smeparsl: '⧤',
+  smid: '∣',
+  smile: '⌣',
+  smt: '⪪',
+  smte: '⪬',
+  smtes: '⪬︀',
+  softcy: 'ь',
+  sol: '/',
+  solb: '⧄',
+  solbar: '⌿',
+  sopf: '𝕤',
+  spades: '♠',
+  spadesuit: '♠',
+  spar: '∥',
+  sqcap: '⊓',
+  sqcaps: '⊓︀',
+  sqcup: '⊔',
+  sqcups: '⊔︀',
+  sqsub: '⊏',
+  sqsube: '⊑',
+  sqsubset: '⊏',
+  sqsubseteq: '⊑',
+  sqsup: '⊐',
+  sqsupe: '⊒',
+  sqsupset: '⊐',
+  sqsupseteq: '⊒',
+  squ: '□',
+  square: '□',
+  squarf: '▪',
+  squf: '▪',
+  srarr: '→',
+  sscr: '𝓈',
+  ssetmn: '∖',
+  ssmile: '⌣',
+  sstarf: '⋆',
+  star: '☆',
+  starf: '★',
+  straightepsilon: 'ϵ',
+  straightphi: 'ϕ',
+  strns: '¯',
+  sub: '⊂',
+  subE: '⫅',
+  subdot: '⪽',
+  sube: '⊆',
+  subedot: '⫃',
+  submult: '⫁',
+  subnE: '⫋',
+  subne: '⊊',
+  subplus: '⪿',
+  subrarr: '⥹',
+  subset: '⊂',
+  subseteq: '⊆',
+  subseteqq: '⫅',
+  subsetneq: '⊊',
+  subsetneqq: '⫋',
+  subsim: '⫇',
+  subsub: '⫕',
+  subsup: '⫓',
+  succ: '≻',
+  succapprox: '⪸',
+  succcurlyeq: '≽',
+  succeq: '⪰',
+  succnapprox: '⪺',
+  succneqq: '⪶',
+  succnsim: '⋩',
+  succsim: '≿',
+  sum: '∑',
+  sung: '♪',
+  sup1: '¹',
+  sup2: '²',
+  sup3: '³',
+  sup: '⊃',
+  supE: '⫆',
+  supdot: '⪾',
+  supdsub: '⫘',
+  supe: '⊇',
+  supedot: '⫄',
+  suphsol: '⟉',
+  suphsub: '⫗',
+  suplarr: '⥻',
+  supmult: '⫂',
+  supnE: '⫌',
+  supne: '⊋',
+  supplus: '⫀',
+  supset: '⊃',
+  supseteq: '⊇',
+  supseteqq: '⫆',
+  supsetneq: '⊋',
+  supsetneqq: '⫌',
+  supsim: '⫈',
+  supsub: '⫔',
+  supsup: '⫖',
+  swArr: '⇙',
+  swarhk: '⤦',
+  swarr: '↙',
+  swarrow: '↙',
+  swnwar: '⤪',
+  szlig: 'ß',
+  target: '⌖',
+  tau: 'τ',
+  tbrk: '⎴',
+  tcaron: 'ť',
+  tcedil: 'ţ',
+  tcy: 'т',
+  tdot: '⃛',
+  telrec: '⌕',
+  tfr: '𝔱',
+  there4: '∴',
+  therefore: '∴',
+  theta: 'θ',
+  thetasym: 'ϑ',
+  thetav: 'ϑ',
+  thickapprox: '≈',
+  thicksim: '∼',
+  thinsp: ' ',
+  thkap: '≈',
+  thksim: '∼',
+  thorn: 'þ',
+  tilde: '˜',
+  times: '×',
+  timesb: '⊠',
+  timesbar: '⨱',
+  timesd: '⨰',
+  tint: '∭',
+  toea: '⤨',
+  top: '⊤',
+  topbot: '⌶',
+  topcir: '⫱',
+  topf: '𝕥',
+  topfork: '⫚',
+  tosa: '⤩',
+  tprime: '‴',
+  trade: '™',
+  triangle: '▵',
+  triangledown: '▿',
+  triangleleft: '◃',
+  trianglelefteq: '⊴',
+  triangleq: '≜',
+  triangleright: '▹',
+  trianglerighteq: '⊵',
+  tridot: '◬',
+  trie: '≜',
+  triminus: '⨺',
+  triplus: '⨹',
+  trisb: '⧍',
+  tritime: '⨻',
+  trpezium: '⏢',
+  tscr: '𝓉',
+  tscy: 'ц',
+  tshcy: 'ћ',
+  tstrok: 'ŧ',
+  twixt: '≬',
+  twoheadleftarrow: '↞',
+  twoheadrightarrow: '↠',
+  uArr: '⇑',
+  uHar: '⥣',
+  uacute: 'ú',
+  uarr: '↑',
+  ubrcy: 'ў',
+  ubreve: 'ŭ',
+  ucirc: 'û',
+  ucy: 'у',
+  udarr: '⇅',
+  udblac: 'ű',
+  udhar: '⥮',
+  ufisht: '⥾',
+  ufr: '𝔲',
+  ugrave: 'ù',
+  uharl: '↿',
+  uharr: '↾',
+  uhblk: '▀',
+  ulcorn: '⌜',
+  ulcorner: '⌜',
+  ulcrop: '⌏',
+  ultri: '◸',
+  umacr: 'ū',
+  uml: '¨',
+  uogon: 'ų',
+  uopf: '𝕦',
+  uparrow: '↑',
+  updownarrow: '↕',
+  upharpoonleft: '↿',
+  upharpoonright: '↾',
+  uplus: '⊎',
+  upsi: 'υ',
+  upsih: 'ϒ',
+  upsilon: 'υ',
+  upuparrows: '⇈',
+  urcorn: '⌝',
+  urcorner: '⌝',
+  urcrop: '⌎',
+  uring: 'ů',
+  urtri: '◹',
+  uscr: '𝓊',
+  utdot: '⋰',
+  utilde: 'ũ',
+  utri: '▵',
+  utrif: '▴',
+  uuarr: '⇈',
+  uuml: 'ü',
+  uwangle: '⦧',
+  vArr: '⇕',
+  vBar: '⫨',
+  vBarv: '⫩',
+  vDash: '⊨',
+  vangrt: '⦜',
+  varepsilon: 'ϵ',
+  varkappa: 'ϰ',
+  varnothing: '∅',
+  varphi: 'ϕ',
+  varpi: 'ϖ',
+  varpropto: '∝',
+  varr: '↕',
+  varrho: 'ϱ',
+  varsigma: 'ς',
+  varsubsetneq: '⊊︀',
+  varsubsetneqq: '⫋︀',
+  varsupsetneq: '⊋︀',
+  varsupsetneqq: '⫌︀',
+  vartheta: 'ϑ',
+  vartriangleleft: '⊲',
+  vartriangleright: '⊳',
+  vcy: 'в',
+  vdash: '⊢',
+  vee: '∨',
+  veebar: '⊻',
+  veeeq: '≚',
+  vellip: '⋮',
+  verbar: '|',
+  vert: '|',
+  vfr: '𝔳',
+  vltri: '⊲',
+  vnsub: '⊂⃒',
+  vnsup: '⊃⃒',
+  vopf: '𝕧',
+  vprop: '∝',
+  vrtri: '⊳',
+  vscr: '𝓋',
+  vsubnE: '⫋︀',
+  vsubne: '⊊︀',
+  vsupnE: '⫌︀',
+  vsupne: '⊋︀',
+  vzigzag: '⦚',
+  wcirc: 'ŵ',
+  wedbar: '⩟',
+  wedge: '∧',
+  wedgeq: '≙',
+  weierp: '℘',
+  wfr: '𝔴',
+  wopf: '𝕨',
+  wp: '℘',
+  wr: '≀',
+  wreath: '≀',
+  wscr: '𝓌',
+  xcap: '⋂',
+  xcirc: '◯',
+  xcup: '⋃',
+  xdtri: '▽',
+  xfr: '𝔵',
+  xhArr: '⟺',
+  xharr: '⟷',
+  xi: 'ξ',
+  xlArr: '⟸',
+  xlarr: '⟵',
+  xmap: '⟼',
+  xnis: '⋻',
+  xodot: '⨀',
+  xopf: '𝕩',
+  xoplus: '⨁',
+  xotime: '⨂',
+  xrArr: '⟹',
+  xrarr: '⟶',
+  xscr: '𝓍',
+  xsqcup: '⨆',
+  xuplus: '⨄',
+  xutri: '△',
+  xvee: '⋁',
+  xwedge: '⋀',
+  yacute: 'ý',
+  yacy: 'я',
+  ycirc: 'ŷ',
+  ycy: 'ы',
+  yen: '¥',
+  yfr: '𝔶',
+  yicy: 'ї',
+  yopf: '𝕪',
+  yscr: '𝓎',
+  yucy: 'ю',
+  yuml: 'ÿ',
+  zacute: 'ź',
+  zcaron: 'ž',
+  zcy: 'з',
+  zdot: 'ż',
+  zeetrf: 'ℨ',
+  zeta: 'ζ',
+  zfr: '𝔷',
+  zhcy: 'ж',
+  zigrarr: '⇝',
+  zopf: '𝕫',
+  zscr: '𝓏',
+  zwj: '‍',
+  zwnj: '‌'
+}
+
+function htmlChar(name:'AElig'):'Æ';
+function htmlChar(name:'AElig'):'Æ';
+function htmlChar(name:'AMP'):'&';
+function htmlChar(name:'AMP'):'&';
+function htmlChar(name:'Aacute'):'Á';
+function htmlChar(name:'Aacute'):'Á';
+function htmlChar(name:'Abreve'):'Ă';
+function htmlChar(name:'Acirc'):'Â';
+function htmlChar(name:'Acirc'):'Â';
+function htmlChar(name:'Acy'):'А';
+function htmlChar(name:'Afr'):'𝔄';
+function htmlChar(name:'Agrave'):'À';
+function htmlChar(name:'Agrave'):'À';
+function htmlChar(name:'Alpha'):'Α';
+function htmlChar(name:'Amacr'):'Ā';
+function htmlChar(name:'And'):'⩓';
+function htmlChar(name:'Aogon'):'Ą';
+function htmlChar(name:'Aopf'):'𝔸';
+function htmlChar(name:'ApplyFunction'):'⁡';
+function htmlChar(name:'Aring'):'Å';
+function htmlChar(name:'Aring'):'Å';
+function htmlChar(name:'Ascr'):'𝒜';
+function htmlChar(name:'Assign'):'≔';
+function htmlChar(name:'Atilde'):'Ã';
+function htmlChar(name:'Atilde'):'Ã';
+function htmlChar(name:'Auml'):'Ä';
+function htmlChar(name:'Auml'):'Ä';
+function htmlChar(name:'Backslash'):'∖';
+function htmlChar(name:'Barv'):'⫧';
+function htmlChar(name:'Barwed'):'⌆';
+function htmlChar(name:'Bcy'):'Б';
+function htmlChar(name:'Because'):'∵';
+function htmlChar(name:'Bernoullis'):'ℬ';
+function htmlChar(name:'Beta'):'Β';
+function htmlChar(name:'Bfr'):'𝔅';
+function htmlChar(name:'Bopf'):'𝔹';
+function htmlChar(name:'Breve'):'˘';
+function htmlChar(name:'Bscr'):'ℬ';
+function htmlChar(name:'Bumpeq'):'≎';
+function htmlChar(name:'CHcy'):'Ч';
+function htmlChar(name:'COPY'):'©';
+function htmlChar(name:'COPY'):'©';
+function htmlChar(name:'Cacute'):'Ć';
+function htmlChar(name:'Cap'):'⋒';
+function htmlChar(name:'CapitalDifferentialD'):'ⅅ';
+function htmlChar(name:'Cayleys'):'ℭ';
+function htmlChar(name:'Ccaron'):'Č';
+function htmlChar(name:'Ccedil'):'Ç';
+function htmlChar(name:'Ccedil'):'Ç';
+function htmlChar(name:'Ccirc'):'Ĉ';
+function htmlChar(name:'Cconint'):'∰';
+function htmlChar(name:'Cdot'):'Ċ';
+function htmlChar(name:'Cedilla'):'¸';
+function htmlChar(name:'CenterDot'):'·';
+function htmlChar(name:'Cfr'):'ℭ';
+function htmlChar(name:'Chi'):'Χ';
+function htmlChar(name:'CircleDot'):'⊙';
+function htmlChar(name:'CircleMinus'):'⊖';
+function htmlChar(name:'CirclePlus'):'⊕';
+function htmlChar(name:'CircleTimes'):'⊗';
+function htmlChar(name:'ClockwiseContourIntegral'):'∲';
+function htmlChar(name:'CloseCurlyDoubleQuote'):'”';
+function htmlChar(name:'CloseCurlyQuote'):'’';
+function htmlChar(name:'Colon'):'∷';
+function htmlChar(name:'Colone'):'⩴';
+function htmlChar(name:'Congruent'):'≡';
+function htmlChar(name:'Conint'):'∯';
+function htmlChar(name:'ContourIntegral'):'∮';
+function htmlChar(name:'Copf'):'ℂ';
+function htmlChar(name:'Coproduct'):'∐';
+function htmlChar(name:'CounterClockwiseContourIntegral'):'∳';
+function htmlChar(name:'Cross'):'⨯';
+function htmlChar(name:'Cscr'):'𝒞';
+function htmlChar(name:'Cup'):'⋓';
+function htmlChar(name:'CupCap'):'≍';
+function htmlChar(name:'DD'):'ⅅ';
+function htmlChar(name:'DDotrahd'):'⤑';
+function htmlChar(name:'DJcy'):'Ђ';
+function htmlChar(name:'DScy'):'Ѕ';
+function htmlChar(name:'DZcy'):'Џ';
+function htmlChar(name:'Dagger'):'‡';
+function htmlChar(name:'Darr'):'↡';
+function htmlChar(name:'Dashv'):'⫤';
+function htmlChar(name:'Dcaron'):'Ď';
+function htmlChar(name:'Dcy'):'Д';
+function htmlChar(name:'Del'):'∇';
+function htmlChar(name:'Delta'):'Δ';
+function htmlChar(name:'Dfr'):'𝔇';
+function htmlChar(name:'DiacriticalAcute'):'´';
+function htmlChar(name:'DiacriticalDot'):'˙';
+function htmlChar(name:'DiacriticalDoubleAcute'):'˝';
+function htmlChar(name:'DiacriticalGrave'):'`';
+function htmlChar(name:'DiacriticalTilde'):'˜';
+function htmlChar(name:'Diamond'):'⋄';
+function htmlChar(name:'DifferentialD'):'ⅆ';
+function htmlChar(name:'Dopf'):'𝔻';
+function htmlChar(name:'Dot'):'¨';
+function htmlChar(name:'DotDot'):'⃜';
+function htmlChar(name:'DotEqual'):'≐';
+function htmlChar(name:'DoubleContourIntegral'):'∯';
+function htmlChar(name:'DoubleDot'):'¨';
+function htmlChar(name:'DoubleDownArrow'):'⇓';
+function htmlChar(name:'DoubleLeftArrow'):'⇐';
+function htmlChar(name:'DoubleLeftRightArrow'):'⇔';
+function htmlChar(name:'DoubleLeftTee'):'⫤';
+function htmlChar(name:'DoubleLongLeftArrow'):'⟸';
+function htmlChar(name:'DoubleLongLeftRightArrow'):'⟺';
+function htmlChar(name:'DoubleLongRightArrow'):'⟹';
+function htmlChar(name:'DoubleRightArrow'):'⇒';
+function htmlChar(name:'DoubleRightTee'):'⊨';
+function htmlChar(name:'DoubleUpArrow'):'⇑';
+function htmlChar(name:'DoubleUpDownArrow'):'⇕';
+function htmlChar(name:'DoubleVerticalBar'):'∥';
+function htmlChar(name:'DownArrow'):'↓';
+function htmlChar(name:'DownArrowBar'):'⤓';
+function htmlChar(name:'DownArrowUpArrow'):'⇵';
+function htmlChar(name:'DownBreve'):'̑';
+function htmlChar(name:'DownLeftRightVector'):'⥐';
+function htmlChar(name:'DownLeftTeeVector'):'⥞';
+function htmlChar(name:'DownLeftVector'):'↽';
+function htmlChar(name:'DownLeftVectorBar'):'⥖';
+function htmlChar(name:'DownRightTeeVector'):'⥟';
+function htmlChar(name:'DownRightVector'):'⇁';
+function htmlChar(name:'DownRightVectorBar'):'⥗';
+function htmlChar(name:'DownTee'):'⊤';
+function htmlChar(name:'DownTeeArrow'):'↧';
+function htmlChar(name:'Downarrow'):'⇓';
+function htmlChar(name:'Dscr'):'𝒟';
+function htmlChar(name:'Dstrok'):'Đ';
+function htmlChar(name:'ENG'):'Ŋ';
+function htmlChar(name:'ETH'):'Ð';
+function htmlChar(name:'ETH'):'Ð';
+function htmlChar(name:'Eacute'):'É';
+function htmlChar(name:'Eacute'):'É';
+function htmlChar(name:'Ecaron'):'Ě';
+function htmlChar(name:'Ecirc'):'Ê';
+function htmlChar(name:'Ecirc'):'Ê';
+function htmlChar(name:'Ecy'):'Э';
+function htmlChar(name:'Edot'):'Ė';
+function htmlChar(name:'Efr'):'𝔈';
+function htmlChar(name:'Egrave'):'È';
+function htmlChar(name:'Egrave'):'È';
+function htmlChar(name:'Element'):'∈';
+function htmlChar(name:'Emacr'):'Ē';
+function htmlChar(name:'EmptySmallSquare'):'◻';
+function htmlChar(name:'EmptyVerySmallSquare'):'▫';
+function htmlChar(name:'Eogon'):'Ę';
+function htmlChar(name:'Eopf'):'𝔼';
+function htmlChar(name:'Epsilon'):'Ε';
+function htmlChar(name:'Equal'):'⩵';
+function htmlChar(name:'EqualTilde'):'≂';
+function htmlChar(name:'Equilibrium'):'⇌';
+function htmlChar(name:'Escr'):'ℰ';
+function htmlChar(name:'Esim'):'⩳';
+function htmlChar(name:'Eta'):'Η';
+function htmlChar(name:'Euml'):'Ë';
+function htmlChar(name:'Euml'):'Ë';
+function htmlChar(name:'Exists'):'∃';
+function htmlChar(name:'ExponentialE'):'ⅇ';
+function htmlChar(name:'Fcy'):'Ф';
+function htmlChar(name:'Ffr'):'𝔉';
+function htmlChar(name:'FilledSmallSquare'):'◼';
+function htmlChar(name:'FilledVerySmallSquare'):'▪';
+function htmlChar(name:'Fopf'):'𝔽';
+function htmlChar(name:'ForAll'):'∀';
+function htmlChar(name:'Fouriertrf'):'ℱ';
+function htmlChar(name:'Fscr'):'ℱ';
+function htmlChar(name:'GJcy'):'Ѓ';
+function htmlChar(name:'GT'):'>';
+function htmlChar(name:'GT'):'>';
+function htmlChar(name:'Gamma'):'Γ';
+function htmlChar(name:'Gammad'):'Ϝ';
+function htmlChar(name:'Gbreve'):'Ğ';
+function htmlChar(name:'Gcedil'):'Ģ';
+function htmlChar(name:'Gcirc'):'Ĝ';
+function htmlChar(name:'Gcy'):'Г';
+function htmlChar(name:'Gdot'):'Ġ';
+function htmlChar(name:'Gfr'):'𝔊';
+function htmlChar(name:'Gg'):'⋙';
+function htmlChar(name:'Gopf'):'𝔾';
+function htmlChar(name:'GreaterEqual'):'≥';
+function htmlChar(name:'GreaterEqualLess'):'⋛';
+function htmlChar(name:'GreaterFullEqual'):'≧';
+function htmlChar(name:'GreaterGreater'):'⪢';
+function htmlChar(name:'GreaterLess'):'≷';
+function htmlChar(name:'GreaterSlantEqual'):'⩾';
+function htmlChar(name:'GreaterTilde'):'≳';
+function htmlChar(name:'Gscr'):'𝒢';
+function htmlChar(name:'Gt'):'≫';
+function htmlChar(name:'HARDcy'):'Ъ';
+function htmlChar(name:'Hacek'):'ˇ';
+function htmlChar(name:'Hat'):'^';
+function htmlChar(name:'Hcirc'):'Ĥ';
+function htmlChar(name:'Hfr'):'ℌ';
+function htmlChar(name:'HilbertSpace'):'ℋ';
+function htmlChar(name:'Hopf'):'ℍ';
+function htmlChar(name:'HorizontalLine'):'─';
+function htmlChar(name:'Hscr'):'ℋ';
+function htmlChar(name:'Hstrok'):'Ħ';
+function htmlChar(name:'HumpDownHump'):'≎';
+function htmlChar(name:'HumpEqual'):'≏';
+function htmlChar(name:'IEcy'):'Е';
+function htmlChar(name:'IJlig'):'Ĳ';
+function htmlChar(name:'IOcy'):'Ё';
+function htmlChar(name:'Iacute'):'Í';
+function htmlChar(name:'Iacute'):'Í';
+function htmlChar(name:'Icirc'):'Î';
+function htmlChar(name:'Icirc'):'Î';
+function htmlChar(name:'Icy'):'И';
+function htmlChar(name:'Idot'):'İ';
+function htmlChar(name:'Ifr'):'ℑ';
+function htmlChar(name:'Igrave'):'Ì';
+function htmlChar(name:'Igrave'):'Ì';
+function htmlChar(name:'Im'):'ℑ';
+function htmlChar(name:'Imacr'):'Ī';
+function htmlChar(name:'ImaginaryI'):'ⅈ';
+function htmlChar(name:'Implies'):'⇒';
+function htmlChar(name:'Int'):'∬';
+function htmlChar(name:'Integral'):'∫';
+function htmlChar(name:'Intersection'):'⋂';
+function htmlChar(name:'InvisibleComma'):'⁣';
+function htmlChar(name:'InvisibleTimes'):'⁢';
+function htmlChar(name:'Iogon'):'Į';
+function htmlChar(name:'Iopf'):'𝕀';
+function htmlChar(name:'Iota'):'Ι';
+function htmlChar(name:'Iscr'):'ℐ';
+function htmlChar(name:'Itilde'):'Ĩ';
+function htmlChar(name:'Iukcy'):'І';
+function htmlChar(name:'Iuml'):'Ï';
+function htmlChar(name:'Iuml'):'Ï';
+function htmlChar(name:'Jcirc'):'Ĵ';
+function htmlChar(name:'Jcy'):'Й';
+function htmlChar(name:'Jfr'):'𝔍';
+function htmlChar(name:'Jopf'):'𝕁';
+function htmlChar(name:'Jscr'):'𝒥';
+function htmlChar(name:'Jsercy'):'Ј';
+function htmlChar(name:'Jukcy'):'Є';
+function htmlChar(name:'KHcy'):'Х';
+function htmlChar(name:'KJcy'):'Ќ';
+function htmlChar(name:'Kappa'):'Κ';
+function htmlChar(name:'Kcedil'):'Ķ';
+function htmlChar(name:'Kcy'):'К';
+function htmlChar(name:'Kfr'):'𝔎';
+function htmlChar(name:'Kopf'):'𝕂';
+function htmlChar(name:'Kscr'):'𝒦';
+function htmlChar(name:'LJcy'):'Љ';
+function htmlChar(name:'LT'):'<';
+function htmlChar(name:'LT'):'<';
+function htmlChar(name:'Lacute'):'Ĺ';
+function htmlChar(name:'Lambda'):'Λ';
+function htmlChar(name:'Lang'):'⟪';
+function htmlChar(name:'Laplacetrf'):'ℒ';
+function htmlChar(name:'Larr'):'↞';
+function htmlChar(name:'Lcaron'):'Ľ';
+function htmlChar(name:'Lcedil'):'Ļ';
+function htmlChar(name:'Lcy'):'Л';
+function htmlChar(name:'LeftAngleBracket'):'⟨';
+function htmlChar(name:'LeftArrow'):'←';
+function htmlChar(name:'LeftArrowBar'):'⇤';
+function htmlChar(name:'LeftArrowRightArrow'):'⇆';
+function htmlChar(name:'LeftCeiling'):'⌈';
+function htmlChar(name:'LeftDoubleBracket'):'⟦';
+function htmlChar(name:'LeftDownTeeVector'):'⥡';
+function htmlChar(name:'LeftDownVector'):'⇃';
+function htmlChar(name:'LeftDownVectorBar'):'⥙';
+function htmlChar(name:'LeftFloor'):'⌊';
+function htmlChar(name:'LeftRightArrow'):'↔';
+function htmlChar(name:'LeftRightVector'):'⥎';
+function htmlChar(name:'LeftTee'):'⊣';
+function htmlChar(name:'LeftTeeArrow'):'↤';
+function htmlChar(name:'LeftTeeVector'):'⥚';
+function htmlChar(name:'LeftTriangle'):'⊲';
+function htmlChar(name:'LeftTriangleBar'):'⧏';
+function htmlChar(name:'LeftTriangleEqual'):'⊴';
+function htmlChar(name:'LeftUpDownVector'):'⥑';
+function htmlChar(name:'LeftUpTeeVector'):'⥠';
+function htmlChar(name:'LeftUpVector'):'↿';
+function htmlChar(name:'LeftUpVectorBar'):'⥘';
+function htmlChar(name:'LeftVector'):'↼';
+function htmlChar(name:'LeftVectorBar'):'⥒';
+function htmlChar(name:'Leftarrow'):'⇐';
+function htmlChar(name:'Leftrightarrow'):'⇔';
+function htmlChar(name:'LessEqualGreater'):'⋚';
+function htmlChar(name:'LessFullEqual'):'≦';
+function htmlChar(name:'LessGreater'):'≶';
+function htmlChar(name:'LessLess'):'⪡';
+function htmlChar(name:'LessSlantEqual'):'⩽';
+function htmlChar(name:'LessTilde'):'≲';
+function htmlChar(name:'Lfr'):'𝔏';
+function htmlChar(name:'Ll'):'⋘';
+function htmlChar(name:'Lleftarrow'):'⇚';
+function htmlChar(name:'Lmidot'):'Ŀ';
+function htmlChar(name:'LongLeftArrow'):'⟵';
+function htmlChar(name:'LongLeftRightArrow'):'⟷';
+function htmlChar(name:'LongRightArrow'):'⟶';
+function htmlChar(name:'Longleftarrow'):'⟸';
+function htmlChar(name:'Longleftrightarrow'):'⟺';
+function htmlChar(name:'Longrightarrow'):'⟹';
+function htmlChar(name:'Lopf'):'𝕃';
+function htmlChar(name:'LowerLeftArrow'):'↙';
+function htmlChar(name:'LowerRightArrow'):'↘';
+function htmlChar(name:'Lscr'):'ℒ';
+function htmlChar(name:'Lsh'):'↰';
+function htmlChar(name:'Lstrok'):'Ł';
+function htmlChar(name:'Lt'):'≪';
+function htmlChar(name:'Map'):'⤅';
+function htmlChar(name:'Mcy'):'М';
+function htmlChar(name:'MediumSpace'):' ';
+function htmlChar(name:'Mellintrf'):'ℳ';
+function htmlChar(name:'Mfr'):'𝔐';
+function htmlChar(name:'MinusPlus'):'∓';
+function htmlChar(name:'Mopf'):'𝕄';
+function htmlChar(name:'Mscr'):'ℳ';
+function htmlChar(name:'Mu'):'Μ';
+function htmlChar(name:'NJcy'):'Њ';
+function htmlChar(name:'Nacute'):'Ń';
+function htmlChar(name:'Ncaron'):'Ň';
+function htmlChar(name:'Ncedil'):'Ņ';
+function htmlChar(name:'Ncy'):'Н';
+function htmlChar(name:'NegativeMediumSpace'):'​';
+function htmlChar(name:'NegativeThickSpace'):'​';
+function htmlChar(name:'NegativeThinSpace'):'​';
+function htmlChar(name:'NegativeVeryThinSpace'):'​';
+function htmlChar(name:'NestedGreaterGreater'):'≫';
+function htmlChar(name:'NestedLessLess'):'≪';
+function htmlChar(name:'Nfr'):'𝔑';
+function htmlChar(name:'NoBreak'):'⁠';
+function htmlChar(name:'NonBreakingSpace'):' ';
+function htmlChar(name:'Nopf'):'ℕ';
+function htmlChar(name:'Not'):'⫬';
+function htmlChar(name:'NotCongruent'):'≢';
+function htmlChar(name:'NotCupCap'):'≭';
+function htmlChar(name:'NotDoubleVerticalBar'):'∦';
+function htmlChar(name:'NotElement'):'∉';
+function htmlChar(name:'NotEqual'):'≠';
+function htmlChar(name:'NotEqualTilde'):'≂̸';
+function htmlChar(name:'NotExists'):'∄';
+function htmlChar(name:'NotGreater'):'≯';
+function htmlChar(name:'NotGreaterEqual'):'≱';
+function htmlChar(name:'NotGreaterFullEqual'):'≧̸';
+function htmlChar(name:'NotGreaterGreater'):'≫̸';
+function htmlChar(name:'NotGreaterLess'):'≹';
+function htmlChar(name:'NotGreaterSlantEqual'):'⩾̸';
+function htmlChar(name:'NotGreaterTilde'):'≵';
+function htmlChar(name:'NotHumpDownHump'):'≎̸';
+function htmlChar(name:'NotHumpEqual'):'≏̸';
+function htmlChar(name:'NotLeftTriangle'):'⋪';
+function htmlChar(name:'NotLeftTriangleBar'):'⧏̸';
+function htmlChar(name:'NotLeftTriangleEqual'):'⋬';
+function htmlChar(name:'NotLess'):'≮';
+function htmlChar(name:'NotLessEqual'):'≰';
+function htmlChar(name:'NotLessGreater'):'≸';
+function htmlChar(name:'NotLessLess'):'≪̸';
+function htmlChar(name:'NotLessSlantEqual'):'⩽̸';
+function htmlChar(name:'NotLessTilde'):'≴';
+function htmlChar(name:'NotNestedGreaterGreater'):'⪢̸';
+function htmlChar(name:'NotNestedLessLess'):'⪡̸';
+function htmlChar(name:'NotPrecedes'):'⊀';
+function htmlChar(name:'NotPrecedesEqual'):'⪯̸';
+function htmlChar(name:'NotPrecedesSlantEqual'):'⋠';
+function htmlChar(name:'NotReverseElement'):'∌';
+function htmlChar(name:'NotRightTriangle'):'⋫';
+function htmlChar(name:'NotRightTriangleBar'):'⧐̸';
+function htmlChar(name:'NotRightTriangleEqual'):'⋭';
+function htmlChar(name:'NotSquareSubset'):'⊏̸';
+function htmlChar(name:'NotSquareSubsetEqual'):'⋢';
+function htmlChar(name:'NotSquareSuperset'):'⊐̸';
+function htmlChar(name:'NotSquareSupersetEqual'):'⋣';
+function htmlChar(name:'NotSubset'):'⊂⃒';
+function htmlChar(name:'NotSubsetEqual'):'⊈';
+function htmlChar(name:'NotSucceeds'):'⊁';
+function htmlChar(name:'NotSucceedsEqual'):'⪰̸';
+function htmlChar(name:'NotSucceedsSlantEqual'):'⋡';
+function htmlChar(name:'NotSucceedsTilde'):'≿̸';
+function htmlChar(name:'NotSuperset'):'⊃⃒';
+function htmlChar(name:'NotSupersetEqual'):'⊉';
+function htmlChar(name:'NotTilde'):'≁';
+function htmlChar(name:'NotTildeEqual'):'≄';
+function htmlChar(name:'NotTildeFullEqual'):'≇';
+function htmlChar(name:'NotTildeTilde'):'≉';
+function htmlChar(name:'NotVerticalBar'):'∤';
+function htmlChar(name:'Nscr'):'𝒩';
+function htmlChar(name:'Ntilde'):'Ñ';
+function htmlChar(name:'Ntilde'):'Ñ';
+function htmlChar(name:'Nu'):'Ν';
+function htmlChar(name:'OElig'):'Œ';
+function htmlChar(name:'Oacute'):'Ó';
+function htmlChar(name:'Oacute'):'Ó';
+function htmlChar(name:'Ocirc'):'Ô';
+function htmlChar(name:'Ocirc'):'Ô';
+function htmlChar(name:'Ocy'):'О';
+function htmlChar(name:'Odblac'):'Ő';
+function htmlChar(name:'Ofr'):'𝔒';
+function htmlChar(name:'Ograve'):'Ò';
+function htmlChar(name:'Ograve'):'Ò';
+function htmlChar(name:'Omacr'):'Ō';
+function htmlChar(name:'Omega'):'Ω';
+function htmlChar(name:'Omicron'):'Ο';
+function htmlChar(name:'Oopf'):'𝕆';
+function htmlChar(name:'OpenCurlyDoubleQuote'):'“';
+function htmlChar(name:'OpenCurlyQuote'):'‘';
+function htmlChar(name:'Or'):'⩔';
+function htmlChar(name:'Oscr'):'𝒪';
+function htmlChar(name:'Oslash'):'Ø';
+function htmlChar(name:'Oslash'):'Ø';
+function htmlChar(name:'Otilde'):'Õ';
+function htmlChar(name:'Otilde'):'Õ';
+function htmlChar(name:'Otimes'):'⨷';
+function htmlChar(name:'Ouml'):'Ö';
+function htmlChar(name:'Ouml'):'Ö';
+function htmlChar(name:'OverBar'):'‾';
+function htmlChar(name:'OverBrace'):'⏞';
+function htmlChar(name:'OverBracket'):'⎴';
+function htmlChar(name:'OverParenthesis'):'⏜';
+function htmlChar(name:'PartialD'):'∂';
+function htmlChar(name:'Pcy'):'П';
+function htmlChar(name:'Pfr'):'𝔓';
+function htmlChar(name:'Phi'):'Φ';
+function htmlChar(name:'Pi'):'Π';
+function htmlChar(name:'PlusMinus'):'±';
+function htmlChar(name:'Poincareplane'):'ℌ';
+function htmlChar(name:'Popf'):'ℙ';
+function htmlChar(name:'Pr'):'⪻';
+function htmlChar(name:'Precedes'):'≺';
+function htmlChar(name:'PrecedesEqual'):'⪯';
+function htmlChar(name:'PrecedesSlantEqual'):'≼';
+function htmlChar(name:'PrecedesTilde'):'≾';
+function htmlChar(name:'Prime'):'″';
+function htmlChar(name:'Product'):'∏';
+function htmlChar(name:'Proportion'):'∷';
+function htmlChar(name:'Proportional'):'∝';
+function htmlChar(name:'Pscr'):'𝒫';
+function htmlChar(name:'Psi'):'Ψ';
+function htmlChar(name:'QUOT'):'"';
+function htmlChar(name:'QUOT'):'"';
+function htmlChar(name:'Qfr'):'𝔔';
+function htmlChar(name:'Qopf'):'ℚ';
+function htmlChar(name:'Qscr'):'𝒬';
+function htmlChar(name:'RBarr'):'⤐';
+function htmlChar(name:'REG'):'®';
+function htmlChar(name:'REG'):'®';
+function htmlChar(name:'Racute'):'Ŕ';
+function htmlChar(name:'Rang'):'⟫';
+function htmlChar(name:'Rarr'):'↠';
+function htmlChar(name:'Rarrtl'):'⤖';
+function htmlChar(name:'Rcaron'):'Ř';
+function htmlChar(name:'Rcedil'):'Ŗ';
+function htmlChar(name:'Rcy'):'Р';
+function htmlChar(name:'Re'):'ℜ';
+function htmlChar(name:'ReverseElement'):'∋';
+function htmlChar(name:'ReverseEquilibrium'):'⇋';
+function htmlChar(name:'ReverseUpEquilibrium'):'⥯';
+function htmlChar(name:'Rfr'):'ℜ';
+function htmlChar(name:'Rho'):'Ρ';
+function htmlChar(name:'RightAngleBracket'):'⟩';
+function htmlChar(name:'RightArrow'):'→';
+function htmlChar(name:'RightArrowBar'):'⇥';
+function htmlChar(name:'RightArrowLeftArrow'):'⇄';
+function htmlChar(name:'RightCeiling'):'⌉';
+function htmlChar(name:'RightDoubleBracket'):'⟧';
+function htmlChar(name:'RightDownTeeVector'):'⥝';
+function htmlChar(name:'RightDownVector'):'⇂';
+function htmlChar(name:'RightDownVectorBar'):'⥕';
+function htmlChar(name:'RightFloor'):'⌋';
+function htmlChar(name:'RightTee'):'⊢';
+function htmlChar(name:'RightTeeArrow'):'↦';
+function htmlChar(name:'RightTeeVector'):'⥛';
+function htmlChar(name:'RightTriangle'):'⊳';
+function htmlChar(name:'RightTriangleBar'):'⧐';
+function htmlChar(name:'RightTriangleEqual'):'⊵';
+function htmlChar(name:'RightUpDownVector'):'⥏';
+function htmlChar(name:'RightUpTeeVector'):'⥜';
+function htmlChar(name:'RightUpVector'):'↾';
+function htmlChar(name:'RightUpVectorBar'):'⥔';
+function htmlChar(name:'RightVector'):'⇀';
+function htmlChar(name:'RightVectorBar'):'⥓';
+function htmlChar(name:'Rightarrow'):'⇒';
+function htmlChar(name:'Ropf'):'ℝ';
+function htmlChar(name:'RoundImplies'):'⥰';
+function htmlChar(name:'Rrightarrow'):'⇛';
+function htmlChar(name:'Rscr'):'ℛ';
+function htmlChar(name:'Rsh'):'↱';
+function htmlChar(name:'RuleDelayed'):'⧴';
+function htmlChar(name:'SHCHcy'):'Щ';
+function htmlChar(name:'SHcy'):'Ш';
+function htmlChar(name:'SOFTcy'):'Ь';
+function htmlChar(name:'Sacute'):'Ś';
+function htmlChar(name:'Sc'):'⪼';
+function htmlChar(name:'Scaron'):'Š';
+function htmlChar(name:'Scedil'):'Ş';
+function htmlChar(name:'Scirc'):'Ŝ';
+function htmlChar(name:'Scy'):'С';
+function htmlChar(name:'Sfr'):'𝔖';
+function htmlChar(name:'ShortDownArrow'):'↓';
+function htmlChar(name:'ShortLeftArrow'):'←';
+function htmlChar(name:'ShortRightArrow'):'→';
+function htmlChar(name:'ShortUpArrow'):'↑';
+function htmlChar(name:'Sigma'):'Σ';
+function htmlChar(name:'SmallCircle'):'∘';
+function htmlChar(name:'Sopf'):'𝕊';
+function htmlChar(name:'Sqrt'):'√';
+function htmlChar(name:'Square'):'□';
+function htmlChar(name:'SquareIntersection'):'⊓';
+function htmlChar(name:'SquareSubset'):'⊏';
+function htmlChar(name:'SquareSubsetEqual'):'⊑';
+function htmlChar(name:'SquareSuperset'):'⊐';
+function htmlChar(name:'SquareSupersetEqual'):'⊒';
+function htmlChar(name:'SquareUnion'):'⊔';
+function htmlChar(name:'Sscr'):'𝒮';
+function htmlChar(name:'Star'):'⋆';
+function htmlChar(name:'Sub'):'⋐';
+function htmlChar(name:'Subset'):'⋐';
+function htmlChar(name:'SubsetEqual'):'⊆';
+function htmlChar(name:'Succeeds'):'≻';
+function htmlChar(name:'SucceedsEqual'):'⪰';
+function htmlChar(name:'SucceedsSlantEqual'):'≽';
+function htmlChar(name:'SucceedsTilde'):'≿';
+function htmlChar(name:'SuchThat'):'∋';
+function htmlChar(name:'Sum'):'∑';
+function htmlChar(name:'Sup'):'⋑';
+function htmlChar(name:'Superset'):'⊃';
+function htmlChar(name:'SupersetEqual'):'⊇';
+function htmlChar(name:'Supset'):'⋑';
+function htmlChar(name:'THORN'):'Þ';
+function htmlChar(name:'THORN'):'Þ';
+function htmlChar(name:'TRADE'):'™';
+function htmlChar(name:'TSHcy'):'Ћ';
+function htmlChar(name:'TScy'):'Ц';
+function htmlChar(name:'Tab'):'	';
+function htmlChar(name:'Tau'):'Τ';
+function htmlChar(name:'Tcaron'):'Ť';
+function htmlChar(name:'Tcedil'):'Ţ';
+function htmlChar(name:'Tcy'):'Т';
+function htmlChar(name:'Tfr'):'𝔗';
+function htmlChar(name:'Therefore'):'∴';
+function htmlChar(name:'Theta'):'Θ';
+function htmlChar(name:'ThickSpace'):'  ';
+function htmlChar(name:'ThinSpace'):' ';
+function htmlChar(name:'Tilde'):'∼';
+function htmlChar(name:'TildeEqual'):'≃';
+function htmlChar(name:'TildeFullEqual'):'≅';
+function htmlChar(name:'TildeTilde'):'≈';
+function htmlChar(name:'Topf'):'𝕋';
+function htmlChar(name:'TripleDot'):'⃛';
+function htmlChar(name:'Tscr'):'𝒯';
+function htmlChar(name:'Tstrok'):'Ŧ';
+function htmlChar(name:'Uacute'):'Ú';
+function htmlChar(name:'Uacute'):'Ú';
+function htmlChar(name:'Uarr'):'↟';
+function htmlChar(name:'Uarrocir'):'⥉';
+function htmlChar(name:'Ubrcy'):'Ў';
+function htmlChar(name:'Ubreve'):'Ŭ';
+function htmlChar(name:'Ucirc'):'Û';
+function htmlChar(name:'Ucirc'):'Û';
+function htmlChar(name:'Ucy'):'У';
+function htmlChar(name:'Udblac'):'Ű';
+function htmlChar(name:'Ufr'):'𝔘';
+function htmlChar(name:'Ugrave'):'Ù';
+function htmlChar(name:'Ugrave'):'Ù';
+function htmlChar(name:'Umacr'):'Ū';
+function htmlChar(name:'UnderBar'):'_';
+function htmlChar(name:'UnderBrace'):'⏟';
+function htmlChar(name:'UnderBracket'):'⎵';
+function htmlChar(name:'UnderParenthesis'):'⏝';
+function htmlChar(name:'Union'):'⋃';
+function htmlChar(name:'UnionPlus'):'⊎';
+function htmlChar(name:'Uogon'):'Ų';
+function htmlChar(name:'Uopf'):'𝕌';
+function htmlChar(name:'UpArrow'):'↑';
+function htmlChar(name:'UpArrowBar'):'⤒';
+function htmlChar(name:'UpArrowDownArrow'):'⇅';
+function htmlChar(name:'UpDownArrow'):'↕';
+function htmlChar(name:'UpEquilibrium'):'⥮';
+function htmlChar(name:'UpTee'):'⊥';
+function htmlChar(name:'UpTeeArrow'):'↥';
+function htmlChar(name:'Uparrow'):'⇑';
+function htmlChar(name:'Updownarrow'):'⇕';
+function htmlChar(name:'UpperLeftArrow'):'↖';
+function htmlChar(name:'UpperRightArrow'):'↗';
+function htmlChar(name:'Upsi'):'ϒ';
+function htmlChar(name:'Upsilon'):'Υ';
+function htmlChar(name:'Uring'):'Ů';
+function htmlChar(name:'Uscr'):'𝒰';
+function htmlChar(name:'Utilde'):'Ũ';
+function htmlChar(name:'Uuml'):'Ü';
+function htmlChar(name:'Uuml'):'Ü';
+function htmlChar(name:'VDash'):'⊫';
+function htmlChar(name:'Vbar'):'⫫';
+function htmlChar(name:'Vcy'):'В';
+function htmlChar(name:'Vdash'):'⊩';
+function htmlChar(name:'Vdashl'):'⫦';
+function htmlChar(name:'Vee'):'⋁';
+function htmlChar(name:'Verbar'):'‖';
+function htmlChar(name:'Vert'):'‖';
+function htmlChar(name:'VerticalBar'):'∣';
+function htmlChar(name:'VerticalLine'):'|';
+function htmlChar(name:'VerticalSeparator'):'❘';
+function htmlChar(name:'VerticalTilde'):'≀';
+function htmlChar(name:'VeryThinSpace'):' ';
+function htmlChar(name:'Vfr'):'𝔙';
+function htmlChar(name:'Vopf'):'𝕍';
+function htmlChar(name:'Vscr'):'𝒱';
+function htmlChar(name:'Vvdash'):'⊪';
+function htmlChar(name:'Wcirc'):'Ŵ';
+function htmlChar(name:'Wedge'):'⋀';
+function htmlChar(name:'Wfr'):'𝔚';
+function htmlChar(name:'Wopf'):'𝕎';
+function htmlChar(name:'Wscr'):'𝒲';
+function htmlChar(name:'Xfr'):'𝔛';
+function htmlChar(name:'Xi'):'Ξ';
+function htmlChar(name:'Xopf'):'𝕏';
+function htmlChar(name:'Xscr'):'𝒳';
+function htmlChar(name:'YAcy'):'Я';
+function htmlChar(name:'YIcy'):'Ї';
+function htmlChar(name:'YUcy'):'Ю';
+function htmlChar(name:'Yacute'):'Ý';
+function htmlChar(name:'Yacute'):'Ý';
+function htmlChar(name:'Ycirc'):'Ŷ';
+function htmlChar(name:'Ycy'):'Ы';
+function htmlChar(name:'Yfr'):'𝔜';
+function htmlChar(name:'Yopf'):'𝕐';
+function htmlChar(name:'Yscr'):'𝒴';
+function htmlChar(name:'Yuml'):'Ÿ';
+function htmlChar(name:'ZHcy'):'Ж';
+function htmlChar(name:'Zacute'):'Ź';
+function htmlChar(name:'Zcaron'):'Ž';
+function htmlChar(name:'Zcy'):'З';
+function htmlChar(name:'Zdot'):'Ż';
+function htmlChar(name:'ZeroWidthSpace'):'​';
+function htmlChar(name:'Zeta'):'Ζ';
+function htmlChar(name:'Zfr'):'ℨ';
+function htmlChar(name:'Zopf'):'ℤ';
+function htmlChar(name:'Zscr'):'𝒵';
+function htmlChar(name:'aacute'):'á';
+function htmlChar(name:'aacute'):'á';
+function htmlChar(name:'abreve'):'ă';
+function htmlChar(name:'ac'):'∾';
+function htmlChar(name:'acE'):'∾̳';
+function htmlChar(name:'acd'):'∿';
+function htmlChar(name:'acirc'):'â';
+function htmlChar(name:'acirc'):'â';
+function htmlChar(name:'acute'):'´';
+function htmlChar(name:'acute'):'´';
+function htmlChar(name:'acy'):'а';
+function htmlChar(name:'aelig'):'æ';
+function htmlChar(name:'aelig'):'æ';
+function htmlChar(name:'af'):'⁡';
+function htmlChar(name:'afr'):'𝔞';
+function htmlChar(name:'agrave'):'à';
+function htmlChar(name:'agrave'):'à';
+function htmlChar(name:'alefsym'):'ℵ';
+function htmlChar(name:'aleph'):'ℵ';
+function htmlChar(name:'alpha'):'α';
+function htmlChar(name:'amacr'):'ā';
+function htmlChar(name:'amalg'):'⨿';
+function htmlChar(name:'amp'):'&';
+function htmlChar(name:'amp'):'&';
+function htmlChar(name:'and'):'∧';
+function htmlChar(name:'andand'):'⩕';
+function htmlChar(name:'andd'):'⩜';
+function htmlChar(name:'andslope'):'⩘';
+function htmlChar(name:'andv'):'⩚';
+function htmlChar(name:'ang'):'∠';
+function htmlChar(name:'ange'):'⦤';
+function htmlChar(name:'angle'):'∠';
+function htmlChar(name:'angmsd'):'∡';
+function htmlChar(name:'angmsdaa'):'⦨';
+function htmlChar(name:'angmsdab'):'⦩';
+function htmlChar(name:'angmsdac'):'⦪';
+function htmlChar(name:'angmsdad'):'⦫';
+function htmlChar(name:'angmsdae'):'⦬';
+function htmlChar(name:'angmsdaf'):'⦭';
+function htmlChar(name:'angmsdag'):'⦮';
+function htmlChar(name:'angmsdah'):'⦯';
+function htmlChar(name:'angrt'):'∟';
+function htmlChar(name:'angrtvb'):'⊾';
+function htmlChar(name:'angrtvbd'):'⦝';
+function htmlChar(name:'angsph'):'∢';
+function htmlChar(name:'angst'):'Å';
+function htmlChar(name:'angzarr'):'⍼';
+function htmlChar(name:'aogon'):'ą';
+function htmlChar(name:'aopf'):'𝕒';
+function htmlChar(name:'ap'):'≈';
+function htmlChar(name:'apE'):'⩰';
+function htmlChar(name:'apacir'):'⩯';
+function htmlChar(name:'ape'):'≊';
+function htmlChar(name:'apid'):'≋';
+function htmlChar(name:'apos'):"'";
+function htmlChar(name:'approx'):'≈';
+function htmlChar(name:'approxeq'):'≊';
+function htmlChar(name:'aring'):'å';
+function htmlChar(name:'aring'):'å';
+function htmlChar(name:'ascr'):'𝒶';
+function htmlChar(name:'ast'):'*';
+function htmlChar(name:'asymp'):'≈';
+function htmlChar(name:'asympeq'):'≍';
+function htmlChar(name:'atilde'):'ã';
+function htmlChar(name:'atilde'):'ã';
+function htmlChar(name:'auml'):'ä';
+function htmlChar(name:'auml'):'ä';
+function htmlChar(name:'awconint'):'∳';
+function htmlChar(name:'awint'):'⨑';
+function htmlChar(name:'bNot'):'⫭';
+function htmlChar(name:'backcong'):'≌';
+function htmlChar(name:'backepsilon'):'϶';
+function htmlChar(name:'backprime'):'‵';
+function htmlChar(name:'backsim'):'∽';
+function htmlChar(name:'backsimeq'):'⋍';
+function htmlChar(name:'barvee'):'⊽';
+function htmlChar(name:'barwed'):'⌅';
+function htmlChar(name:'barwedge'):'⌅';
+function htmlChar(name:'bbrk'):'⎵';
+function htmlChar(name:'bbrktbrk'):'⎶';
+function htmlChar(name:'bcong'):'≌';
+function htmlChar(name:'bcy'):'б';
+function htmlChar(name:'bdquo'):'„';
+function htmlChar(name:'becaus'):'∵';
+function htmlChar(name:'because'):'∵';
+function htmlChar(name:'bemptyv'):'⦰';
+function htmlChar(name:'bepsi'):'϶';
+function htmlChar(name:'bernou'):'ℬ';
+function htmlChar(name:'beta'):'β';
+function htmlChar(name:'beth'):'ℶ';
+function htmlChar(name:'between'):'≬';
+function htmlChar(name:'bfr'):'𝔟';
+function htmlChar(name:'bigcap'):'⋂';
+function htmlChar(name:'bigcirc'):'◯';
+function htmlChar(name:'bigcup'):'⋃';
+function htmlChar(name:'bigodot'):'⨀';
+function htmlChar(name:'bigoplus'):'⨁';
+function htmlChar(name:'bigotimes'):'⨂';
+function htmlChar(name:'bigsqcup'):'⨆';
+function htmlChar(name:'bigstar'):'★';
+function htmlChar(name:'bigtriangledown'):'▽';
+function htmlChar(name:'bigtriangleup'):'△';
+function htmlChar(name:'biguplus'):'⨄';
+function htmlChar(name:'bigvee'):'⋁';
+function htmlChar(name:'bigwedge'):'⋀';
+function htmlChar(name:'bkarow'):'⤍';
+function htmlChar(name:'blacklozenge'):'⧫';
+function htmlChar(name:'blacksquare'):'▪';
+function htmlChar(name:'blacktriangle'):'▴';
+function htmlChar(name:'blacktriangledown'):'▾';
+function htmlChar(name:'blacktriangleleft'):'◂';
+function htmlChar(name:'blacktriangleright'):'▸';
+function htmlChar(name:'blank'):'␣';
+function htmlChar(name:'blk12'):'▒';
+function htmlChar(name:'blk14'):'░';
+function htmlChar(name:'blk34'):'▓';
+function htmlChar(name:'block'):'█';
+function htmlChar(name:'bne'):'=⃥';
+function htmlChar(name:'bnequiv'):'≡⃥';
+function htmlChar(name:'bnot'):'⌐';
+function htmlChar(name:'bopf'):'𝕓';
+function htmlChar(name:'bot'):'⊥';
+function htmlChar(name:'bottom'):'⊥';
+function htmlChar(name:'bowtie'):'⋈';
+function htmlChar(name:'boxDL'):'╗';
+function htmlChar(name:'boxDR'):'╔';
+function htmlChar(name:'boxDl'):'╖';
+function htmlChar(name:'boxDr'):'╓';
+function htmlChar(name:'boxH'):'═';
+function htmlChar(name:'boxHD'):'╦';
+function htmlChar(name:'boxHU'):'╩';
+function htmlChar(name:'boxHd'):'╤';
+function htmlChar(name:'boxHu'):'╧';
+function htmlChar(name:'boxUL'):'╝';
+function htmlChar(name:'boxUR'):'╚';
+function htmlChar(name:'boxUl'):'╜';
+function htmlChar(name:'boxUr'):'╙';
+function htmlChar(name:'boxV'):'║';
+function htmlChar(name:'boxVH'):'╬';
+function htmlChar(name:'boxVL'):'╣';
+function htmlChar(name:'boxVR'):'╠';
+function htmlChar(name:'boxVh'):'╫';
+function htmlChar(name:'boxVl'):'╢';
+function htmlChar(name:'boxVr'):'╟';
+function htmlChar(name:'boxbox'):'⧉';
+function htmlChar(name:'boxdL'):'╕';
+function htmlChar(name:'boxdR'):'╒';
+function htmlChar(name:'boxdl'):'┐';
+function htmlChar(name:'boxdr'):'┌';
+function htmlChar(name:'boxh'):'─';
+function htmlChar(name:'boxhD'):'╥';
+function htmlChar(name:'boxhU'):'╨';
+function htmlChar(name:'boxhd'):'┬';
+function htmlChar(name:'boxhu'):'┴';
+function htmlChar(name:'boxminus'):'⊟';
+function htmlChar(name:'boxplus'):'⊞';
+function htmlChar(name:'boxtimes'):'⊠';
+function htmlChar(name:'boxuL'):'╛';
+function htmlChar(name:'boxuR'):'╘';
+function htmlChar(name:'boxul'):'┘';
+function htmlChar(name:'boxur'):'└';
+function htmlChar(name:'boxv'):'│';
+function htmlChar(name:'boxvH'):'╪';
+function htmlChar(name:'boxvL'):'╡';
+function htmlChar(name:'boxvR'):'╞';
+function htmlChar(name:'boxvh'):'┼';
+function htmlChar(name:'boxvl'):'┤';
+function htmlChar(name:'boxvr'):'├';
+function htmlChar(name:'bprime'):'‵';
+function htmlChar(name:'breve'):'˘';
+function htmlChar(name:'brvbar'):'¦';
+function htmlChar(name:'brvbar'):'¦';
+function htmlChar(name:'bscr'):'𝒷';
+function htmlChar(name:'bsemi'):'⁏';
+function htmlChar(name:'bsim'):'∽';
+function htmlChar(name:'bsime'):'⋍';
+function htmlChar(name:'bsol'):'\\';
+function htmlChar(name:'bsolb'):'⧅';
+function htmlChar(name:'bsolhsub'):'⟈';
+function htmlChar(name:'bull'):'•';
+function htmlChar(name:'bullet'):'•';
+function htmlChar(name:'bump'):'≎';
+function htmlChar(name:'bumpE'):'⪮';
+function htmlChar(name:'bumpe'):'≏';
+function htmlChar(name:'bumpeq'):'≏';
+function htmlChar(name:'cacute'):'ć';
+function htmlChar(name:'cap'):'∩';
+function htmlChar(name:'capand'):'⩄';
+function htmlChar(name:'capbrcup'):'⩉';
+function htmlChar(name:'capcap'):'⩋';
+function htmlChar(name:'capcup'):'⩇';
+function htmlChar(name:'capdot'):'⩀';
+function htmlChar(name:'caps'):'∩︀';
+function htmlChar(name:'caret'):'⁁';
+function htmlChar(name:'caron'):'ˇ';
+function htmlChar(name:'ccaps'):'⩍';
+function htmlChar(name:'ccaron'):'č';
+function htmlChar(name:'ccedil'):'ç';
+function htmlChar(name:'ccedil'):'ç';
+function htmlChar(name:'ccirc'):'ĉ';
+function htmlChar(name:'ccups'):'⩌';
+function htmlChar(name:'ccupssm'):'⩐';
+function htmlChar(name:'cdot'):'ċ';
+function htmlChar(name:'cedil'):'¸';
+function htmlChar(name:'cedil'):'¸';
+function htmlChar(name:'cemptyv'):'⦲';
+function htmlChar(name:'cent'):'¢';
+function htmlChar(name:'cent'):'¢';
+function htmlChar(name:'centerdot'):'·';
+function htmlChar(name:'cfr'):'𝔠';
+function htmlChar(name:'chcy'):'ч';
+function htmlChar(name:'check'):'✓';
+function htmlChar(name:'checkmark'):'✓';
+function htmlChar(name:'chi'):'χ';
+function htmlChar(name:'cir'):'○';
+function htmlChar(name:'cirE'):'⧃';
+function htmlChar(name:'circ'):'ˆ';
+function htmlChar(name:'circeq'):'≗';
+function htmlChar(name:'circlearrowleft'):'↺';
+function htmlChar(name:'circlearrowright'):'↻';
+function htmlChar(name:'circledR'):'®';
+function htmlChar(name:'circledS'):'Ⓢ';
+function htmlChar(name:'circledast'):'⊛';
+function htmlChar(name:'circledcirc'):'⊚';
+function htmlChar(name:'circleddash'):'⊝';
+function htmlChar(name:'cire'):'≗';
+function htmlChar(name:'cirfnint'):'⨐';
+function htmlChar(name:'cirmid'):'⫯';
+function htmlChar(name:'cirscir'):'⧂';
+function htmlChar(name:'clubs'):'♣';
+function htmlChar(name:'clubsuit'):'♣';
+function htmlChar(name:'colon'):':';
+function htmlChar(name:'colone'):'≔';
+function htmlChar(name:'coloneq'):'≔';
+function htmlChar(name:'comma'):',';
+function htmlChar(name:'commat'):'@';
+function htmlChar(name:'comp'):'∁';
+function htmlChar(name:'compfn'):'∘';
+function htmlChar(name:'complement'):'∁';
+function htmlChar(name:'complexes'):'ℂ';
+function htmlChar(name:'cong'):'≅';
+function htmlChar(name:'congdot'):'⩭';
+function htmlChar(name:'conint'):'∮';
+function htmlChar(name:'copf'):'𝕔';
+function htmlChar(name:'coprod'):'∐';
+function htmlChar(name:'copy'):'©';
+function htmlChar(name:'copy'):'©';
+function htmlChar(name:'copysr'):'℗';
+function htmlChar(name:'crarr'):'↵';
+function htmlChar(name:'cross'):'✗';
+function htmlChar(name:'cscr'):'𝒸';
+function htmlChar(name:'csub'):'⫏';
+function htmlChar(name:'csube'):'⫑';
+function htmlChar(name:'csup'):'⫐';
+function htmlChar(name:'csupe'):'⫒';
+function htmlChar(name:'ctdot'):'⋯';
+function htmlChar(name:'cudarrl'):'⤸';
+function htmlChar(name:'cudarrr'):'⤵';
+function htmlChar(name:'cuepr'):'⋞';
+function htmlChar(name:'cuesc'):'⋟';
+function htmlChar(name:'cularr'):'↶';
+function htmlChar(name:'cularrp'):'⤽';
+function htmlChar(name:'cup'):'∪';
+function htmlChar(name:'cupbrcap'):'⩈';
+function htmlChar(name:'cupcap'):'⩆';
+function htmlChar(name:'cupcup'):'⩊';
+function htmlChar(name:'cupdot'):'⊍';
+function htmlChar(name:'cupor'):'⩅';
+function htmlChar(name:'cups'):'∪︀';
+function htmlChar(name:'curarr'):'↷';
+function htmlChar(name:'curarrm'):'⤼';
+function htmlChar(name:'curlyeqprec'):'⋞';
+function htmlChar(name:'curlyeqsucc'):'⋟';
+function htmlChar(name:'curlyvee'):'⋎';
+function htmlChar(name:'curlywedge'):'⋏';
+function htmlChar(name:'curren'):'¤';
+function htmlChar(name:'curren'):'¤';
+function htmlChar(name:'curvearrowleft'):'↶';
+function htmlChar(name:'curvearrowright'):'↷';
+function htmlChar(name:'cuvee'):'⋎';
+function htmlChar(name:'cuwed'):'⋏';
+function htmlChar(name:'cwconint'):'∲';
+function htmlChar(name:'cwint'):'∱';
+function htmlChar(name:'cylcty'):'⌭';
+function htmlChar(name:'dArr'):'⇓';
+function htmlChar(name:'dHar'):'⥥';
+function htmlChar(name:'dagger'):'†';
+function htmlChar(name:'daleth'):'ℸ';
+function htmlChar(name:'darr'):'↓';
+function htmlChar(name:'dash'):'‐';
+function htmlChar(name:'dashv'):'⊣';
+function htmlChar(name:'dbkarow'):'⤏';
+function htmlChar(name:'dblac'):'˝';
+function htmlChar(name:'dcaron'):'ď';
+function htmlChar(name:'dcy'):'д';
+function htmlChar(name:'dd'):'ⅆ';
+function htmlChar(name:'ddagger'):'‡';
+function htmlChar(name:'ddarr'):'⇊';
+function htmlChar(name:'ddotseq'):'⩷';
+function htmlChar(name:'deg'):'°';
+function htmlChar(name:'deg'):'°';
+function htmlChar(name:'delta'):'δ';
+function htmlChar(name:'demptyv'):'⦱';
+function htmlChar(name:'dfisht'):'⥿';
+function htmlChar(name:'dfr'):'𝔡';
+function htmlChar(name:'dharl'):'⇃';
+function htmlChar(name:'dharr'):'⇂';
+function htmlChar(name:'diam'):'⋄';
+function htmlChar(name:'diamond'):'⋄';
+function htmlChar(name:'diamondsuit'):'♦';
+function htmlChar(name:'diams'):'♦';
+function htmlChar(name:'die'):'¨';
+function htmlChar(name:'digamma'):'ϝ';
+function htmlChar(name:'disin'):'⋲';
+function htmlChar(name:'div'):'÷';
+function htmlChar(name:'divide'):'÷';
+function htmlChar(name:'divide'):'÷';
+function htmlChar(name:'divideontimes'):'⋇';
+function htmlChar(name:'divonx'):'⋇';
+function htmlChar(name:'djcy'):'ђ';
+function htmlChar(name:'dlcorn'):'⌞';
+function htmlChar(name:'dlcrop'):'⌍';
+function htmlChar(name:'dollar'):'$';
+function htmlChar(name:'dopf'):'𝕕';
+function htmlChar(name:'dot'):'˙';
+function htmlChar(name:'doteq'):'≐';
+function htmlChar(name:'doteqdot'):'≑';
+function htmlChar(name:'dotminus'):'∸';
+function htmlChar(name:'dotplus'):'∔';
+function htmlChar(name:'dotsquare'):'⊡';
+function htmlChar(name:'doublebarwedge'):'⌆';
+function htmlChar(name:'downarrow'):'↓';
+function htmlChar(name:'downdownarrows'):'⇊';
+function htmlChar(name:'downharpoonleft'):'⇃';
+function htmlChar(name:'downharpoonright'):'⇂';
+function htmlChar(name:'drbkarow'):'⤐';
+function htmlChar(name:'drcorn'):'⌟';
+function htmlChar(name:'drcrop'):'⌌';
+function htmlChar(name:'dscr'):'𝒹';
+function htmlChar(name:'dscy'):'ѕ';
+function htmlChar(name:'dsol'):'⧶';
+function htmlChar(name:'dstrok'):'đ';
+function htmlChar(name:'dtdot'):'⋱';
+function htmlChar(name:'dtri'):'▿';
+function htmlChar(name:'dtrif'):'▾';
+function htmlChar(name:'duarr'):'⇵';
+function htmlChar(name:'duhar'):'⥯';
+function htmlChar(name:'dwangle'):'⦦';
+function htmlChar(name:'dzcy'):'џ';
+function htmlChar(name:'dzigrarr'):'⟿';
+function htmlChar(name:'eDDot'):'⩷';
+function htmlChar(name:'eDot'):'≑';
+function htmlChar(name:'eacute'):'é';
+function htmlChar(name:'eacute'):'é';
+function htmlChar(name:'easter'):'⩮';
+function htmlChar(name:'ecaron'):'ě';
+function htmlChar(name:'ecir'):'≖';
+function htmlChar(name:'ecirc'):'ê';
+function htmlChar(name:'ecirc'):'ê';
+function htmlChar(name:'ecolon'):'≕';
+function htmlChar(name:'ecy'):'э';
+function htmlChar(name:'edot'):'ė';
+function htmlChar(name:'ee'):'ⅇ';
+function htmlChar(name:'efDot'):'≒';
+function htmlChar(name:'efr'):'𝔢';
+function htmlChar(name:'eg'):'⪚';
+function htmlChar(name:'egrave'):'è';
+function htmlChar(name:'egrave'):'è';
+function htmlChar(name:'egs'):'⪖';
+function htmlChar(name:'egsdot'):'⪘';
+function htmlChar(name:'el'):'⪙';
+function htmlChar(name:'elinters'):'⏧';
+function htmlChar(name:'ell'):'ℓ';
+function htmlChar(name:'els'):'⪕';
+function htmlChar(name:'elsdot'):'⪗';
+function htmlChar(name:'emacr'):'ē';
+function htmlChar(name:'empty'):'∅';
+function htmlChar(name:'emptyset'):'∅';
+function htmlChar(name:'emptyv'):'∅';
+function htmlChar(name:'emsp13'):' ';
+function htmlChar(name:'emsp14'):' ';
+function htmlChar(name:'emsp'):' ';
+function htmlChar(name:'eng'):'ŋ';
+function htmlChar(name:'ensp'):' ';
+function htmlChar(name:'eogon'):'ę';
+function htmlChar(name:'eopf'):'𝕖';
+function htmlChar(name:'epar'):'⋕';
+function htmlChar(name:'eparsl'):'⧣';
+function htmlChar(name:'eplus'):'⩱';
+function htmlChar(name:'epsi'):'ε';
+function htmlChar(name:'epsilon'):'ε';
+function htmlChar(name:'epsiv'):'ϵ';
+function htmlChar(name:'eqcirc'):'≖';
+function htmlChar(name:'eqcolon'):'≕';
+function htmlChar(name:'eqsim'):'≂';
+function htmlChar(name:'eqslantgtr'):'⪖';
+function htmlChar(name:'eqslantless'):'⪕';
+function htmlChar(name:'equals'):'=';
+function htmlChar(name:'equest'):'≟';
+function htmlChar(name:'equiv'):'≡';
+function htmlChar(name:'equivDD'):'⩸';
+function htmlChar(name:'eqvparsl'):'⧥';
+function htmlChar(name:'erDot'):'≓';
+function htmlChar(name:'erarr'):'⥱';
+function htmlChar(name:'escr'):'ℯ';
+function htmlChar(name:'esdot'):'≐';
+function htmlChar(name:'esim'):'≂';
+function htmlChar(name:'eta'):'η';
+function htmlChar(name:'eth'):'ð';
+function htmlChar(name:'eth'):'ð';
+function htmlChar(name:'euml'):'ë';
+function htmlChar(name:'euml'):'ë';
+function htmlChar(name:'euro'):'€';
+function htmlChar(name:'excl'):'!';
+function htmlChar(name:'exist'):'∃';
+function htmlChar(name:'expectation'):'ℰ';
+function htmlChar(name:'exponentiale'):'ⅇ';
+function htmlChar(name:'fallingdotseq'):'≒';
+function htmlChar(name:'fcy'):'ф';
+function htmlChar(name:'female'):'♀';
+function htmlChar(name:'ffilig'):'ﬃ';
+function htmlChar(name:'fflig'):'ﬀ';
+function htmlChar(name:'ffllig'):'ﬄ';
+function htmlChar(name:'ffr'):'𝔣';
+function htmlChar(name:'filig'):'ﬁ';
+function htmlChar(name:'fjlig'):'fj';
+function htmlChar(name:'flat'):'♭';
+function htmlChar(name:'fllig'):'ﬂ';
+function htmlChar(name:'fltns'):'▱';
+function htmlChar(name:'fnof'):'ƒ';
+function htmlChar(name:'fopf'):'𝕗';
+function htmlChar(name:'forall'):'∀';
+function htmlChar(name:'fork'):'⋔';
+function htmlChar(name:'forkv'):'⫙';
+function htmlChar(name:'fpartint'):'⨍';
+function htmlChar(name:'frac12'):'½';
+function htmlChar(name:'frac12'):'½';
+function htmlChar(name:'frac13'):'⅓';
+function htmlChar(name:'frac14'):'¼';
+function htmlChar(name:'frac14'):'¼';
+function htmlChar(name:'frac15'):'⅕';
+function htmlChar(name:'frac16'):'⅙';
+function htmlChar(name:'frac18'):'⅛';
+function htmlChar(name:'frac23'):'⅔';
+function htmlChar(name:'frac25'):'⅖';
+function htmlChar(name:'frac34'):'¾';
+function htmlChar(name:'frac34'):'¾';
+function htmlChar(name:'frac35'):'⅗';
+function htmlChar(name:'frac38'):'⅜';
+function htmlChar(name:'frac45'):'⅘';
+function htmlChar(name:'frac56'):'⅚';
+function htmlChar(name:'frac58'):'⅝';
+function htmlChar(name:'frac78'):'⅞';
+function htmlChar(name:'frasl'):'⁄';
+function htmlChar(name:'frown'):'⌢';
+function htmlChar(name:'fscr'):'𝒻';
+function htmlChar(name:'gE'):'≧';
+function htmlChar(name:'gEl'):'⪌';
+function htmlChar(name:'gacute'):'ǵ';
+function htmlChar(name:'gamma'):'γ';
+function htmlChar(name:'gammad'):'ϝ';
+function htmlChar(name:'gap'):'⪆';
+function htmlChar(name:'gbreve'):'ğ';
+function htmlChar(name:'gcirc'):'ĝ';
+function htmlChar(name:'gcy'):'г';
+function htmlChar(name:'gdot'):'ġ';
+function htmlChar(name:'ge'):'≥';
+function htmlChar(name:'gel'):'⋛';
+function htmlChar(name:'geq'):'≥';
+function htmlChar(name:'geqq'):'≧';
+function htmlChar(name:'geqslant'):'⩾';
+function htmlChar(name:'ges'):'⩾';
+function htmlChar(name:'gescc'):'⪩';
+function htmlChar(name:'gesdot'):'⪀';
+function htmlChar(name:'gesdoto'):'⪂';
+function htmlChar(name:'gesdotol'):'⪄';
+function htmlChar(name:'gesl'):'⋛︀';
+function htmlChar(name:'gesles'):'⪔';
+function htmlChar(name:'gfr'):'𝔤';
+function htmlChar(name:'gg'):'≫';
+function htmlChar(name:'ggg'):'⋙';
+function htmlChar(name:'gimel'):'ℷ';
+function htmlChar(name:'gjcy'):'ѓ';
+function htmlChar(name:'gl'):'≷';
+function htmlChar(name:'glE'):'⪒';
+function htmlChar(name:'gla'):'⪥';
+function htmlChar(name:'glj'):'⪤';
+function htmlChar(name:'gnE'):'≩';
+function htmlChar(name:'gnap'):'⪊';
+function htmlChar(name:'gnapprox'):'⪊';
+function htmlChar(name:'gne'):'⪈';
+function htmlChar(name:'gneq'):'⪈';
+function htmlChar(name:'gneqq'):'≩';
+function htmlChar(name:'gnsim'):'⋧';
+function htmlChar(name:'gopf'):'𝕘';
+function htmlChar(name:'grave'):'`';
+function htmlChar(name:'gscr'):'ℊ';
+function htmlChar(name:'gsim'):'≳';
+function htmlChar(name:'gsime'):'⪎';
+function htmlChar(name:'gsiml'):'⪐';
+function htmlChar(name:'gt'):'>';
+function htmlChar(name:'gt'):'>';
+function htmlChar(name:'gtcc'):'⪧';
+function htmlChar(name:'gtcir'):'⩺';
+function htmlChar(name:'gtdot'):'⋗';
+function htmlChar(name:'gtlPar'):'⦕';
+function htmlChar(name:'gtquest'):'⩼';
+function htmlChar(name:'gtrapprox'):'⪆';
+function htmlChar(name:'gtrarr'):'⥸';
+function htmlChar(name:'gtrdot'):'⋗';
+function htmlChar(name:'gtreqless'):'⋛';
+function htmlChar(name:'gtreqqless'):'⪌';
+function htmlChar(name:'gtrless'):'≷';
+function htmlChar(name:'gtrsim'):'≳';
+function htmlChar(name:'gvertneqq'):'≩︀';
+function htmlChar(name:'gvnE'):'≩︀';
+function htmlChar(name:'hArr'):'⇔';
+function htmlChar(name:'hairsp'):' ';
+function htmlChar(name:'half'):'½';
+function htmlChar(name:'hamilt'):'ℋ';
+function htmlChar(name:'hardcy'):'ъ';
+function htmlChar(name:'harr'):'↔';
+function htmlChar(name:'harrcir'):'⥈';
+function htmlChar(name:'harrw'):'↭';
+function htmlChar(name:'hbar'):'ℏ';
+function htmlChar(name:'hcirc'):'ĥ';
+function htmlChar(name:'hearts'):'♥';
+function htmlChar(name:'heartsuit'):'♥';
+function htmlChar(name:'hellip'):'…';
+function htmlChar(name:'hercon'):'⊹';
+function htmlChar(name:'hfr'):'𝔥';
+function htmlChar(name:'hksearow'):'⤥';
+function htmlChar(name:'hkswarow'):'⤦';
+function htmlChar(name:'hoarr'):'⇿';
+function htmlChar(name:'homtht'):'∻';
+function htmlChar(name:'hookleftarrow'):'↩';
+function htmlChar(name:'hookrightarrow'):'↪';
+function htmlChar(name:'hopf'):'𝕙';
+function htmlChar(name:'horbar'):'―';
+function htmlChar(name:'hscr'):'𝒽';
+function htmlChar(name:'hslash'):'ℏ';
+function htmlChar(name:'hstrok'):'ħ';
+function htmlChar(name:'hybull'):'⁃';
+function htmlChar(name:'hyphen'):'‐';
+function htmlChar(name:'iacute'):'í';
+function htmlChar(name:'iacute'):'í';
+function htmlChar(name:'ic'):'⁣';
+function htmlChar(name:'icirc'):'î';
+function htmlChar(name:'icirc'):'î';
+function htmlChar(name:'icy'):'и';
+function htmlChar(name:'iecy'):'е';
+function htmlChar(name:'iexcl'):'¡';
+function htmlChar(name:'iexcl'):'¡';
+function htmlChar(name:'iff'):'⇔';
+function htmlChar(name:'ifr'):'𝔦';
+function htmlChar(name:'igrave'):'ì';
+function htmlChar(name:'igrave'):'ì';
+function htmlChar(name:'ii'):'ⅈ';
+function htmlChar(name:'iiiint'):'⨌';
+function htmlChar(name:'iiint'):'∭';
+function htmlChar(name:'iinfin'):'⧜';
+function htmlChar(name:'iiota'):'℩';
+function htmlChar(name:'ijlig'):'ĳ';
+function htmlChar(name:'imacr'):'ī';
+function htmlChar(name:'image'):'ℑ';
+function htmlChar(name:'imagline'):'ℐ';
+function htmlChar(name:'imagpart'):'ℑ';
+function htmlChar(name:'imath'):'ı';
+function htmlChar(name:'imof'):'⊷';
+function htmlChar(name:'imped'):'Ƶ';
+function htmlChar(name:'in'):'∈';
+function htmlChar(name:'incare'):'℅';
+function htmlChar(name:'infin'):'∞';
+function htmlChar(name:'infintie'):'⧝';
+function htmlChar(name:'inodot'):'ı';
+function htmlChar(name:'int'):'∫';
+function htmlChar(name:'intcal'):'⊺';
+function htmlChar(name:'integers'):'ℤ';
+function htmlChar(name:'intercal'):'⊺';
+function htmlChar(name:'intlarhk'):'⨗';
+function htmlChar(name:'intprod'):'⨼';
+function htmlChar(name:'iocy'):'ё';
+function htmlChar(name:'iogon'):'į';
+function htmlChar(name:'iopf'):'𝕚';
+function htmlChar(name:'iota'):'ι';
+function htmlChar(name:'iprod'):'⨼';
+function htmlChar(name:'iquest'):'¿';
+function htmlChar(name:'iquest'):'¿';
+function htmlChar(name:'iscr'):'𝒾';
+function htmlChar(name:'isin'):'∈';
+function htmlChar(name:'isinE'):'⋹';
+function htmlChar(name:'isindot'):'⋵';
+function htmlChar(name:'isins'):'⋴';
+function htmlChar(name:'isinsv'):'⋳';
+function htmlChar(name:'isinv'):'∈';
+function htmlChar(name:'it'):'⁢';
+function htmlChar(name:'itilde'):'ĩ';
+function htmlChar(name:'iukcy'):'і';
+function htmlChar(name:'iuml'):'ï';
+function htmlChar(name:'iuml'):'ï';
+function htmlChar(name:'jcirc'):'ĵ';
+function htmlChar(name:'jcy'):'й';
+function htmlChar(name:'jfr'):'𝔧';
+function htmlChar(name:'jmath'):'ȷ';
+function htmlChar(name:'jopf'):'𝕛';
+function htmlChar(name:'jscr'):'𝒿';
+function htmlChar(name:'jsercy'):'ј';
+function htmlChar(name:'jukcy'):'є';
+function htmlChar(name:'kappa'):'κ';
+function htmlChar(name:'kappav'):'ϰ';
+function htmlChar(name:'kcedil'):'ķ';
+function htmlChar(name:'kcy'):'к';
+function htmlChar(name:'kfr'):'𝔨';
+function htmlChar(name:'kgreen'):'ĸ';
+function htmlChar(name:'khcy'):'х';
+function htmlChar(name:'kjcy'):'ќ';
+function htmlChar(name:'kopf'):'𝕜';
+function htmlChar(name:'kscr'):'𝓀';
+function htmlChar(name:'lAarr'):'⇚';
+function htmlChar(name:'lArr'):'⇐';
+function htmlChar(name:'lAtail'):'⤛';
+function htmlChar(name:'lBarr'):'⤎';
+function htmlChar(name:'lE'):'≦';
+function htmlChar(name:'lEg'):'⪋';
+function htmlChar(name:'lHar'):'⥢';
+function htmlChar(name:'lacute'):'ĺ';
+function htmlChar(name:'laemptyv'):'⦴';
+function htmlChar(name:'lagran'):'ℒ';
+function htmlChar(name:'lambda'):'λ';
+function htmlChar(name:'lang'):'⟨';
+function htmlChar(name:'langd'):'⦑';
+function htmlChar(name:'langle'):'⟨';
+function htmlChar(name:'lap'):'⪅';
+function htmlChar(name:'laquo'):'«';
+function htmlChar(name:'laquo'):'«';
+function htmlChar(name:'larr'):'←';
+function htmlChar(name:'larrb'):'⇤';
+function htmlChar(name:'larrbfs'):'⤟';
+function htmlChar(name:'larrfs'):'⤝';
+function htmlChar(name:'larrhk'):'↩';
+function htmlChar(name:'larrlp'):'↫';
+function htmlChar(name:'larrpl'):'⤹';
+function htmlChar(name:'larrsim'):'⥳';
+function htmlChar(name:'larrtl'):'↢';
+function htmlChar(name:'lat'):'⪫';
+function htmlChar(name:'latail'):'⤙';
+function htmlChar(name:'late'):'⪭';
+function htmlChar(name:'lates'):'⪭︀';
+function htmlChar(name:'lbarr'):'⤌';
+function htmlChar(name:'lbbrk'):'❲';
+function htmlChar(name:'lbrace'):'{';
+function htmlChar(name:'lbrack'):'[';
+function htmlChar(name:'lbrke'):'⦋';
+function htmlChar(name:'lbrksld'):'⦏';
+function htmlChar(name:'lbrkslu'):'⦍';
+function htmlChar(name:'lcaron'):'ľ';
+function htmlChar(name:'lcedil'):'ļ';
+function htmlChar(name:'lceil'):'⌈';
+function htmlChar(name:'lcub'):'{';
+function htmlChar(name:'lcy'):'л';
+function htmlChar(name:'ldca'):'⤶';
+function htmlChar(name:'ldquo'):'“';
+function htmlChar(name:'ldquor'):'„';
+function htmlChar(name:'ldrdhar'):'⥧';
+function htmlChar(name:'ldrushar'):'⥋';
+function htmlChar(name:'ldsh'):'↲';
+function htmlChar(name:'le'):'≤';
+function htmlChar(name:'leftarrow'):'←';
+function htmlChar(name:'leftarrowtail'):'↢';
+function htmlChar(name:'leftharpoondown'):'↽';
+function htmlChar(name:'leftharpoonup'):'↼';
+function htmlChar(name:'leftleftarrows'):'⇇';
+function htmlChar(name:'leftrightarrow'):'↔';
+function htmlChar(name:'leftrightarrows'):'⇆';
+function htmlChar(name:'leftrightharpoons'):'⇋';
+function htmlChar(name:'leftrightsquigarrow'):'↭';
+function htmlChar(name:'leftthreetimes'):'⋋';
+function htmlChar(name:'leg'):'⋚';
+function htmlChar(name:'leq'):'≤';
+function htmlChar(name:'leqq'):'≦';
+function htmlChar(name:'leqslant'):'⩽';
+function htmlChar(name:'les'):'⩽';
+function htmlChar(name:'lescc'):'⪨';
+function htmlChar(name:'lesdot'):'⩿';
+function htmlChar(name:'lesdoto'):'⪁';
+function htmlChar(name:'lesdotor'):'⪃';
+function htmlChar(name:'lesg'):'⋚︀';
+function htmlChar(name:'lesges'):'⪓';
+function htmlChar(name:'lessapprox'):'⪅';
+function htmlChar(name:'lessdot'):'⋖';
+function htmlChar(name:'lesseqgtr'):'⋚';
+function htmlChar(name:'lesseqqgtr'):'⪋';
+function htmlChar(name:'lessgtr'):'≶';
+function htmlChar(name:'lesssim'):'≲';
+function htmlChar(name:'lfisht'):'⥼';
+function htmlChar(name:'lfloor'):'⌊';
+function htmlChar(name:'lfr'):'𝔩';
+function htmlChar(name:'lg'):'≶';
+function htmlChar(name:'lgE'):'⪑';
+function htmlChar(name:'lhard'):'↽';
+function htmlChar(name:'lharu'):'↼';
+function htmlChar(name:'lharul'):'⥪';
+function htmlChar(name:'lhblk'):'▄';
+function htmlChar(name:'ljcy'):'љ';
+function htmlChar(name:'ll'):'≪';
+function htmlChar(name:'llarr'):'⇇';
+function htmlChar(name:'llcorner'):'⌞';
+function htmlChar(name:'llhard'):'⥫';
+function htmlChar(name:'lltri'):'◺';
+function htmlChar(name:'lmidot'):'ŀ';
+function htmlChar(name:'lmoust'):'⎰';
+function htmlChar(name:'lmoustache'):'⎰';
+function htmlChar(name:'lnE'):'≨';
+function htmlChar(name:'lnap'):'⪉';
+function htmlChar(name:'lnapprox'):'⪉';
+function htmlChar(name:'lne'):'⪇';
+function htmlChar(name:'lneq'):'⪇';
+function htmlChar(name:'lneqq'):'≨';
+function htmlChar(name:'lnsim'):'⋦';
+function htmlChar(name:'loang'):'⟬';
+function htmlChar(name:'loarr'):'⇽';
+function htmlChar(name:'lobrk'):'⟦';
+function htmlChar(name:'longleftarrow'):'⟵';
+function htmlChar(name:'longleftrightarrow'):'⟷';
+function htmlChar(name:'longmapsto'):'⟼';
+function htmlChar(name:'longrightarrow'):'⟶';
+function htmlChar(name:'looparrowleft'):'↫';
+function htmlChar(name:'looparrowright'):'↬';
+function htmlChar(name:'lopar'):'⦅';
+function htmlChar(name:'lopf'):'𝕝';
+function htmlChar(name:'loplus'):'⨭';
+function htmlChar(name:'lotimes'):'⨴';
+function htmlChar(name:'lowast'):'∗';
+function htmlChar(name:'lowbar'):'_';
+function htmlChar(name:'loz'):'◊';
+function htmlChar(name:'lozenge'):'◊';
+function htmlChar(name:'lozf'):'⧫';
+function htmlChar(name:'lpar'):'(';
+function htmlChar(name:'lparlt'):'⦓';
+function htmlChar(name:'lrarr'):'⇆';
+function htmlChar(name:'lrcorner'):'⌟';
+function htmlChar(name:'lrhar'):'⇋';
+function htmlChar(name:'lrhard'):'⥭';
+function htmlChar(name:'lrm'):'‎';
+function htmlChar(name:'lrtri'):'⊿';
+function htmlChar(name:'lsaquo'):'‹';
+function htmlChar(name:'lscr'):'𝓁';
+function htmlChar(name:'lsh'):'↰';
+function htmlChar(name:'lsim'):'≲';
+function htmlChar(name:'lsime'):'⪍';
+function htmlChar(name:'lsimg'):'⪏';
+function htmlChar(name:'lsqb'):'[';
+function htmlChar(name:'lsquo'):'‘';
+function htmlChar(name:'lsquor'):'‚';
+function htmlChar(name:'lstrok'):'ł';
+function htmlChar(name:'lt'):'<';
+function htmlChar(name:'lt'):'<';
+function htmlChar(name:'ltcc'):'⪦';
+function htmlChar(name:'ltcir'):'⩹';
+function htmlChar(name:'ltdot'):'⋖';
+function htmlChar(name:'lthree'):'⋋';
+function htmlChar(name:'ltimes'):'⋉';
+function htmlChar(name:'ltlarr'):'⥶';
+function htmlChar(name:'ltquest'):'⩻';
+function htmlChar(name:'ltrPar'):'⦖';
+function htmlChar(name:'ltri'):'◃';
+function htmlChar(name:'ltrie'):'⊴';
+function htmlChar(name:'ltrif'):'◂';
+function htmlChar(name:'lurdshar'):'⥊';
+function htmlChar(name:'luruhar'):'⥦';
+function htmlChar(name:'lvertneqq'):'≨︀';
+function htmlChar(name:'lvnE'):'≨︀';
+function htmlChar(name:'mDDot'):'∺';
+function htmlChar(name:'macr'):'¯';
+function htmlChar(name:'macr'):'¯';
+function htmlChar(name:'male'):'♂';
+function htmlChar(name:'malt'):'✠';
+function htmlChar(name:'maltese'):'✠';
+function htmlChar(name:'map'):'↦';
+function htmlChar(name:'mapsto'):'↦';
+function htmlChar(name:'mapstodown'):'↧';
+function htmlChar(name:'mapstoleft'):'↤';
+function htmlChar(name:'mapstoup'):'↥';
+function htmlChar(name:'marker'):'▮';
+function htmlChar(name:'mcomma'):'⨩';
+function htmlChar(name:'mcy'):'м';
+function htmlChar(name:'mdash'):'—';
+function htmlChar(name:'measuredangle'):'∡';
+function htmlChar(name:'mfr'):'𝔪';
+function htmlChar(name:'mho'):'℧';
+function htmlChar(name:'micro'):'µ';
+function htmlChar(name:'micro'):'µ';
+function htmlChar(name:'mid'):'∣';
+function htmlChar(name:'midast'):'*';
+function htmlChar(name:'midcir'):'⫰';
+function htmlChar(name:'middot'):'·';
+function htmlChar(name:'middot'):'·';
+function htmlChar(name:'minus'):'−';
+function htmlChar(name:'minusb'):'⊟';
+function htmlChar(name:'minusd'):'∸';
+function htmlChar(name:'minusdu'):'⨪';
+function htmlChar(name:'mlcp'):'⫛';
+function htmlChar(name:'mldr'):'…';
+function htmlChar(name:'mnplus'):'∓';
+function htmlChar(name:'models'):'⊧';
+function htmlChar(name:'mopf'):'𝕞';
+function htmlChar(name:'mp'):'∓';
+function htmlChar(name:'mscr'):'𝓂';
+function htmlChar(name:'mstpos'):'∾';
+function htmlChar(name:'mu'):'μ';
+function htmlChar(name:'multimap'):'⊸';
+function htmlChar(name:'mumap'):'⊸';
+function htmlChar(name:'nGg'):'⋙̸';
+function htmlChar(name:'nGt'):'≫⃒';
+function htmlChar(name:'nGtv'):'≫̸';
+function htmlChar(name:'nLeftarrow'):'⇍';
+function htmlChar(name:'nLeftrightarrow'):'⇎';
+function htmlChar(name:'nLl'):'⋘̸';
+function htmlChar(name:'nLt'):'≪⃒';
+function htmlChar(name:'nLtv'):'≪̸';
+function htmlChar(name:'nRightarrow'):'⇏';
+function htmlChar(name:'nVDash'):'⊯';
+function htmlChar(name:'nVdash'):'⊮';
+function htmlChar(name:'nabla'):'∇';
+function htmlChar(name:'nacute'):'ń';
+function htmlChar(name:'nang'):'∠⃒';
+function htmlChar(name:'nap'):'≉';
+function htmlChar(name:'napE'):'⩰̸';
+function htmlChar(name:'napid'):'≋̸';
+function htmlChar(name:'napos'):'ŉ';
+function htmlChar(name:'napprox'):'≉';
+function htmlChar(name:'natur'):'♮';
+function htmlChar(name:'natural'):'♮';
+function htmlChar(name:'naturals'):'ℕ';
+function htmlChar(name:'nbsp'):' ';
+function htmlChar(name:'nbsp'):' ';
+function htmlChar(name:'nbump'):'≎̸';
+function htmlChar(name:'nbumpe'):'≏̸';
+function htmlChar(name:'ncap'):'⩃';
+function htmlChar(name:'ncaron'):'ň';
+function htmlChar(name:'ncedil'):'ņ';
+function htmlChar(name:'ncong'):'≇';
+function htmlChar(name:'ncongdot'):'⩭̸';
+function htmlChar(name:'ncup'):'⩂';
+function htmlChar(name:'ncy'):'н';
+function htmlChar(name:'ndash'):'–';
+function htmlChar(name:'ne'):'≠';
+function htmlChar(name:'neArr'):'⇗';
+function htmlChar(name:'nearhk'):'⤤';
+function htmlChar(name:'nearr'):'↗';
+function htmlChar(name:'nearrow'):'↗';
+function htmlChar(name:'nedot'):'≐̸';
+function htmlChar(name:'nequiv'):'≢';
+function htmlChar(name:'nesear'):'⤨';
+function htmlChar(name:'nesim'):'≂̸';
+function htmlChar(name:'nexist'):'∄';
+function htmlChar(name:'nexists'):'∄';
+function htmlChar(name:'nfr'):'𝔫';
+function htmlChar(name:'ngE'):'≧̸';
+function htmlChar(name:'nge'):'≱';
+function htmlChar(name:'ngeq'):'≱';
+function htmlChar(name:'ngeqq'):'≧̸';
+function htmlChar(name:'ngeqslant'):'⩾̸';
+function htmlChar(name:'nges'):'⩾̸';
+function htmlChar(name:'ngsim'):'≵';
+function htmlChar(name:'ngt'):'≯';
+function htmlChar(name:'ngtr'):'≯';
+function htmlChar(name:'nhArr'):'⇎';
+function htmlChar(name:'nharr'):'↮';
+function htmlChar(name:'nhpar'):'⫲';
+function htmlChar(name:'ni'):'∋';
+function htmlChar(name:'nis'):'⋼';
+function htmlChar(name:'nisd'):'⋺';
+function htmlChar(name:'niv'):'∋';
+function htmlChar(name:'njcy'):'њ';
+function htmlChar(name:'nlArr'):'⇍';
+function htmlChar(name:'nlE'):'≦̸';
+function htmlChar(name:'nlarr'):'↚';
+function htmlChar(name:'nldr'):'‥';
+function htmlChar(name:'nle'):'≰';
+function htmlChar(name:'nleftarrow'):'↚';
+function htmlChar(name:'nleftrightarrow'):'↮';
+function htmlChar(name:'nleq'):'≰';
+function htmlChar(name:'nleqq'):'≦̸';
+function htmlChar(name:'nleqslant'):'⩽̸';
+function htmlChar(name:'nles'):'⩽̸';
+function htmlChar(name:'nless'):'≮';
+function htmlChar(name:'nlsim'):'≴';
+function htmlChar(name:'nlt'):'≮';
+function htmlChar(name:'nltri'):'⋪';
+function htmlChar(name:'nltrie'):'⋬';
+function htmlChar(name:'nmid'):'∤';
+function htmlChar(name:'nopf'):'𝕟';
+function htmlChar(name:'not'):'¬';
+function htmlChar(name:'not'):'¬';
+function htmlChar(name:'notin'):'∉';
+function htmlChar(name:'notinE'):'⋹̸';
+function htmlChar(name:'notindot'):'⋵̸';
+function htmlChar(name:'notinva'):'∉';
+function htmlChar(name:'notinvb'):'⋷';
+function htmlChar(name:'notinvc'):'⋶';
+function htmlChar(name:'notni'):'∌';
+function htmlChar(name:'notniva'):'∌';
+function htmlChar(name:'notnivb'):'⋾';
+function htmlChar(name:'notnivc'):'⋽';
+function htmlChar(name:'npar'):'∦';
+function htmlChar(name:'nparallel'):'∦';
+function htmlChar(name:'nparsl'):'⫽⃥';
+function htmlChar(name:'npart'):'∂̸';
+function htmlChar(name:'npolint'):'⨔';
+function htmlChar(name:'npr'):'⊀';
+function htmlChar(name:'nprcue'):'⋠';
+function htmlChar(name:'npre'):'⪯̸';
+function htmlChar(name:'nprec'):'⊀';
+function htmlChar(name:'npreceq'):'⪯̸';
+function htmlChar(name:'nrArr'):'⇏';
+function htmlChar(name:'nrarr'):'↛';
+function htmlChar(name:'nrarrc'):'⤳̸';
+function htmlChar(name:'nrarrw'):'↝̸';
+function htmlChar(name:'nrightarrow'):'↛';
+function htmlChar(name:'nrtri'):'⋫';
+function htmlChar(name:'nrtrie'):'⋭';
+function htmlChar(name:'nsc'):'⊁';
+function htmlChar(name:'nsccue'):'⋡';
+function htmlChar(name:'nsce'):'⪰̸';
+function htmlChar(name:'nscr'):'𝓃';
+function htmlChar(name:'nshortmid'):'∤';
+function htmlChar(name:'nshortparallel'):'∦';
+function htmlChar(name:'nsim'):'≁';
+function htmlChar(name:'nsime'):'≄';
+function htmlChar(name:'nsimeq'):'≄';
+function htmlChar(name:'nsmid'):'∤';
+function htmlChar(name:'nspar'):'∦';
+function htmlChar(name:'nsqsube'):'⋢';
+function htmlChar(name:'nsqsupe'):'⋣';
+function htmlChar(name:'nsub'):'⊄';
+function htmlChar(name:'nsubE'):'⫅̸';
+function htmlChar(name:'nsube'):'⊈';
+function htmlChar(name:'nsubset'):'⊂⃒';
+function htmlChar(name:'nsubseteq'):'⊈';
+function htmlChar(name:'nsubseteqq'):'⫅̸';
+function htmlChar(name:'nsucc'):'⊁';
+function htmlChar(name:'nsucceq'):'⪰̸';
+function htmlChar(name:'nsup'):'⊅';
+function htmlChar(name:'nsupE'):'⫆̸';
+function htmlChar(name:'nsupe'):'⊉';
+function htmlChar(name:'nsupset'):'⊃⃒';
+function htmlChar(name:'nsupseteq'):'⊉';
+function htmlChar(name:'nsupseteqq'):'⫆̸';
+function htmlChar(name:'ntgl'):'≹';
+function htmlChar(name:'ntilde'):'ñ';
+function htmlChar(name:'ntilde'):'ñ';
+function htmlChar(name:'ntlg'):'≸';
+function htmlChar(name:'ntriangleleft'):'⋪';
+function htmlChar(name:'ntrianglelefteq'):'⋬';
+function htmlChar(name:'ntriangleright'):'⋫';
+function htmlChar(name:'ntrianglerighteq'):'⋭';
+function htmlChar(name:'nu'):'ν';
+function htmlChar(name:'num'):'#';
+function htmlChar(name:'numero'):'№';
+function htmlChar(name:'numsp'):' ';
+function htmlChar(name:'nvDash'):'⊭';
+function htmlChar(name:'nvHarr'):'⤄';
+function htmlChar(name:'nvap'):'≍⃒';
+function htmlChar(name:'nvdash'):'⊬';
+function htmlChar(name:'nvge'):'≥⃒';
+function htmlChar(name:'nvgt'):'>⃒';
+function htmlChar(name:'nvinfin'):'⧞';
+function htmlChar(name:'nvlArr'):'⤂';
+function htmlChar(name:'nvle'):'≤⃒';
+function htmlChar(name:'nvlt'):'<⃒';
+function htmlChar(name:'nvltrie'):'⊴⃒';
+function htmlChar(name:'nvrArr'):'⤃';
+function htmlChar(name:'nvrtrie'):'⊵⃒';
+function htmlChar(name:'nvsim'):'∼⃒';
+function htmlChar(name:'nwArr'):'⇖';
+function htmlChar(name:'nwarhk'):'⤣';
+function htmlChar(name:'nwarr'):'↖';
+function htmlChar(name:'nwarrow'):'↖';
+function htmlChar(name:'nwnear'):'⤧';
+function htmlChar(name:'oS'):'Ⓢ';
+function htmlChar(name:'oacute'):'ó';
+function htmlChar(name:'oacute'):'ó';
+function htmlChar(name:'oast'):'⊛';
+function htmlChar(name:'ocir'):'⊚';
+function htmlChar(name:'ocirc'):'ô';
+function htmlChar(name:'ocirc'):'ô';
+function htmlChar(name:'ocy'):'о';
+function htmlChar(name:'odash'):'⊝';
+function htmlChar(name:'odblac'):'ő';
+function htmlChar(name:'odiv'):'⨸';
+function htmlChar(name:'odot'):'⊙';
+function htmlChar(name:'odsold'):'⦼';
+function htmlChar(name:'oelig'):'œ';
+function htmlChar(name:'ofcir'):'⦿';
+function htmlChar(name:'ofr'):'𝔬';
+function htmlChar(name:'ogon'):'˛';
+function htmlChar(name:'ograve'):'ò';
+function htmlChar(name:'ograve'):'ò';
+function htmlChar(name:'ogt'):'⧁';
+function htmlChar(name:'ohbar'):'⦵';
+function htmlChar(name:'ohm'):'Ω';
+function htmlChar(name:'oint'):'∮';
+function htmlChar(name:'olarr'):'↺';
+function htmlChar(name:'olcir'):'⦾';
+function htmlChar(name:'olcross'):'⦻';
+function htmlChar(name:'oline'):'‾';
+function htmlChar(name:'olt'):'⧀';
+function htmlChar(name:'omacr'):'ō';
+function htmlChar(name:'omega'):'ω';
+function htmlChar(name:'omicron'):'ο';
+function htmlChar(name:'omid'):'⦶';
+function htmlChar(name:'ominus'):'⊖';
+function htmlChar(name:'oopf'):'𝕠';
+function htmlChar(name:'opar'):'⦷';
+function htmlChar(name:'operp'):'⦹';
+function htmlChar(name:'oplus'):'⊕';
+function htmlChar(name:'or'):'∨';
+function htmlChar(name:'orarr'):'↻';
+function htmlChar(name:'ord'):'⩝';
+function htmlChar(name:'order'):'ℴ';
+function htmlChar(name:'orderof'):'ℴ';
+function htmlChar(name:'ordf'):'ª';
+function htmlChar(name:'ordf'):'ª';
+function htmlChar(name:'ordm'):'º';
+function htmlChar(name:'ordm'):'º';
+function htmlChar(name:'origof'):'⊶';
+function htmlChar(name:'oror'):'⩖';
+function htmlChar(name:'orslope'):'⩗';
+function htmlChar(name:'orv'):'⩛';
+function htmlChar(name:'oscr'):'ℴ';
+function htmlChar(name:'oslash'):'ø';
+function htmlChar(name:'oslash'):'ø';
+function htmlChar(name:'osol'):'⊘';
+function htmlChar(name:'otilde'):'õ';
+function htmlChar(name:'otilde'):'õ';
+function htmlChar(name:'otimes'):'⊗';
+function htmlChar(name:'otimesas'):'⨶';
+function htmlChar(name:'ouml'):'ö';
+function htmlChar(name:'ouml'):'ö';
+function htmlChar(name:'ovbar'):'⌽';
+function htmlChar(name:'par'):'∥';
+function htmlChar(name:'para'):'¶';
+function htmlChar(name:'para'):'¶';
+function htmlChar(name:'parallel'):'∥';
+function htmlChar(name:'parsim'):'⫳';
+function htmlChar(name:'parsl'):'⫽';
+function htmlChar(name:'part'):'∂';
+function htmlChar(name:'pcy'):'п';
+function htmlChar(name:'percnt'):'%';
+function htmlChar(name:'period'):'.';
+function htmlChar(name:'permil'):'‰';
+function htmlChar(name:'perp'):'⊥';
+function htmlChar(name:'pertenk'):'‱';
+function htmlChar(name:'pfr'):'𝔭';
+function htmlChar(name:'phi'):'φ';
+function htmlChar(name:'phiv'):'ϕ';
+function htmlChar(name:'phmmat'):'ℳ';
+function htmlChar(name:'phone'):'☎';
+function htmlChar(name:'pi'):'π';
+function htmlChar(name:'pitchfork'):'⋔';
+function htmlChar(name:'piv'):'ϖ';
+function htmlChar(name:'planck'):'ℏ';
+function htmlChar(name:'planckh'):'ℎ';
+function htmlChar(name:'plankv'):'ℏ';
+function htmlChar(name:'plus'):'+';
+function htmlChar(name:'plusacir'):'⨣';
+function htmlChar(name:'plusb'):'⊞';
+function htmlChar(name:'pluscir'):'⨢';
+function htmlChar(name:'plusdo'):'∔';
+function htmlChar(name:'plusdu'):'⨥';
+function htmlChar(name:'pluse'):'⩲';
+function htmlChar(name:'plusmn'):'±';
+function htmlChar(name:'plusmn'):'±';
+function htmlChar(name:'plussim'):'⨦';
+function htmlChar(name:'plustwo'):'⨧';
+function htmlChar(name:'pm'):'±';
+function htmlChar(name:'pointint'):'⨕';
+function htmlChar(name:'popf'):'𝕡';
+function htmlChar(name:'pound'):'£';
+function htmlChar(name:'pound'):'£';
+function htmlChar(name:'pr'):'≺';
+function htmlChar(name:'prE'):'⪳';
+function htmlChar(name:'prap'):'⪷';
+function htmlChar(name:'prcue'):'≼';
+function htmlChar(name:'pre'):'⪯';
+function htmlChar(name:'prec'):'≺';
+function htmlChar(name:'precapprox'):'⪷';
+function htmlChar(name:'preccurlyeq'):'≼';
+function htmlChar(name:'preceq'):'⪯';
+function htmlChar(name:'precnapprox'):'⪹';
+function htmlChar(name:'precneqq'):'⪵';
+function htmlChar(name:'precnsim'):'⋨';
+function htmlChar(name:'precsim'):'≾';
+function htmlChar(name:'prime'):'′';
+function htmlChar(name:'primes'):'ℙ';
+function htmlChar(name:'prnE'):'⪵';
+function htmlChar(name:'prnap'):'⪹';
+function htmlChar(name:'prnsim'):'⋨';
+function htmlChar(name:'prod'):'∏';
+function htmlChar(name:'profalar'):'⌮';
+function htmlChar(name:'profline'):'⌒';
+function htmlChar(name:'profsurf'):'⌓';
+function htmlChar(name:'prop'):'∝';
+function htmlChar(name:'propto'):'∝';
+function htmlChar(name:'prsim'):'≾';
+function htmlChar(name:'prurel'):'⊰';
+function htmlChar(name:'pscr'):'𝓅';
+function htmlChar(name:'psi'):'ψ';
+function htmlChar(name:'puncsp'):' ';
+function htmlChar(name:'qfr'):'𝔮';
+function htmlChar(name:'qint'):'⨌';
+function htmlChar(name:'qopf'):'𝕢';
+function htmlChar(name:'qprime'):'⁗';
+function htmlChar(name:'qscr'):'𝓆';
+function htmlChar(name:'quaternions'):'ℍ';
+function htmlChar(name:'quatint'):'⨖';
+function htmlChar(name:'quest'):'?';
+function htmlChar(name:'questeq'):'≟';
+function htmlChar(name:'quot'):'"';
+function htmlChar(name:'quot'):'"';
+function htmlChar(name:'rAarr'):'⇛';
+function htmlChar(name:'rArr'):'⇒';
+function htmlChar(name:'rAtail'):'⤜';
+function htmlChar(name:'rBarr'):'⤏';
+function htmlChar(name:'rHar'):'⥤';
+function htmlChar(name:'race'):'∽̱';
+function htmlChar(name:'racute'):'ŕ';
+function htmlChar(name:'radic'):'√';
+function htmlChar(name:'raemptyv'):'⦳';
+function htmlChar(name:'rang'):'⟩';
+function htmlChar(name:'rangd'):'⦒';
+function htmlChar(name:'range'):'⦥';
+function htmlChar(name:'rangle'):'⟩';
+function htmlChar(name:'raquo'):'»';
+function htmlChar(name:'raquo'):'»';
+function htmlChar(name:'rarr'):'→';
+function htmlChar(name:'rarrap'):'⥵';
+function htmlChar(name:'rarrb'):'⇥';
+function htmlChar(name:'rarrbfs'):'⤠';
+function htmlChar(name:'rarrc'):'⤳';
+function htmlChar(name:'rarrfs'):'⤞';
+function htmlChar(name:'rarrhk'):'↪';
+function htmlChar(name:'rarrlp'):'↬';
+function htmlChar(name:'rarrpl'):'⥅';
+function htmlChar(name:'rarrsim'):'⥴';
+function htmlChar(name:'rarrtl'):'↣';
+function htmlChar(name:'rarrw'):'↝';
+function htmlChar(name:'ratail'):'⤚';
+function htmlChar(name:'ratio'):'∶';
+function htmlChar(name:'rationals'):'ℚ';
+function htmlChar(name:'rbarr'):'⤍';
+function htmlChar(name:'rbbrk'):'❳';
+function htmlChar(name:'rbrace'):'}';
+function htmlChar(name:'rbrack'):']';
+function htmlChar(name:'rbrke'):'⦌';
+function htmlChar(name:'rbrksld'):'⦎';
+function htmlChar(name:'rbrkslu'):'⦐';
+function htmlChar(name:'rcaron'):'ř';
+function htmlChar(name:'rcedil'):'ŗ';
+function htmlChar(name:'rceil'):'⌉';
+function htmlChar(name:'rcub'):'}';
+function htmlChar(name:'rcy'):'р';
+function htmlChar(name:'rdca'):'⤷';
+function htmlChar(name:'rdldhar'):'⥩';
+function htmlChar(name:'rdquo'):'”';
+function htmlChar(name:'rdquor'):'”';
+function htmlChar(name:'rdsh'):'↳';
+function htmlChar(name:'real'):'ℜ';
+function htmlChar(name:'realine'):'ℛ';
+function htmlChar(name:'realpart'):'ℜ';
+function htmlChar(name:'reals'):'ℝ';
+function htmlChar(name:'rect'):'▭';
+function htmlChar(name:'reg'):'®';
+function htmlChar(name:'reg'):'®';
+function htmlChar(name:'rfisht'):'⥽';
+function htmlChar(name:'rfloor'):'⌋';
+function htmlChar(name:'rfr'):'𝔯';
+function htmlChar(name:'rhard'):'⇁';
+function htmlChar(name:'rharu'):'⇀';
+function htmlChar(name:'rharul'):'⥬';
+function htmlChar(name:'rho'):'ρ';
+function htmlChar(name:'rhov'):'ϱ';
+function htmlChar(name:'rightarrow'):'→';
+function htmlChar(name:'rightarrowtail'):'↣';
+function htmlChar(name:'rightharpoondown'):'⇁';
+function htmlChar(name:'rightharpoonup'):'⇀';
+function htmlChar(name:'rightleftarrows'):'⇄';
+function htmlChar(name:'rightleftharpoons'):'⇌';
+function htmlChar(name:'rightrightarrows'):'⇉';
+function htmlChar(name:'rightsquigarrow'):'↝';
+function htmlChar(name:'rightthreetimes'):'⋌';
+function htmlChar(name:'ring'):'˚';
+function htmlChar(name:'risingdotseq'):'≓';
+function htmlChar(name:'rlarr'):'⇄';
+function htmlChar(name:'rlhar'):'⇌';
+function htmlChar(name:'rlm'):'‏';
+function htmlChar(name:'rmoust'):'⎱';
+function htmlChar(name:'rmoustache'):'⎱';
+function htmlChar(name:'rnmid'):'⫮';
+function htmlChar(name:'roang'):'⟭';
+function htmlChar(name:'roarr'):'⇾';
+function htmlChar(name:'robrk'):'⟧';
+function htmlChar(name:'ropar'):'⦆';
+function htmlChar(name:'ropf'):'𝕣';
+function htmlChar(name:'roplus'):'⨮';
+function htmlChar(name:'rotimes'):'⨵';
+function htmlChar(name:'rpar'):')';
+function htmlChar(name:'rpargt'):'⦔';
+function htmlChar(name:'rppolint'):'⨒';
+function htmlChar(name:'rrarr'):'⇉';
+function htmlChar(name:'rsaquo'):'›';
+function htmlChar(name:'rscr'):'𝓇';
+function htmlChar(name:'rsh'):'↱';
+function htmlChar(name:'rsqb'):']';
+function htmlChar(name:'rsquo'):'’';
+function htmlChar(name:'rsquor'):'’';
+function htmlChar(name:'rthree'):'⋌';
+function htmlChar(name:'rtimes'):'⋊';
+function htmlChar(name:'rtri'):'▹';
+function htmlChar(name:'rtrie'):'⊵';
+function htmlChar(name:'rtrif'):'▸';
+function htmlChar(name:'rtriltri'):'⧎';
+function htmlChar(name:'ruluhar'):'⥨';
+function htmlChar(name:'rx'):'℞';
+function htmlChar(name:'sacute'):'ś';
+function htmlChar(name:'sbquo'):'‚';
+function htmlChar(name:'sc'):'≻';
+function htmlChar(name:'scE'):'⪴';
+function htmlChar(name:'scap'):'⪸';
+function htmlChar(name:'scaron'):'š';
+function htmlChar(name:'sccue'):'≽';
+function htmlChar(name:'sce'):'⪰';
+function htmlChar(name:'scedil'):'ş';
+function htmlChar(name:'scirc'):'ŝ';
+function htmlChar(name:'scnE'):'⪶';
+function htmlChar(name:'scnap'):'⪺';
+function htmlChar(name:'scnsim'):'⋩';
+function htmlChar(name:'scpolint'):'⨓';
+function htmlChar(name:'scsim'):'≿';
+function htmlChar(name:'scy'):'с';
+function htmlChar(name:'sdot'):'⋅';
+function htmlChar(name:'sdotb'):'⊡';
+function htmlChar(name:'sdote'):'⩦';
+function htmlChar(name:'seArr'):'⇘';
+function htmlChar(name:'searhk'):'⤥';
+function htmlChar(name:'searr'):'↘';
+function htmlChar(name:'searrow'):'↘';
+function htmlChar(name:'sect'):'§';
+function htmlChar(name:'sect'):'§';
+function htmlChar(name:'semi'):';';
+function htmlChar(name:'seswar'):'⤩';
+function htmlChar(name:'setminus'):'∖';
+function htmlChar(name:'setmn'):'∖';
+function htmlChar(name:'sext'):'✶';
+function htmlChar(name:'sfr'):'𝔰';
+function htmlChar(name:'sfrown'):'⌢';
+function htmlChar(name:'sharp'):'♯';
+function htmlChar(name:'shchcy'):'щ';
+function htmlChar(name:'shcy'):'ш';
+function htmlChar(name:'shortmid'):'∣';
+function htmlChar(name:'shortparallel'):'∥';
+function htmlChar(name:'shy'):'­';
+function htmlChar(name:'shy'):'­';
+function htmlChar(name:'sigma'):'σ';
+function htmlChar(name:'sigmaf'):'ς';
+function htmlChar(name:'sigmav'):'ς';
+function htmlChar(name:'sim'):'∼';
+function htmlChar(name:'simdot'):'⩪';
+function htmlChar(name:'sime'):'≃';
+function htmlChar(name:'simeq'):'≃';
+function htmlChar(name:'simg'):'⪞';
+function htmlChar(name:'simgE'):'⪠';
+function htmlChar(name:'siml'):'⪝';
+function htmlChar(name:'simlE'):'⪟';
+function htmlChar(name:'simne'):'≆';
+function htmlChar(name:'simplus'):'⨤';
+function htmlChar(name:'simrarr'):'⥲';
+function htmlChar(name:'slarr'):'←';
+function htmlChar(name:'smallsetminus'):'∖';
+function htmlChar(name:'smashp'):'⨳';
+function htmlChar(name:'smeparsl'):'⧤';
+function htmlChar(name:'smid'):'∣';
+function htmlChar(name:'smile'):'⌣';
+function htmlChar(name:'smt'):'⪪';
+function htmlChar(name:'smte'):'⪬';
+function htmlChar(name:'smtes'):'⪬︀';
+function htmlChar(name:'softcy'):'ь';
+function htmlChar(name:'sol'):'/';
+function htmlChar(name:'solb'):'⧄';
+function htmlChar(name:'solbar'):'⌿';
+function htmlChar(name:'sopf'):'𝕤';
+function htmlChar(name:'spades'):'♠';
+function htmlChar(name:'spadesuit'):'♠';
+function htmlChar(name:'spar'):'∥';
+function htmlChar(name:'sqcap'):'⊓';
+function htmlChar(name:'sqcaps'):'⊓︀';
+function htmlChar(name:'sqcup'):'⊔';
+function htmlChar(name:'sqcups'):'⊔︀';
+function htmlChar(name:'sqsub'):'⊏';
+function htmlChar(name:'sqsube'):'⊑';
+function htmlChar(name:'sqsubset'):'⊏';
+function htmlChar(name:'sqsubseteq'):'⊑';
+function htmlChar(name:'sqsup'):'⊐';
+function htmlChar(name:'sqsupe'):'⊒';
+function htmlChar(name:'sqsupset'):'⊐';
+function htmlChar(name:'sqsupseteq'):'⊒';
+function htmlChar(name:'squ'):'□';
+function htmlChar(name:'square'):'□';
+function htmlChar(name:'squarf'):'▪';
+function htmlChar(name:'squf'):'▪';
+function htmlChar(name:'srarr'):'→';
+function htmlChar(name:'sscr'):'𝓈';
+function htmlChar(name:'ssetmn'):'∖';
+function htmlChar(name:'ssmile'):'⌣';
+function htmlChar(name:'sstarf'):'⋆';
+function htmlChar(name:'star'):'☆';
+function htmlChar(name:'starf'):'★';
+function htmlChar(name:'straightepsilon'):'ϵ';
+function htmlChar(name:'straightphi'):'ϕ';
+function htmlChar(name:'strns'):'¯';
+function htmlChar(name:'sub'):'⊂';
+function htmlChar(name:'subE'):'⫅';
+function htmlChar(name:'subdot'):'⪽';
+function htmlChar(name:'sube'):'⊆';
+function htmlChar(name:'subedot'):'⫃';
+function htmlChar(name:'submult'):'⫁';
+function htmlChar(name:'subnE'):'⫋';
+function htmlChar(name:'subne'):'⊊';
+function htmlChar(name:'subplus'):'⪿';
+function htmlChar(name:'subrarr'):'⥹';
+function htmlChar(name:'subset'):'⊂';
+function htmlChar(name:'subseteq'):'⊆';
+function htmlChar(name:'subseteqq'):'⫅';
+function htmlChar(name:'subsetneq'):'⊊';
+function htmlChar(name:'subsetneqq'):'⫋';
+function htmlChar(name:'subsim'):'⫇';
+function htmlChar(name:'subsub'):'⫕';
+function htmlChar(name:'subsup'):'⫓';
+function htmlChar(name:'succ'):'≻';
+function htmlChar(name:'succapprox'):'⪸';
+function htmlChar(name:'succcurlyeq'):'≽';
+function htmlChar(name:'succeq'):'⪰';
+function htmlChar(name:'succnapprox'):'⪺';
+function htmlChar(name:'succneqq'):'⪶';
+function htmlChar(name:'succnsim'):'⋩';
+function htmlChar(name:'succsim'):'≿';
+function htmlChar(name:'sum'):'∑';
+function htmlChar(name:'sung'):'♪';
+function htmlChar(name:'sup1'):'¹';
+function htmlChar(name:'sup1'):'¹';
+function htmlChar(name:'sup2'):'²';
+function htmlChar(name:'sup2'):'²';
+function htmlChar(name:'sup3'):'³';
+function htmlChar(name:'sup3'):'³';
+function htmlChar(name:'sup'):'⊃';
+function htmlChar(name:'supE'):'⫆';
+function htmlChar(name:'supdot'):'⪾';
+function htmlChar(name:'supdsub'):'⫘';
+function htmlChar(name:'supe'):'⊇';
+function htmlChar(name:'supedot'):'⫄';
+function htmlChar(name:'suphsol'):'⟉';
+function htmlChar(name:'suphsub'):'⫗';
+function htmlChar(name:'suplarr'):'⥻';
+function htmlChar(name:'supmult'):'⫂';
+function htmlChar(name:'supnE'):'⫌';
+function htmlChar(name:'supne'):'⊋';
+function htmlChar(name:'supplus'):'⫀';
+function htmlChar(name:'supset'):'⊃';
+function htmlChar(name:'supseteq'):'⊇';
+function htmlChar(name:'supseteqq'):'⫆';
+function htmlChar(name:'supsetneq'):'⊋';
+function htmlChar(name:'supsetneqq'):'⫌';
+function htmlChar(name:'supsim'):'⫈';
+function htmlChar(name:'supsub'):'⫔';
+function htmlChar(name:'supsup'):'⫖';
+function htmlChar(name:'swArr'):'⇙';
+function htmlChar(name:'swarhk'):'⤦';
+function htmlChar(name:'swarr'):'↙';
+function htmlChar(name:'swarrow'):'↙';
+function htmlChar(name:'swnwar'):'⤪';
+function htmlChar(name:'szlig'):'ß';
+function htmlChar(name:'szlig'):'ß';
+function htmlChar(name:'target'):'⌖';
+function htmlChar(name:'tau'):'τ';
+function htmlChar(name:'tbrk'):'⎴';
+function htmlChar(name:'tcaron'):'ť';
+function htmlChar(name:'tcedil'):'ţ';
+function htmlChar(name:'tcy'):'т';
+function htmlChar(name:'tdot'):'⃛';
+function htmlChar(name:'telrec'):'⌕';
+function htmlChar(name:'tfr'):'𝔱';
+function htmlChar(name:'there4'):'∴';
+function htmlChar(name:'therefore'):'∴';
+function htmlChar(name:'theta'):'θ';
+function htmlChar(name:'thetasym'):'ϑ';
+function htmlChar(name:'thetav'):'ϑ';
+function htmlChar(name:'thickapprox'):'≈';
+function htmlChar(name:'thicksim'):'∼';
+function htmlChar(name:'thinsp'):' ';
+function htmlChar(name:'thkap'):'≈';
+function htmlChar(name:'thksim'):'∼';
+function htmlChar(name:'thorn'):'þ';
+function htmlChar(name:'thorn'):'þ';
+function htmlChar(name:'tilde'):'˜';
+function htmlChar(name:'times'):'×';
+function htmlChar(name:'times'):'×';
+function htmlChar(name:'timesb'):'⊠';
+function htmlChar(name:'timesbar'):'⨱';
+function htmlChar(name:'timesd'):'⨰';
+function htmlChar(name:'tint'):'∭';
+function htmlChar(name:'toea'):'⤨';
+function htmlChar(name:'top'):'⊤';
+function htmlChar(name:'topbot'):'⌶';
+function htmlChar(name:'topcir'):'⫱';
+function htmlChar(name:'topf'):'𝕥';
+function htmlChar(name:'topfork'):'⫚';
+function htmlChar(name:'tosa'):'⤩';
+function htmlChar(name:'tprime'):'‴';
+function htmlChar(name:'trade'):'™';
+function htmlChar(name:'triangle'):'▵';
+function htmlChar(name:'triangledown'):'▿';
+function htmlChar(name:'triangleleft'):'◃';
+function htmlChar(name:'trianglelefteq'):'⊴';
+function htmlChar(name:'triangleq'):'≜';
+function htmlChar(name:'triangleright'):'▹';
+function htmlChar(name:'trianglerighteq'):'⊵';
+function htmlChar(name:'tridot'):'◬';
+function htmlChar(name:'trie'):'≜';
+function htmlChar(name:'triminus'):'⨺';
+function htmlChar(name:'triplus'):'⨹';
+function htmlChar(name:'trisb'):'⧍';
+function htmlChar(name:'tritime'):'⨻';
+function htmlChar(name:'trpezium'):'⏢';
+function htmlChar(name:'tscr'):'𝓉';
+function htmlChar(name:'tscy'):'ц';
+function htmlChar(name:'tshcy'):'ћ';
+function htmlChar(name:'tstrok'):'ŧ';
+function htmlChar(name:'twixt'):'≬';
+function htmlChar(name:'twoheadleftarrow'):'↞';
+function htmlChar(name:'twoheadrightarrow'):'↠';
+function htmlChar(name:'uArr'):'⇑';
+function htmlChar(name:'uHar'):'⥣';
+function htmlChar(name:'uacute'):'ú';
+function htmlChar(name:'uacute'):'ú';
+function htmlChar(name:'uarr'):'↑';
+function htmlChar(name:'ubrcy'):'ў';
+function htmlChar(name:'ubreve'):'ŭ';
+function htmlChar(name:'ucirc'):'û';
+function htmlChar(name:'ucirc'):'û';
+function htmlChar(name:'ucy'):'у';
+function htmlChar(name:'udarr'):'⇅';
+function htmlChar(name:'udblac'):'ű';
+function htmlChar(name:'udhar'):'⥮';
+function htmlChar(name:'ufisht'):'⥾';
+function htmlChar(name:'ufr'):'𝔲';
+function htmlChar(name:'ugrave'):'ù';
+function htmlChar(name:'ugrave'):'ù';
+function htmlChar(name:'uharl'):'↿';
+function htmlChar(name:'uharr'):'↾';
+function htmlChar(name:'uhblk'):'▀';
+function htmlChar(name:'ulcorn'):'⌜';
+function htmlChar(name:'ulcorner'):'⌜';
+function htmlChar(name:'ulcrop'):'⌏';
+function htmlChar(name:'ultri'):'◸';
+function htmlChar(name:'umacr'):'ū';
+function htmlChar(name:'uml'):'¨';
+function htmlChar(name:'uml'):'¨';
+function htmlChar(name:'uogon'):'ų';
+function htmlChar(name:'uopf'):'𝕦';
+function htmlChar(name:'uparrow'):'↑';
+function htmlChar(name:'updownarrow'):'↕';
+function htmlChar(name:'upharpoonleft'):'↿';
+function htmlChar(name:'upharpoonright'):'↾';
+function htmlChar(name:'uplus'):'⊎';
+function htmlChar(name:'upsi'):'υ';
+function htmlChar(name:'upsih'):'ϒ';
+function htmlChar(name:'upsilon'):'υ';
+function htmlChar(name:'upuparrows'):'⇈';
+function htmlChar(name:'urcorn'):'⌝';
+function htmlChar(name:'urcorner'):'⌝';
+function htmlChar(name:'urcrop'):'⌎';
+function htmlChar(name:'uring'):'ů';
+function htmlChar(name:'urtri'):'◹';
+function htmlChar(name:'uscr'):'𝓊';
+function htmlChar(name:'utdot'):'⋰';
+function htmlChar(name:'utilde'):'ũ';
+function htmlChar(name:'utri'):'▵';
+function htmlChar(name:'utrif'):'▴';
+function htmlChar(name:'uuarr'):'⇈';
+function htmlChar(name:'uuml'):'ü';
+function htmlChar(name:'uuml'):'ü';
+function htmlChar(name:'uwangle'):'⦧';
+function htmlChar(name:'vArr'):'⇕';
+function htmlChar(name:'vBar'):'⫨';
+function htmlChar(name:'vBarv'):'⫩';
+function htmlChar(name:'vDash'):'⊨';
+function htmlChar(name:'vangrt'):'⦜';
+function htmlChar(name:'varepsilon'):'ϵ';
+function htmlChar(name:'varkappa'):'ϰ';
+function htmlChar(name:'varnothing'):'∅';
+function htmlChar(name:'varphi'):'ϕ';
+function htmlChar(name:'varpi'):'ϖ';
+function htmlChar(name:'varpropto'):'∝';
+function htmlChar(name:'varr'):'↕';
+function htmlChar(name:'varrho'):'ϱ';
+function htmlChar(name:'varsigma'):'ς';
+function htmlChar(name:'varsubsetneq'):'⊊︀';
+function htmlChar(name:'varsubsetneqq'):'⫋︀';
+function htmlChar(name:'varsupsetneq'):'⊋︀';
+function htmlChar(name:'varsupsetneqq'):'⫌︀';
+function htmlChar(name:'vartheta'):'ϑ';
+function htmlChar(name:'vartriangleleft'):'⊲';
+function htmlChar(name:'vartriangleright'):'⊳';
+function htmlChar(name:'vcy'):'в';
+function htmlChar(name:'vdash'):'⊢';
+function htmlChar(name:'vee'):'∨';
+function htmlChar(name:'veebar'):'⊻';
+function htmlChar(name:'veeeq'):'≚';
+function htmlChar(name:'vellip'):'⋮';
+function htmlChar(name:'verbar'):'|';
+function htmlChar(name:'vert'):'|';
+function htmlChar(name:'vfr'):'𝔳';
+function htmlChar(name:'vltri'):'⊲';
+function htmlChar(name:'vnsub'):'⊂⃒';
+function htmlChar(name:'vnsup'):'⊃⃒';
+function htmlChar(name:'vopf'):'𝕧';
+function htmlChar(name:'vprop'):'∝';
+function htmlChar(name:'vrtri'):'⊳';
+function htmlChar(name:'vscr'):'𝓋';
+function htmlChar(name:'vsubnE'):'⫋︀';
+function htmlChar(name:'vsubne'):'⊊︀';
+function htmlChar(name:'vsupnE'):'⫌︀';
+function htmlChar(name:'vsupne'):'⊋︀';
+function htmlChar(name:'vzigzag'):'⦚';
+function htmlChar(name:'wcirc'):'ŵ';
+function htmlChar(name:'wedbar'):'⩟';
+function htmlChar(name:'wedge'):'∧';
+function htmlChar(name:'wedgeq'):'≙';
+function htmlChar(name:'weierp'):'℘';
+function htmlChar(name:'wfr'):'𝔴';
+function htmlChar(name:'wopf'):'𝕨';
+function htmlChar(name:'wp'):'℘';
+function htmlChar(name:'wr'):'≀';
+function htmlChar(name:'wreath'):'≀';
+function htmlChar(name:'wscr'):'𝓌';
+function htmlChar(name:'xcap'):'⋂';
+function htmlChar(name:'xcirc'):'◯';
+function htmlChar(name:'xcup'):'⋃';
+function htmlChar(name:'xdtri'):'▽';
+function htmlChar(name:'xfr'):'𝔵';
+function htmlChar(name:'xhArr'):'⟺';
+function htmlChar(name:'xharr'):'⟷';
+function htmlChar(name:'xi'):'ξ';
+function htmlChar(name:'xlArr'):'⟸';
+function htmlChar(name:'xlarr'):'⟵';
+function htmlChar(name:'xmap'):'⟼';
+function htmlChar(name:'xnis'):'⋻';
+function htmlChar(name:'xodot'):'⨀';
+function htmlChar(name:'xopf'):'𝕩';
+function htmlChar(name:'xoplus'):'⨁';
+function htmlChar(name:'xotime'):'⨂';
+function htmlChar(name:'xrArr'):'⟹';
+function htmlChar(name:'xrarr'):'⟶';
+function htmlChar(name:'xscr'):'𝓍';
+function htmlChar(name:'xsqcup'):'⨆';
+function htmlChar(name:'xuplus'):'⨄';
+function htmlChar(name:'xutri'):'△';
+function htmlChar(name:'xvee'):'⋁';
+function htmlChar(name:'xwedge'):'⋀';
+function htmlChar(name:'yacute'):'ý';
+function htmlChar(name:'yacute'):'ý';
+function htmlChar(name:'yacy'):'я';
+function htmlChar(name:'ycirc'):'ŷ';
+function htmlChar(name:'ycy'):'ы';
+function htmlChar(name:'yen'):'¥';
+function htmlChar(name:'yen'):'¥';
+function htmlChar(name:'yfr'):'𝔶';
+function htmlChar(name:'yicy'):'ї';
+function htmlChar(name:'yopf'):'𝕪';
+function htmlChar(name:'yscr'):'𝓎';
+function htmlChar(name:'yucy'):'ю';
+function htmlChar(name:'yuml'):'ÿ';
+function htmlChar(name:'yuml'):'ÿ';
+function htmlChar(name:'zacute'):'ź';
+function htmlChar(name:'zcaron'):'ž';
+function htmlChar(name:'zcy'):'з';
+function htmlChar(name:'zdot'):'ż';
+function htmlChar(name:'zeetrf'):'ℨ';
+function htmlChar(name:'zeta'):'ζ';
+function htmlChar(name:'zfr'):'𝔷';
+function htmlChar(name:'zhcy'):'ж';
+function htmlChar(name:'zigrarr'):'⇝';
+function htmlChar(name:'zopf'):'𝕫';
+function htmlChar(name:'zscr'):'𝓏';
+function htmlChar(name:'zwj'):'‍';
+function htmlChar(name:'zwnj'):'‌';
+export default function htmlChar(name:Char) {
+  return characterEntities[name];
+}

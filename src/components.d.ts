@@ -16,7 +16,12 @@ declare module 'vue' {
     ChartLine: typeof import('./components/demo-charts/ChartLine.vue')['default']
     ChartPie: typeof import('./components/demo-charts/ChartPie.vue')['default']
     ChartRadar: typeof import('./components/demo-charts/ChartRadar.vue')['default']
+    DndSave: typeof import('./components/dnd-save.vue')['default']
+    DndStat: typeof import('./components/dnd-stat.vue')['default']
+    DndStats: typeof import('./components/dnd-stats.vue')['default']
+    Fraction: typeof import('./components/fraction.vue')['default']
     RouterWrapper: typeof import('./components/layout/RouterWrapper.vue')['default']
+    Stat: typeof import('./components/Stat.vue')['default']
     StatsCard: typeof import('./components/StatsCard.vue')['default']
     VPage: typeof import('./components/VPage.vue')['default']
   }

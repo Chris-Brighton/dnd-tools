@@ -6,12 +6,15 @@
   <AppNotification />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useTitle } from '@vueuse/core'
 const route = useRoute()
 const title = computed(() => {
-  const title = route.meta?.title || route.matched[0].meta?.title || ''
-  return title ? `${title} | Vitify Admin` : 'Vitify Admin'
+  let title = route.meta?.title || route.matched[0].meta?.title || ''
+  if (title === 'Home' || title === 'home') title = null
+  return title
+    ? `Dungeons And Dragons Tools - ${title}`
+    : 'Dungeons And Dragons Tools'
 })
 useTitle(title)
 </script>

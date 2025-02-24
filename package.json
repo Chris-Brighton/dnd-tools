@@ -19,6 +19,7 @@
   "dependencies": {
     "@mdi/js": "^7.4.47",
     "@vueuse/core": "^10.9.0",
+    "axios": "^1.7.9",
     "echarts": "^5.5.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",

@@ -4,6 +4,8 @@ import { en } from 'vuetify/locale'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
 import type { VDataTable } from 'vuetify/lib/components/index.mjs'
 import { deepOrange, teal, deepPurple } from 'vuetify/util/colors'
+import * as labsComponents from 'vuetify/labs/components'
+
 const colors = {
   primary: deepOrange.base,
   secondary: teal.accent2,
@@ -41,7 +43,10 @@ export default createVuetify({
   locale: {
     locale: 'en',
     fallback: 'en',
-    messages: {  en },
+    messages: { en },
+  },
+  components: {
+    ...labsComponents,
   },
   defaults: {
     VAlert: {
@@ -59,6 +64,12 @@ export default createVuetify({
       density: 'default',
       class: 'rounded-0 clip-4',
       elevation: '2',
+    },
+    VCardActions: {
+      class: "d-flex justify-end ga-1",
+      VBtn:{
+        variant: "elevated"
+      }
     },
     VCheckbox: {
       color: 'primary',

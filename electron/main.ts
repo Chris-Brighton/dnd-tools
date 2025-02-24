@@ -1,9 +1,10 @@
 import { app, BrowserWindow, ipcMain } from 'electron'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-
+import fs from 'node:fs';
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
+
 
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
 
@@ -23,16 +24,20 @@ app.whenReady().then(() => {
     },
     webPreferences: {
       preload: join(__dirname, 'preload.mjs'),
+      nodeIntegration: true,
     },
   })
 
-  // ipcMain.handle('darkMode:toggle', (event, dark: boolean) => {
-  //   win.setTitleBarOverlay(
-  //     dark
-  //       ? { color: '#21212100', symbolColor: '#999999' }
-  //       : { color: '#f3f3f300', symbolColor: '#434343' },
-  //   )
-  // })
+  ipcMain.handle('file:write', (event, { file, data }) => {
+    const PATH = join(app.getPath('userData'), file);
+    console.log(PATH);
+    fs.writeFileSync(PATH, data, 'utf-8');
+  })
+
+  ipcMain.handle('file:read', (event, file:string) => {
+    const data = fs.readFileSync(join(app.getPath('userData'), file), { encoding: 'utf-8'});
+    return data;
+  })
 
   // You can use `process.env.VITE_DEV_SERVER_URL` when the vite command is called `serve`
   if (process.env.VITE_DEV_SERVER_URL) {
